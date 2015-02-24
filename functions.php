@@ -21,6 +21,14 @@ function theme_enqueue_styles() {
     wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array('ala-style') ,'4.3.0');
 }
 
+function do_loginscript()
+{
+	$server = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
+	$server .= $_SERVER["SERVER_NAME"]; 
+	$loggedIn = 'https://auth.ala.org.au/cas/login?service='.home_url().'/wp-login.php?redirect_to='.home_url().'/my-profile/'; 
+	echo $loggedIn;
+}
+
 //template directory shortcode
 function template_directory_path()
 {

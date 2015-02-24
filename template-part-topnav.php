@@ -64,8 +64,12 @@
         </form>
         <small>
           <ul class="nav navbar-nav navbar-right">
-            <li ><a href="#">My profile</a></li>
-            <li ><a href="#">Login</a></li>
+            <li><a href="<?php echo get_permalink(95); ?>" title="My profile">My profile</a></li>
+<?php if (is_user_logged_in() ) { ?>
+            <li><a href="<?php bloginfo('template_directory'); ?>/Logout.php">Log out</a></li>
+<?php } else { ?>
+            <li><a href="<?php do_loginscript(); ?>">Log in</a></li>
+<?php } ?>
           </ul>
         </small>
       </div>
