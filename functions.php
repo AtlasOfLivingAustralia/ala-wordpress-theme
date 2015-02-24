@@ -1,6 +1,20 @@
 <?php
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+
+add_action( "wp_enqueue_scripts", "ala_topbar_nav_polite", 11 );
+
+function ala_topbar_nav_polite() 
+{
+    wp_enqueue_script( 
+        'ala_top_nav_polite', 
+        get_stylesheet_directory_uri() . '/js/ala_topnav_polite.js',
+        array( 'jquery' ), 
+        '1.23', 
+        true
+    );
+}
+
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array('bootstrap.css') ,'1.5.0' );
     wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('parent-style') ,'1.0' );
