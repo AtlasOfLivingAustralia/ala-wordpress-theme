@@ -4,7 +4,7 @@
 
 <div id="main" class="container dmbs-container">
 
-<?php get_template_part('template-part', 'head'); ?>
+<?php // get_template_part('template-part', 'head'); ?>
 
 
     <?php //left sidebar ?>
