@@ -64,8 +64,8 @@
         </form>
         <small>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="<?php echo get_permalink(95); ?>" title="My profile">My profile</a></li>
 <?php if (is_user_logged_in() ) { ?>
+            <li><a href="https://auth.ala.org.au/userdetails/myprofile/" title="My profile">My profile</a></li>
             <li><a href="<?php echo wp_logout_url( home_url() ); ?>" title="Log out">Log out</a></li>
 <?php } else { ?>
             <li><a href="<?php do_loginscript(); ?>">Log in</a></li>

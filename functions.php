@@ -23,9 +23,7 @@ function theme_enqueue_styles() {
 
 function do_loginscript()
 {
-	$server = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
-	$server .= $_SERVER["SERVER_NAME"]; 
-	$loggedIn = 'https://auth.ala.org.au/cas/login?service='.home_url().'/wp-login.php?redirect_to='.home_url().'/my-profile/'; 
+	$loggedIn = 'https://auth.ala.org.au/cas/login?service='.home_url().'/wp-login.php?redirect_to='.home_url(); 
 	echo $loggedIn;
 }
 
