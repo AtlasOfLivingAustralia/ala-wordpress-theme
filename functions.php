@@ -63,7 +63,7 @@ function latest_news()
 			$args=array(
 				'post_type' => 'post',
 				'category_name' => 'blogs-news',
-				'posts_per_page' => 1
+				'posts_per_page' => 3
 			);
 			$my_query->query($args);
 			global $skipposts;
