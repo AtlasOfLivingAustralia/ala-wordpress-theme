@@ -46,20 +46,21 @@
               <li><a href="http://collections.ala.org.au/">Collections</a></li>
               <li><a href="http://volunteer.ala.org.au">DigiVol</a></li>
               <li><a href="https://fieldcapture.ala.org.au">Fieldcapture</a></li>
-              <li><a href="#">Soils to satellite</a></li>
-              <li><a href="#">Traits, species lists</a></li>
+              <li><a href="http://www.soils2satellites.org.au/">Soils to satellite</a></li>
+              <li><a href="http://lists.ala.org.au/">Traits, species lists</a></li>
 
               <li class="divider"></li>
-              <li><a href="#">Community portals</a></li>
+              <li><a href="http://root.ala.org.au/">Community portals</a></li>
               <li><a href="http://dashboard.ala.org.au">Dashboard</a></li>
               <li><a href="http://collections.ala.org.au/datasets">Datasets browser</a></li>
             </ul>
           </li>
 
         </ul>
-        <form class="navbar-form navbar-left" role="search">
+        <form class="navbar-form navbar-left" role="search" action="http://bie.ala.org.au/search" method="get">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search the Atlas"></div>
+            <input id="search" class="form-control" title="Search" type="text" name="q" placeholder="Search the Atlas" autocomplete="off">
+            </div>
           <button type="submit" class="btn btn-primary">Search</button>
         </form>
         <small>

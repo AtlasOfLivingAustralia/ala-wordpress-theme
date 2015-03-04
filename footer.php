@@ -77,11 +77,11 @@
         </div>
         <div class="col-xs-12 col-sm-4">
           <p>
-            The Atlas of Living Australia is funded by <a href="http://www.csiro.au/">The Commonwealth Scientific and Industrial Research Organisation</a> (CSIRO) and is a node of the <a href="http://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a>.
+            The Atlas of Living Australia is a node of the <a href="http://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a>.
           </p>
-          <div class="col-xs-6 col-sm-6">
-            <img class="img-responsive csiro" src="<?php echo get_stylesheet_directory_uri(); ?>/img/CSIRO_Solid_RGB.svg"><!-- Logo -->
-          </div>
+          <!-- <div class="col-xs-6 col-sm-6">
+            <img class="img-responsive csiro" src="<?php echo get_stylesheet_directory_uri(); ?>/img/CSIRO_Solid_RGB.svg">
+          </div> -->
 
           <div class="col-xs-6 col-sm-6">
             <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF_logo_short_form.gif"><!-- Logo -->
@@ -118,7 +118,6 @@
           <ul class="footer-nav list-inline">
             <li ><a href="/about-the-atlas/contact-us/">Contact Us</a></li>
             <li ><a href="/get-involved/">Get Involved</a></li>
-            <li ><a href="/">Explore the ALA</a></li>
           </ul>
         </div>
 
