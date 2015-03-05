@@ -83,7 +83,7 @@
             <img class="img-responsive csiro" src="<?php echo get_stylesheet_directory_uri(); ?>/img/CSIRO_Solid_RGB.svg">
           </div> -->
 
-          <div class="col-xs-6 col-sm-6">
+          <div class="col-xs-12 col-sm-12">
             <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF_logo_short_form.gif" alt="GBIF">
           </div>
         </div>

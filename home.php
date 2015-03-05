@@ -6,16 +6,16 @@
   <div class="jumbotron ala-header">
     <div class="container no-gutter">
       <div class="col-xs-12 col-md-12 col-md-10 col-lg-9 col-lg-offset-1">
-      <!-- inpage search start -->
-      <form id="search-form" class="banner" action="http://bie.ala.org.au/search" method="get" name="search-form">
-        <div class="input-group">
-          <input type="text" class="form-control" name="q" placeholder="Search the Atlas ...">
-          <span class="input-group-btn">
-            <input class="btn btn-primary btn-lg button-search" type="submit">Search</input>
-          </span>
-        </div>
+
+        <form id="global-search" class="banner" action="http://bie.ala.org.au/search" method="get" name="search-form">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search the Atlas ...">
+            <span class="input-group-btn">
+              <input class="btn btn-primary btn-lg button-search" type="submit">Search</input>
+            </span>
+          </div>
         </form>
-        <!-- inpage search end -->
+
       </div>
     </div>
   </div><!-- End Jumbotron -->
