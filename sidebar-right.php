@@ -13,7 +13,7 @@
 
       <div class="panel panel-default">
         <div class="panel-heading">
-          <a href="/blogs-news/" class="pull-right">View all</a>
+          <a href="/blogs-news/" class="font-xxxsmall pull-right">View all</a>
           <h4>Blog &amp; News Updates</h4>
         </div>
         <div class="panel-body">

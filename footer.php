@@ -66,11 +66,11 @@
           
           <div class="row">
             <div class="col-xs-6 col-sm-12">
-              <img class="img-responsive ncris" src="<?php echo get_stylesheet_directory_uri(); ?>/img/NCRIS-Logo_Mono.png"><!-- Logo -->
+              <img class="img-responsive ncris" src="<?php echo get_stylesheet_directory_uri(); ?>/img/NCRIS-Logo_Mono.png" alt="NCRIS"><!-- Logo -->
             </div>
 
             <div class="col-xs-6 col-sm-12">
-              <img class="img-responsive aus-govt" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Aust-Govt-Initiative-stacked-64.png"><!-- Logo -->
+              <img class="img-responsive aus-govt" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Aust-Govt-Initiative-stacked-64.png" alt="An Australian Government initiative"><!-- Logo -->
             </div>
           </div>
 
@@ -84,14 +84,14 @@
           </div> -->
 
           <div class="col-xs-6 col-sm-6">
-            <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF_logo_short_form.gif"><!-- Logo -->
+            <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF_logo_short_form.gif" alt="GBIF">
           </div>
         </div>
         <div class="col-xs-12 col-sm-4">
           <p>
             This site is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia License</a>.
           </p>
-          <p><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/creativecommons.png"><!-- Logo --><!-- http://placehold.it/150x50 --></p>
+          <p><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/creativecommons.png" alt="Creative Commons"></p>
           <p>
             Provider content may be covered by other <a href="/about-the-atlas/terms-of-use/">Terms of Use</a>.
           </p>
