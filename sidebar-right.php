@@ -1,7 +1,7 @@
       <aside class="col-lg-3 col-md-3 col-sm-12">
         <div class="panel panel-default">
           <div class="panel-heading">
-          <h3 class="cta">Sharing biodiversity knowledge</h3>
+          <h3 class="heading-underlined cta">Sharing biodiversity knowledge</h3>
         </div>
         <div class="panel-body">
           <p class="lead cta">
@@ -14,7 +14,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">
           <a href="/blogs-news/" class="font-xxxsmall pull-right">View all</a>
-          <h4>Blog &amp; News Updates</h4>
+          <h4 class="heading-underlined">Blog &amp; News Updates</h4>
         </div>
         <div class="panel-body">
         <?php echo latest_news() ?>
@@ -23,7 +23,7 @@
 
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h4>Connect with us</h4>
+          <h4 class="heading-underlined">Connect with us</h4>
         </div>
         <div class="panel-body">
           
