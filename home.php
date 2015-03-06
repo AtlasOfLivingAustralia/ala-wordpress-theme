@@ -11,7 +11,7 @@
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search the Atlas ...">
             <span class="input-group-btn">
-              <input class="btn btn-primary btn-lg button-search" type="submit">Search</input>
+              <input class="btn btn-primary btn-lg button-search" name="q" type="submit">Search</input>
             </span>
           </div>
         </form>
