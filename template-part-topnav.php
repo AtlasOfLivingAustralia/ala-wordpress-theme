@@ -75,9 +75,11 @@
             <ul class="dropdown-menu" role="menu">
 <?php if (is_user_logged_in() ) { ?>
               <li><a href="https://auth.ala.org.au/userdetails/myprofile/">My profile</a></li>
-              <li><a href="<?php echo wp_logout_url( home_url() ); ?>">Log out</a></li>
+              <!--<li><a href="<?php echo wp_logout_url( home_url() ); ?>">Log out</a></li>-->
+              <li><a href="https://auth.ala.org.au/cas/logout?service=<?php echo home_url(); ?>">Log out</a></li>
 <?php } else { ?>
-              <li><a href="<?php echo wp_login_url( home_url() ); ?>">Log in</a></li>
+              <!--<li><a href="<?php echo wp_login_url( home_url() ); ?>">Log in</a></li>-->
+              <li><a href="https://auth.ala.org.au/cas/login?service=<?php echo home_url(); ?>">Log in</a></li>
               <li><a href="https://auth.ala.org.au/userdetails/registration/createAccount">Register</a></li>
 <?php } ?>
             </ul>
