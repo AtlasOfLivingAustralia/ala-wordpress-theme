@@ -9,9 +9,9 @@
 
         <form id="global-search" class="banner" action="http://bie.ala.org.au/search" method="get" name="search-form">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search the Atlas ...">
+            <input type="text" class="form-control" name="q" placeholder="Search the Atlas ...">
             <span class="input-group-btn">
-              <input class="btn btn-primary btn-lg button-search" name="q" type="submit">Search</input>
+              <input class="btn btn-primary btn-lg button-search" type="submit">Search</input>
             </span>
           </div>
         </form>
