@@ -50,7 +50,7 @@
           <li><a href="/about-the-atlas/">About the Atlas</a></li>
           <li><a href="http://sightings.ala.org.au/mine">My Sightings</a></li>
           <li><a href="/faq/">FAQ</a></li>
-          <li><a href="#">Associated Sites</a></li>
+          <!-- <li><a href="#">Associated Sites</a></li> -->
         </ul>
       </div>
     
