@@ -64,7 +64,6 @@
           <button type="submit" class="btn btn-primary">Search</button>
         </form>
 
-<!--
         <small>
           <ul class="nav navbar-nav navbar-right">
           <li class="dropdown font-xsmall">
@@ -73,7 +72,6 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
-
 <?php if (is_user_logged_in() ) { ?>
               <li><a href="https://auth.ala.org.au/userdetails/myprofile/">My profile</a></li>
               <li><a href="<?php echo wp_logout_url( home_url() ); ?>">Log out</a></li>
@@ -85,7 +83,7 @@
           </li>
           </ul>
         </small>
--->
+
       </div>
       <!-- /.navbar-collapse --> </div>
     <!-- /.container-fluid --> </nav>

@@ -67,7 +67,7 @@ function latest_news()
 			);
 			$my_query->query($args);
 			global $skipposts;
-			$output .= '<div class="list-group">';
+			$output = '<div class="list-group">';
 			if( $my_query->have_posts() ) {
 				while ($my_query->have_posts()) : $my_query->the_post();
 					$category = get_the_category();
