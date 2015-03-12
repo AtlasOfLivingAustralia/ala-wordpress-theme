@@ -59,7 +59,7 @@
         </ul>
         <form class="navbar-form navbar-left" role="search" action="http://bie.ala.org.au/search" method="get">
           <div class="form-group">
-            <input id="search" class="form-control" title="Search" type="text" name="q" placeholder="Search the Atlas" autocomplete="off">
+            <input id="search" class="autocomplete form-control" title="Search" type="text" name="q" placeholder="Search the Atlas" autocomplete="off">
             </div>
           <button type="submit" class="btn btn-primary">Search</button>
         </form>

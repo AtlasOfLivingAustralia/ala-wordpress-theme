@@ -1,23 +1,35 @@
 <?php
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'autocompletejs' );
+add_action( 'wp_enqueue_scripts', 'ala_custom_js', 12 );
 
-add_action( "wp_enqueue_scripts", "ala_topbar_nav_polite", 11 );
-
-function ala_topbar_nav_polite() 
+function autocompletejs() 
 {
     wp_enqueue_script( 
-        'ala_top_nav_polite', 
-        get_stylesheet_directory_uri() . '/js/ala_topnav_polite.js',
+        'autocompletejs', 
+        get_stylesheet_directory_uri() . '/js/jquery.autocomplete.js',
         array( 'jquery' ), 
-        '1.23', 
+        '1.0', 
+        true
+    );
+}
+
+function ala_custom_js() 
+{
+    wp_enqueue_script( 
+        'ala_custom_js', 
+        get_stylesheet_directory_uri() . '/js/ala_custom.js',
+        array( 'jquery' ), 
+        '1.01', 
         true
     );
 }
 
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array('bootstrap.css') ,'1.5.0' );
-    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('parent-style') ,'1.0' );
+    wp_enqueue_style( 'autocompcss', get_stylesheet_directory_uri() . '/css/jquery.autocomplete.css', array('parent-style') ,'1.0' );
+    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('parent-style') ,'1.1' );
     wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array('ala-style') ,'4.3.0');
 }
 
