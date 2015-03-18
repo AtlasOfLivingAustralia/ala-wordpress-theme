@@ -26,7 +26,7 @@
           <li class="heading"><a href="/about-the-atlas/">Atlas Features &rarr;</a></li>
           <li><a href="http://dashboard.ala.org.au">Dashboard</a></li>
           <li><a href="http://sandbox.ala.org.au/">Sandbox</a></li>
-          <li><a href="/about-the-atlas/digitisation-guidance/">Digitisation guidance</a></li>
+          <li><a href="http://api.ala.org.au">API</a></li>
           <li><a href="/about-the-atlas/downloadable-tools/ala-mobile-app/">Atlas Mobile Apps</a></li>
         </ul>
       </div>
@@ -48,7 +48,7 @@
           <li class="heading"><a href="/about-the-atlas/contact-us/">Contact Us &rarr;</a></li>
           <li><a href="/about-the-atlas/communications-centre/">Communications</a></li>
           <li><a href="/about-the-atlas/">About the Atlas</a></li>
-          <li><a href="http://sightings.ala.org.au/mine">My Sightings</a></li>
+          <li><a href="/education-resources/">Education resources</a></li>
           <li><a href="/faq/">FAQ</a></li>
           <!-- <li><a href="#">Associated Sites</a></li> -->
         </ul>
