@@ -110,3 +110,27 @@ function latest_news()
 }
 add_shortcode('latest-news', 'latest_news');
 
+//in-page search shortcode
+function inpage_search($atts)
+{
+	extract( shortcode_atts( array(
+		'action' => 'bie.ala.org.au/search',
+	), $atts ) );
+	
+	global $post;
+	$id=$post->ID;
+	$placeholder = get_post_meta($id,'Placeholder',true);
+	$searchtext = get_post_meta($id,'SearchText',true);
+	$form = '<form action="http://'.$action.'" method="get">';
+	$form .= '<input class="inpagesearch form-control" title="Search" type="text" name="q" placeholder="' . $placeholder . '" />';
+	$form .= '<button type="submit" class="btn btn-primary">Search</button>';
+	$form .= '</form>';
+
+	//$form .= '<span class="search-button-wrapper"><button id="search-button" class="search-button" value="Search" type="submit"><img src="' . get_bloginfo("template_directory") . '/images/button_search.png" alt="Search" width="27" height="27" /></button></span></form>';
+	//$form .= '<p>' . $searchtext;
+	
+	return $form;
+}
+add_shortcode('inpage-search', 'inpage_search');
+
+

@@ -184,6 +184,7 @@ div.row.control-group > div:nth-child(1) > form > div > span > button {margin-le
 .data-display{margin: 2em 0;}
 #helpBlock {padding-bottom:10px;}
 .help-block{font-size: 14px;font-weight: 400;}
+.inpagesearch{display: inline-block;width: 79%;margin-right: 0.2em;}
 
 /* Tables
 ================================= */
