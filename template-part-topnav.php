@@ -48,7 +48,7 @@
               <li><a href="https://fieldcapture.ala.org.au/merit">MERIT</a></li>
               <li><a href="http://www.soils2satellites.org.au/">Soils to satellite</a></li>
               <li><a href="http://lists.ala.org.au/">Traits, species lists</a></li>
-              <li><a href="http://phylolink.ala.org.au/">PhyloLink</a></li>
+              <li><a href="http://phylolink.ala.org.au/">Phylolink</a></li>
 
               <li class="divider"></li>
               <li><a href="http://root.ala.org.au/">Community portals</a></li>
