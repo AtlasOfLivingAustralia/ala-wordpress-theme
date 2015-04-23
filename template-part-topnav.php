@@ -2,7 +2,7 @@
 <!-- Navbar -->
   <nav id="alatopnav" class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->  
+      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <a class="navbar-brand" href="/">
           <img alt="Brand" class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporting-graphic-element-flat.png">
@@ -16,7 +16,7 @@
         <a class="navbar-brand font-xsmall" href="/">The Atlas Of Living Australia</a>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->  
+      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li >
@@ -48,6 +48,7 @@
               <li><a href="https://fieldcapture.ala.org.au/merit">MERIT</a></li>
               <li><a href="http://www.soils2satellites.org.au/">Soils to satellite</a></li>
               <li><a href="http://lists.ala.org.au/">Traits, species lists</a></li>
+              <li><a href="http://phylolink.ala.org.au/">PhyloLink</a></li>
 
               <li class="divider"></li>
               <li><a href="http://root.ala.org.au/">Community portals</a></li>
