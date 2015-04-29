@@ -19,7 +19,26 @@
       </div>
     </div>
   </div><!-- End Jumbotron -->
+<?php // theloop - but only for the alert
+  if ( have_posts() ) : while ( have_posts() ) : the_post();
+    if( get_post_meta($post->ID, 'ALACustomAlertMessage', true) ) { ?>
+    <!-- Promotional alert -->
+  <div class="alert alert-promotional alert-dismissible" role="alert">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="col-md-12">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close" title="Close"><span aria-hidden="true">&times;</span></button>
+          <p><?php echo get_post_meta($post->ID, 'ALACustomAlertMessage', true); ?></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End promotional alert -->
+<?php } ?>
+<?php endwhile; ?>
+<?php endif; ?>
 
+  <!-- Container -->
     <div id="main" class="container dmbs-container">
 
      <!-- Main col -->

@@ -176,6 +176,19 @@ div.row.control-group > div:nth-child(1) > form > div > span > button {margin-le
 .modal-dialog{width:450px;}
 .modal-footer{border-width:0;}
 
+/* Alerts
+================================= */
+
+.alert {border-radius: 0;}
+.alert-promotional.alert-dismissible > div > div > div > button:hover{color:#fff;opacity:1.0;}
+.alert-promotional.alert-dismissible > div > div > div > button{line-height:1.7;opacity:0.6;}
+.alert-promotional.alert-dismissible>div>div>div>p>a{color: #FFF6F5;text-decoration: underline;}
+.alert-promotional.alert-dismissible>div>div>div>p>a:hover{text-decoration: none;}
+.alert-promotional.alert-dismissible>div>div>div>p>strong,
+.alert-promotional.alert-dismissible>div>div>div>p{color:#D3D3D3;}
+.alert-promotional.alert-dismissible>div>div>div{padding-top: 8px;}
+.alert.alert-promotional{background-color:#DA644E;border-color:#DA644E;border-top:none;color:#FFF6F5;margin-top:-30px;}
+
 /* Forms
 ================================= */
 
