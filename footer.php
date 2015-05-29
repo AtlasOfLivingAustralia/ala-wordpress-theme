@@ -116,8 +116,9 @@
         
         <div class="col-xs-12 col-sm-5 col-md-4">
           <ul class="footer-nav list-inline">
-            <li ><a href="/about-the-atlas/contact-us/">Contact Us</a></li>
-            <li ><a href="/get-involved/">Get Involved</a></li>
+            <li><a href="/about-the-atlas/contact-us/">Contact Us</a></li>
+            <li><a href="/get-involved/">Get Involved</a></li>
+            <li><a href="/system-status/">System status</a></li>
           </ul>
         </div>
 
