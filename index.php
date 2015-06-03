@@ -22,6 +22,30 @@
         <?php // theloop
         if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+            <div class="row"><!-- post info bar: author, date etc -->
+              <div class="col-md-12">
+                <ul class="list-inline heading-underlined">
+                  <li class="font-xxsmall">By <?php the_author(); ?></li>
+                  <li class="font-xxsmall"><i class="fa fa-calendar"></i>&ensp;<?php echo get_the_date(); ?></li>
+                  <li class="font-xxsmall"><i class="fa fa-tag"></i>&ensp;Tags:&ensp;
+                    <?php
+                    $categories = get_the_category();
+                    $separator = ' ';
+                    $output = '';
+                    if($categories){
+                      foreach($categories as $category) {
+                        # $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '"><span class="label label-primary">'.$category->cat_name.'</span></a>'.$separator;
+                        $output .= '<span class="label label-primary">'.$category->cat_name.'</span>'.$separator;
+                      }
+                    echo trim($output, $separator);
+                    }
+                    ?>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
           <div class="word-limit">
             <!-- <h1 class="heading-xlarge"><?php the_title() ;?></h2> -->
             <?php the_content(); ?>
