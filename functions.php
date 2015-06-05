@@ -26,6 +26,23 @@ function ala_custom_js()
     );
 }
 
+//list pages in section shortcode
+function section_pages($atts)
+{
+	extract( shortcode_atts( array(
+		'jumplink' => '',
+		'linkname' => '',
+	), $atts ) );
+	
+	global $post;
+	$ID = $post->ID;
+	$thispage = '<li><a href="#'.$jumplink.'">'.$linkname.'</a></li>';
+	$pages = wp_list_pages('title_li=&sort_column=menu_ord
+	er&depth=1&child_of='.$ID.'&echo=0');
+	return $thispage.$pages;
+}
+add_shortcode('section-pages', 'section_pages');
+
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array('bootstrap.css') ,'1.5.0' );
     wp_enqueue_style( 'autocompcss', get_stylesheet_directory_uri() . '/css/jquery.autocomplete.css', array('parent-style') ,'1.0' );
