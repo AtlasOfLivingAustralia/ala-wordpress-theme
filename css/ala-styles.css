@@ -547,3 +547,9 @@ li .login-soc-bell:hover{background-color:#75ab0a;}
   #main{padding:40px 0;}
 
 }
+
+@media only print{
+    .ftr-primary, .ftr-social, .ftr-secondary div:first-child, .ftr-secondary div:nth-child(2){
+        display: none;
+    }
+}
