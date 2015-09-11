@@ -10,8 +10,8 @@
           Sharing biodiversity knowledge to shape our future.
         </p>
       </div>
-      
-      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+
+      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 hidden-print">
         <ul class="link-list">
           <li class="heading"><a href="/get-involved/citizen-science/">Citizen Science &rarr;</a></li>
           <li><a href="/get-involved/citizen-science/">About CS in the ALA</a></li>
@@ -20,8 +20,8 @@
           <li><a href="/get-involved/">Upload media</a></li>
         </ul>
       </div>
-      
-      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+
+      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 hidden-print">
         <ul class="link-list">
           <li class="heading"><a href="/about-the-atlas/">Atlas Features &rarr;</a></li>
           <li><a href="http://dashboard.ala.org.au">Dashboard</a></li>
@@ -32,8 +32,8 @@
       </div>
 
       <!-- <div class="clearfix visible-xs-block visible-lg-inline-block"></div> -->
-      
-      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+
+      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 hidden-print">
         <ul class="link-list">
           <li class="heading"><a href="http://biocache.ala.org.au/">Atlas Data &rarr;</a></li>
           <li><a href="/faq/data-sensitivity/">Sensitive Data</a></li>
@@ -43,7 +43,7 @@
         </ul>
       </div>
 
-      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 hidden-print">
         <ul class="link-list">
           <li class="heading"><a href="/about-the-atlas/contact-us/">Contact Us &rarr;</a></li>
           <li><a href="/about-the-atlas/communications-centre/">Communications</a></li>
@@ -53,17 +53,17 @@
           <!-- <li><a href="#">Associated Sites</a></li> -->
         </ul>
       </div>
-    
+
     </div><!-- End row -->
 
     </div><!-- End container -->
   </footer><!-- End Main footer -->
 
-  <footer class="secondary-footer">
+  <footer class="secondary-footer hidden-print">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-4">
-          
+
           <div class="row">
             <div class="col-xs-6 col-sm-12">
               <img class="img-responsive ncris" src="<?php echo get_stylesheet_directory_uri(); ?>/img/NCRIS-Logo_Mono.png" alt="NCRIS"><!-- Logo -->
@@ -101,10 +101,10 @@
     </div><!-- End container -->
   </footer>
 
-  <footer class="social-footer">
-    <div class="container">          
+  <footer class="social-footer hidden-print">
+    <div class="container">
       <div class="row">
-        
+
         <div class="col-xs-12 col-sm-4 col-md-3">
           <ul class="social list-inline">
             <li><a class="soc-facebook" href="https://www.facebook.com/atlasoflivingaustralia"><i class="fa fa-facebook"></i></a></li>
@@ -113,7 +113,7 @@
             <li><a class="soc-envelope" href="/about-the-atlas/contact-us/"><i class="fa fa-envelope"></i></a></li>
           </ul>
         </div>
-        
+
         <div class="col-xs-12 col-sm-5 col-md-4">
           <ul class="footer-nav list-inline">
             <li><a href="/about-the-atlas/contact-us/">Contact Us</a></li>

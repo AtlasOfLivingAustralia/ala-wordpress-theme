@@ -1,4 +1,4 @@
-      <aside class="col-lg-3 col-md-3 col-sm-12">
+      <aside class="col-lg-3 col-md-3 col-sm-12 hidden-print">
         <div class="panel panel-default">
           <div class="panel-heading">
           <h3 class="heading-underlined cta">Sharing biodiversity knowledge</h3>
@@ -26,7 +26,7 @@
           <h4 class="heading-underlined">Connect with us</h4>
         </div>
         <div class="panel-body">
-          
+
           <ul class="social list-inline pull-left">
             <li><a class="soc-facebook" href="https://www.facebook.com/atlasoflivingaustralia"><i class="fa fa-facebook"></i></a></li>
             <li><a class="soc-twitter" href="https://twitter.com/#!/atlaslivingaust"><i class="fa fa-twitter"></i></a></li>

@@ -4,24 +4,24 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'autocompletejs' );
 add_action( 'wp_enqueue_scripts', 'ala_custom_js', 12 );
 
-function autocompletejs() 
+function autocompletejs()
 {
-    wp_enqueue_script( 
-        'autocompletejs', 
+    wp_enqueue_script(
+        'autocompletejs',
         get_stylesheet_directory_uri() . '/js/jquery.autocomplete.js',
-        array( 'jquery' ), 
-        '1.0', 
+        array( 'jquery' ),
+        '1.0',
         true
     );
 }
 
-function ala_custom_js() 
+function ala_custom_js()
 {
-    wp_enqueue_script( 
-        'ala_custom_js', 
+    wp_enqueue_script(
+        'ala_custom_js',
         get_stylesheet_directory_uri() . '/js/ala_custom.js',
-        array( 'jquery' ), 
-        '1.01', 
+        array( 'jquery' ),
+        '1.01',
         true
     );
 }
@@ -33,7 +33,7 @@ function section_pages($atts)
 		'jumplink' => '',
 		'linkname' => '',
 	), $atts ) );
-	
+
 	global $post;
 	$ID = $post->ID;
 	$thispage = '<li><a href="#'.$jumplink.'">'.$linkname.'</a></li>';
@@ -46,13 +46,13 @@ add_shortcode('section-pages', 'section_pages');
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array('bootstrap.css') ,'1.5.0' );
     wp_enqueue_style( 'autocompcss', get_stylesheet_directory_uri() . '/css/jquery.autocomplete.css', array('parent-style') ,'1.0' );
-    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('parent-style') ,'1.4' );
+    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('parent-style') ,'1.5' );
     wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array('ala-style') ,'4.3.0');
 }
 
 function do_loginscript()
 {
-	$loggedIn = 'https://auth.ala.org.au/cas/login?service='.home_url().'/wp-login.php?redirect_to='.home_url(); 
+	$loggedIn = 'https://auth.ala.org.au/cas/login?service='.home_url().'/wp-login.php?redirect_to='.home_url();
 	echo $loggedIn;
 }
 
@@ -80,7 +80,7 @@ function link_to($pagename)
 
 	$pageID = wt_get_ID_by_page_name("{$pagename}");
 	$href = get_permalink($pageID);
-	return $href;	
+	return $href;
 }
 add_shortcode('linkto', 'link_to');
 
@@ -118,7 +118,7 @@ function latest_news()
 			// $output .= '<h2><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2>';
 			// $output .= '<time datetime="' . get_the_time('Y-m-d') . '">' . get_the_time('j F, Y') . '</time>';
 			// $output .= '</article>';
-				
+
 			 endwhile;
 			}
 			$output .= '</div>';
@@ -133,7 +133,7 @@ function inpage_search($atts)
 	extract( shortcode_atts( array(
 		'action' => 'bie.ala.org.au/search',
 	), $atts ) );
-	
+
 	global $post;
 	$id=$post->ID;
 	$placeholder = get_post_meta($id,'Placeholder',true);
@@ -145,9 +145,7 @@ function inpage_search($atts)
 
 	//$form .= '<span class="search-button-wrapper"><button id="search-button" class="search-button" value="Search" type="submit"><img src="' . get_bloginfo("template_directory") . '/images/button_search.png" alt="Search" width="27" height="27" /></button></span></form>';
 	//$form .= '<p>' . $searchtext;
-	
+
 	return $form;
 }
 add_shortcode('inpage-search', 'inpage_search');
-
-
