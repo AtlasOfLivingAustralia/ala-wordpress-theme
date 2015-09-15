@@ -84,7 +84,7 @@ hgroup h3.heading-large{margin-bottom: 0;}
 .navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > li:hover > a{background-color:transparent;border:0 solid #F26649;border-bottom-width:2px;}
 .navbar-header > a:nth-child(3){color:#F26649;}
 div.navbar-header > a:nth-child(1) > img{max-height:20px;}
-.navbar-brand{font-size:1em;padding-right:0;}
+.navbar-brand{font-size:1em;padding-right:0;font-weight:900;}
 .navbar li, .navbar p {font-size: 14px;}
 
 /* Header

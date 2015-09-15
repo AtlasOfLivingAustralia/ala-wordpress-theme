@@ -13,22 +13,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand font-xsmall" href="/">The Atlas Of Living Australia</a>
+        <a class="navbar-brand font-xsmall" href="/">Atlas Of Living Australia</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li >
-            <a href="/about-the-atlas/contact-us/">
-              Contact us
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li >
-            <a href="/get-involved/">Get involved</a>
-          </li>
-
           <li class="dropdown font-xsmall">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
               ALA Apps
@@ -56,7 +46,23 @@
               <li><a href="http://collections.ala.org.au/datasets">Datasets browser</a></li>
             </ul>
           </li>
+          <li class="dropdown font-xsmall">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              ALA Info
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/about-the-atlas/">About the Atlas</a></li>
+              <li ><a href="/get-involved/">Get Involved</a></li>
 
+              <li class="divider"></li>
+              <li ><a href="/education-resources/">Education Resources</a></li>
+
+              <li class="divider"></li>
+              <li ><a href="contact-us-page.html">Contact Us</a></li>
+              <li ><a href="feedback-form-page.html">Provide Feedback</a></li>
+            </ul>
+          </li>
         </ul>
         <form class="navbar-form navbar-left" role="search" action="http://bie.ala.org.au/search" method="get">
           <div class="form-group">
