@@ -53,14 +53,15 @@
             </a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="/about-the-atlas/">About the Atlas</a></li>
-              <li ><a href="/get-involved/">Get Involved</a></li>
+              <li><a href="/get-involved/">Get Involved</a></li>
 
               <li class="divider"></li>
-              <li ><a href="/education-resources/">Education Resources</a></li>
+              <li><a href="/education-resources/">Education Resources</a></li>
 
               <li class="divider"></li>
-              <li ><a href="contact-us-page.html">Contact Us</a></li>
-              <li ><a href="feedback-form-page.html">Provide Feedback</a></li>
+              <li><a href="/about-the-atlas/contact-us/">Contact Us</a></li>
+              <?php //<li><a href="#">Provide Feedback</a></li>
+              ?>
             </ul>
           </li>
         </ul>
