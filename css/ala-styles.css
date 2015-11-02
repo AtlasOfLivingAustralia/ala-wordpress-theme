@@ -161,6 +161,7 @@ div.row.control-group > div:nth-child(1) > form > div > span > button {margin-le
 .pagination>.active>a{background-color:#DA644E;}
 .pagination>.active>a:hover{background-color:#DA644E;border-color:#F26649;}
 .pagination>.active>a:focus{background-color:#DA644E;border-color:#F26649;}
+.pagination>li>span.active{color:white;background-color:#DA644E;border-color:#F26649;}
 
 .pager li > a,
 .pager li > span {background-color: white;border-radius: 0;font-size: 13px;font-weight: 700;letter-spacing: 1px;padding: 10px 16px;text-transform: uppercase;}

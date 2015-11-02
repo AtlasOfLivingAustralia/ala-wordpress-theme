@@ -193,7 +193,7 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
     'prev_next'       => True,
     'prev_text'       => __('&laquo;'),
     'next_text'       => __('&raquo;'),
-    'type'            => 'plain',
+    'type'            => 'array',
     'add_args'        => false,
     'add_fragment'    => ''
   );
@@ -201,10 +201,21 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
   $paginate_links = paginate_links($pagination_args);
 
   if ($paginate_links) {
-    echo "<nav class='custom-pagination'>";
-      echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
-      echo $paginate_links;
-    echo "</nav>";
+    echo "<div class='row-fluid'>";
+      echo "<nav class='col-sm-12 col-centered text-center'>";
+        echo "<ul class='pagination pagination-lg'>";
+          foreach ($paginate_links as $thislink) {
+            $thislink = str_replace("current", "active", $thislink);
+            echo "<li>" . $thislink . "</li>";
+          }
+        echo "</ul>";
+      echo "</nav>";
+    echo "</div>";
+
+    //echo "<nav class='custom-pagination'>";
+      //echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
+      //echo $paginate_links;
+    //echo "</nav>";
   }
 
 }

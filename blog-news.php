@@ -90,7 +90,7 @@ $the_query = new WP_Query( $args ); ?>
   // end The Loop
   ?>
 
-
+<!--
   <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
     <nav class="prev-next-posts">
       <div class="prev-posts-link">
@@ -101,6 +101,7 @@ $the_query = new WP_Query( $args ); ?>
       </div>
     </nav>
   <?php } ?>
+-->
 
     <?php
       if (function_exists(custom_pagination)) {
