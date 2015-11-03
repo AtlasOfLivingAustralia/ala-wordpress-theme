@@ -35,8 +35,10 @@ $args = array(
 $the_query = new WP_Query( $args ); ?>
 
 <?php if ( $the_query->have_posts() ) :
+  $postCounter = 0;
   // start The Loop
   while ( $the_query->have_posts() ) : $the_query->the_post();
+    $postCounter = ++$postCounter;
     $category = get_the_category();
     if ($category_id == 72) { // Blogs & News has id 72
       $category_name = $category[0]->cat_name;
@@ -52,6 +54,46 @@ $the_query = new WP_Query( $args ); ?>
     $thumbsize = 'thumb-med'; //$imgsize = 'width="152" height="200"';
 
     $blog_thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(), $thumbsize);
+
+    if ( $paged == 1 && $postCounter == 1){
+      // first post on first page gets featured display
+      $blog_thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumb-lg'); //$imgsize = 'width="316" height="200"';
+?>
+<div class="row-fluid">
+  <div class="col-lg-12">
+<?php if ($blog_thumb_url) { ?>
+    <img class="img-responsive" src="<?php echo $blog_thumb_url[0]; ?>" alt="Main image: <?php the_title(); ?>">
+<?php } ?>
+    <div class="panel panel-default">
+      <div class="panel-body row">
+        <div class="col-md-2">
+          <p class="stat__title">
+            <a href="<?php echo $category_link; ?>" class="color--mellow-red"><?php echo $category_name ?></a>
+          </p>
+        </div>
+        <div class="col-md-10">
+          <h3 class="blog-heading-large">
+            <a href="<?php the_permalink();?>" class="color--mellow-red"><?php the_title(); ?></a>
+          </h3>
+          <p class="font-xxsmall heading-underlined"><?php the_time('j F, Y'); ?></p>
+          <?php
+          $posttags = get_the_tags();
+          if ($posttags) {
+            echo '<p class="font-xxsmall">Tags: ';
+            foreach($posttags as $tag) {
+              echo '<a href="/blogs-news/tag/' . $tag->term_id . '" class="label label-primary">' . $tag->name . '</a> ';
+            }
+            echo '</p>';
+          }
+          ?>
+        </div>
+      </div>
+    </div>
+  </div><!-- .col-lg-12 -->
+</div><!-- .row-fluid -->
+<?php
+    } else {
+      // all other posts get normal display
 ?>
 
 <div class="col-md-12">
@@ -86,11 +128,13 @@ $the_query = new WP_Query( $args ); ?>
     </div>
   </div>
 </div><!-- .col-md-12 -->
-  <?php endwhile;
+  <?php
+    }
+  endwhile;
   // end The Loop
   ?>
 
-<!--
+
   <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
     <nav class="prev-next-posts">
       <div class="prev-posts-link">
@@ -101,7 +145,6 @@ $the_query = new WP_Query( $args ); ?>
       </div>
     </nav>
   <?php } ?>
--->
 
     <?php
       if (function_exists(custom_pagination)) {
