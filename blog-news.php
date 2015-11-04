@@ -50,14 +50,16 @@ $the_query = new WP_Query( $args ); ?>
       $category_link = get_category_link( $category_id );
     }
     echo '<!-- $category_name: ' . $category_name . ', $category_id: ' . $$category_id . ' -->';
-
-    $thumbsize = 'thumb-med'; //$imgsize = 'width="152" height="200"';
+    // 'thumb-lg' $imgsize = 'width="316" height="200"';
+    // 'thumb-med' $imgsize = 'width="152" height="200"';
+    // 'thumbnail' $imgsize = 'width="70" height="82"';
+    $thumbsize = 'thumb-med';
 
     $blog_thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(), $thumbsize);
 
     if ( $paged == 1 && $postCounter == 1){
       // first post on first page gets featured display
-      $blog_thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumb-lg'); //$imgsize = 'width="316" height="200"';
+      $blog_thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumb-lg');
 ?>
 <div class="row-fluid">
   <div class="col-lg-12">
@@ -136,21 +138,13 @@ $the_query = new WP_Query( $args ); ?>
 
 
   <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
-    <nav class="prev-next-posts">
-      <div class="prev-posts-link">
-        <?php echo get_next_posts_link( 'Older Entries', $the_query->max_num_pages ); // display older posts link ?>
-      </div>
-      <div class="next-posts-link">
-        <?php echo get_previous_posts_link( 'Newer Entries' ); // display newer posts link ?>
-      </div>
+    <nav>
+      <ul class="pager">
+        <li class="previous"><?php echo get_previous_posts_link( '<span aria-hidden="true">&larr;</span> Newer posts' ); ?></li>
+        <li class="next"><?php echo get_next_posts_link( 'Older posts <span aria-hidden="true">&rarr;</span>', $the_query->max_num_pages ); ?></li>
+      </ul>
     </nav>
   <?php } ?>
-
-    <?php
-      if (function_exists(custom_pagination)) {
-        custom_pagination($the_query->max_num_pages,"",$paged);
-      }
-    ?>
 
   <?php wp_reset_postdata(); ?>
 

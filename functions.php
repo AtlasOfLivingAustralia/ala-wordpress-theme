@@ -46,7 +46,7 @@ add_shortcode('section-pages', 'section_pages');
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array('bootstrap.css') ,'1.5.0' );
     wp_enqueue_style( 'autocompcss', get_stylesheet_directory_uri() . '/css/jquery.autocomplete.css', array('parent-style') ,'1.0' );
-    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('parent-style') ,'1.7' );
+    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('parent-style') ,'1.8' );
     wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array('ala-style') ,'4.3.0');
 }
 
@@ -191,8 +191,8 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
     'end_size'        => 1,
     'mid_size'        => $pagerange,
     'prev_next'       => True,
-    'prev_text'       => __('&laquo;'),
-    'next_text'       => __('&raquo;'),
+    'prev_text'       => __('&lt;'),
+    'next_text'       => __('&gt;'),
     'type'            => 'array',
     'add_args'        => false,
     'add_fragment'    => ''
@@ -200,12 +200,63 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
 
   $paginate_links = paginate_links($pagination_args);
 
+/*
+  <!-- debug paginate_links array: Array
+  (
+      [0] => <span class='page-numbers current'>1</span>
+      [1] => <a class='page-numbers' href='http://localhost:8080/blogs-news/page/2'>2</a>
+      [2] => <a class='page-numbers' href='http://localhost:8080/blogs-news/page/3'>3</a>
+      [3] => <span class="page-numbers dots">&hellip;</span>
+      [4] => <a class='page-numbers' href='http://localhost:8080/blogs-news/page/59'>59</a>
+      [5] => <a class="next page-numbers" href="http://localhost:8080/blogs-news/page/2">&gt;</a>
+  )
+  -->
+*/
+
   if ($paginate_links) {
+    //debug
+    echo "<!-- debug paginate_links array: ";
+    print_r($paginate_links);
+    // if element 0 contains 'prev', insert 'first' element with &laquo; before it, and delete element after 'prev'
+    // if element contains 'dots' delete element
+    // if element contains 'current', replace with 'active'
+    // if element contains 'next', insert 'last' element with &raquo; after it, and delete element before 'next'
+    echo "-->";
+    // end debug
+/*
+    // pre-process pagination array for custom output
+    $pagination_array = array();
+    $delete_next = FALSE;
+    foreach ($paginate_links as $thislink) {
+      if ($delete_next === TRUE) {
+        // don't copy anything to output array for this one
+        $delete_next = FALSE;
+      } elseif (strpos($thislink, 'prev') !== FALSE) {
+        // if element contains 'prev', insert 'first' element with &laquo; before it, and delete element after 'prev'
+        $pagination_array[] = "<a class='page-numbers' href='/blogs-news/page/1'>&laquo;</a>";
+        $pagination_array[] = $thislink;
+        $delete_next = TRUE;
+      } elseif (strpos($thislink, 'dots') !== FALSE) {
+        // if element contains 'dots', ignore
+      } elseif (strpos($thislink, 'current') !== FALSE) {
+        // if element contains 'current', replace with 'active'
+        $thislink = str_replace("current", "active", $thislink);
+        $pagination_array[] = $thislink;
+      } elseif (strpos($thislink, 'next') !== FALSE) {
+        // if element contains 'next', insert 'last' element with &raquo; after it, and delete element before 'next'
+        $last_link = array_pop($pagination_array);
+        $pagination_array[] = $thislink;
+        $pagination_array[] = "<a class='page-numbers' href='/blogs-news/page/99'>&raquo;</a>";
+      } else {
+        // just copy to output array
+        $pagination_array[] = $thislink;
+      }
+    }
+*/
     echo "<div class='row-fluid'>";
       echo "<nav class='col-sm-12 col-centered text-center'>";
         echo "<ul class='pagination pagination-lg'>";
-          foreach ($paginate_links as $thislink) {
-            $thislink = str_replace("current", "active", $thislink);
+          foreach ($pagination_array as $thislink) {
             echo "<li>" . $thislink . "</li>";
           }
         echo "</ul>";
