@@ -84,7 +84,7 @@
           </div> -->
 
           <div class="col-xs-12 col-sm-12">
-            <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF_logo_short_form.gif" alt="GBIF">
+            <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF-2015.png" alt="GBIF">
           </div>
         </div>
         <div class="col-xs-12 col-sm-4">
