@@ -50,8 +50,6 @@ $the_query = new WP_Query( $args ); ?>
       $category_id = $category[1]->cat_ID;
       $category_link = get_category_link( $category_id );
     }
-    echo '<!-- $category_name: ' . $category_name . ', $category_id: ' . $$category_id . ' -->';
-
 ?>
 <div class="row-fluid">
   <div class="col-lg-12">
@@ -84,6 +82,7 @@ $the_query = new WP_Query( $args ); ?>
 
 
   <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
+    <!-- $the_query->max_num_pages: <?php echo $the_query->max_num_pages ?> -->
     <nav>
       <ul class="pager">
         <li class="previous"><?php echo get_previous_posts_link( '<span aria-hidden="true">&larr;</span> Newer posts' ); ?></li>
