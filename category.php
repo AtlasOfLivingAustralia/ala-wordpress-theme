@@ -14,6 +14,7 @@ get_header(); ?>
     <h1 class="hidden">Welcome to the Atlas of Living Australia</h1>
     <ol class="breadcrumb hidden-print">
       <li><a class="font-xxsmall" href="/">Home</a></li>
+      <li><a class="font-xxsmall" href="/blogs-news/">Blogs &amp; news updates</a></li>
       <li class="font-xxsmall active"><?php single_cat_title(); ?></li>
     </ol>
     <h2 class="heading-medium">Posts in the <?php single_cat_title(); ?> category</h2>
@@ -22,9 +23,10 @@ get_header(); ?>
   <?php if ( is_category() ) : ?>
 
 <?php
+$postsperpage = get_option('posts_per_page');
 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 $args = array(
-  'posts_per_page'   => 4,
+  'posts_per_page'   => $postsperpage,
   'cat'              => $cat,
   'post_type'        => 'post',
   'post_status'      => 'publish',
@@ -82,7 +84,7 @@ $the_query = new WP_Query( $args ); ?>
 
 
   <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
-    <!-- $the_query->max_num_pages: <?php echo $the_query->max_num_pages ?> -->
+    <!-- total list pages for this category: <?php echo $the_query->max_num_pages ?> -->
     <nav>
       <ul class="pager">
         <li class="previous"><?php echo get_previous_posts_link( '<span aria-hidden="true">&larr;</span> Newer posts' ); ?></li>

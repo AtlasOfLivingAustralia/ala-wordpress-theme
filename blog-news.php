@@ -21,9 +21,10 @@ get_header(); ?>
 
 <?php
 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+$postsperpage = get_option('posts_per_page');
 // cat of -18 means exclude spatial portal help posts
 $args = array(
-  'posts_per_page'   => 4,
+  'posts_per_page'   => $postsperpage,
   'cat'              => '-18',
   'post_type'        => 'post',
   'post_status'      => 'publish',
@@ -49,7 +50,6 @@ $the_query = new WP_Query( $args ); ?>
       $category_id = $category[1]->cat_ID;
       $category_link = get_category_link( $category_id );
     }
-    echo '<!-- $category_name: ' . $category_name . ', $category_id: ' . $$category_id . ' -->';
     // 'thumb-lg' $imgsize = 'width="316" height="200"';
     // 'thumb-med' $imgsize = 'width="152" height="200"';
     // 'thumbnail' $imgsize = 'width="70" height="82"';
