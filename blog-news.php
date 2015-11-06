@@ -79,7 +79,7 @@ $the_query = new WP_Query( $args ); ?>
           if ($posttags) {
             echo '<p class="font-xxsmall">Tags: ';
             foreach($posttags as $tag) {
-              echo '<a href="/tag/' . $tag->term_id . '" class="label label-primary">' . $tag->name . '</a> ';
+              echo '<a href="/tag/' . $tag->slug . '" class="label label-primary">' . $tag->name . '</a> ';
             }
             echo '</p>';
           }
@@ -112,7 +112,7 @@ $the_query = new WP_Query( $args ); ?>
         if ($posttags) {
           echo '<p class="font-xxsmall">Tags: ';
           foreach($posttags as $tag) {
-            echo '<a href="/blogs-news/tag/' . $tag->term_id . '" class="label label-primary">' . $tag->name . '</a> ';
+            echo '<a href="/tag/' . $tag->slug . '" class="label label-primary">' . $tag->name . '</a> ';
           }
           echo '</p>';
         }

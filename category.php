@@ -17,7 +17,7 @@ get_header(); ?>
       <li><a class="font-xxsmall" href="/blogs-news/">Blogs &amp; news updates</a></li>
       <li class="font-xxsmall active"><?php single_cat_title(); ?></li>
     </ol>
-    <h2 class="heading-medium">Posts in the <?php single_cat_title(); ?> category</h2>
+    <h2 class="heading-medium">Category: <?php single_cat_title(); ?></h2>
   </div>
 
   <?php if ( is_category() ) : ?>

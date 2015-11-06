@@ -16,7 +16,7 @@ get_header(); ?>
       <li><a class="font-xxsmall" href="/blogs-news/">Blogs &amp; news updates</a></li>
       <li class="font-xxsmall active"><?php single_tag_title(); ?></li>
     </ol>
-    <h2 class="heading-medium">Posts with the <?php single_tag_title(); ?> tag</h2>
+    <h2 class="heading-medium">Tag: <?php single_tag_title(); ?></h2>
   </div>
 
   <?php if ( is_tag() ) : ?>
