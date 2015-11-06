@@ -40,12 +40,6 @@ $the_query = new WP_Query( $args ); ?>
   $postCounter = 0;
   // start The Loop
   while ( $the_query->have_posts() ) : $the_query->the_post();
-    $postCounter = ++$postCounter;
-    $category = get_the_category();
-    // Blogs & News has id 72
-    $category_id = $category[0]->cat_ID;
-    $category_link = get_category_link( $category_id );
-    $category_name = $category[0]->cat_name;
 ?>
 <div class="row-fluid">
   <div class="col-lg-12">
@@ -54,7 +48,10 @@ $the_query = new WP_Query( $args ); ?>
           <div class="row">
             <div class="col-md-2">
               <p class="blog-category">
-                <a href="<?php echo $category_link; ?>" class="color--pink"><?php echo $category_name ?></a>
+                <?php
+                $this_post_categories = get_the_category();
+                post_category_links($this_post_categories);
+                ?>
               </p>
             </div>
             <div class="col-md-2">
@@ -64,6 +61,16 @@ $the_query = new WP_Query( $args ); ?>
               <h3 class="blog-heading-small">
                 <a href="<?php the_permalink();?>" class="color--pink"><?php the_title(); ?></a>
               </h3>
+              <?php
+              $posttags = get_the_tags();
+              if ($posttags) {
+                echo '<p class="font-xxsmall">Tags: ';
+                foreach($posttags as $tag) {
+                  echo '<a href="/tag/' . $tag->slug . '" class="label label-primary">' . $tag->name . '</a> ';
+                }
+                echo '</p>';
+              }
+              ?>
             </div>
           </div>
       </div>

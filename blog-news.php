@@ -40,11 +40,6 @@ $the_query = new WP_Query( $args ); ?>
   // start The Loop
   while ( $the_query->have_posts() ) : $the_query->the_post();
     $postCounter = ++$postCounter;
-    $category = get_the_category();
-    // Blogs & News has id 72
-    $category_id = $category[0]->cat_ID;
-    $category_link = get_category_link( $category_id );
-    $category_name = $category[0]->cat_name;
 
     // 'thumb-lg' $imgsize = 'width="316" height="200"';
     // 'thumb-med' $imgsize = 'width="152" height="200"';
@@ -66,7 +61,10 @@ $the_query = new WP_Query( $args ); ?>
       <div class="panel-body row">
         <div class="col-md-2">
           <p class="stat__title">
-            <a href="<?php echo $category_link; ?>" class="color--mellow-red"><?php echo $category_name ?></a>
+            <?php
+            $this_post_categories = get_the_category();
+            post_category_links($this_post_categories);
+            ?>
           </p>
         </div>
         <div class="col-md-10">
@@ -99,7 +97,10 @@ $the_query = new WP_Query( $args ); ?>
     <div class="panel-body row">
       <div class="col-md-2">
         <p class="stat__title">
-          <a href="<?php echo $category_link; ?>" class="color--pink"><?php echo $category_name ?></a>
+          <?php
+          $this_post_categories = get_the_category();
+          post_category_links($this_post_categories);
+          ?>
         </p>
       </div>
       <div class="col-md-6">
