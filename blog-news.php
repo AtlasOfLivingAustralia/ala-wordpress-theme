@@ -41,15 +41,11 @@ $the_query = new WP_Query( $args ); ?>
   while ( $the_query->have_posts() ) : $the_query->the_post();
     $postCounter = ++$postCounter;
     $category = get_the_category();
-    if ($category_id == 72) { // Blogs & News has id 72
-      $category_name = $category[0]->cat_name;
-      $category_id = $category[0]->cat_ID;
-      $category_link = get_category_link( $category_id );
-    } else {
-      $category_name = $category[1]->cat_name;
-      $category_id = $category[1]->cat_ID;
-      $category_link = get_category_link( $category_id );
-    }
+    // Blogs & News has id 72
+    $category_id = $category[0]->cat_ID;
+    $category_link = get_category_link( $category_id );
+    $category_name = $category[0]->cat_name;
+
     // 'thumb-lg' $imgsize = 'width="316" height="200"';
     // 'thumb-med' $imgsize = 'width="152" height="200"';
     // 'thumbnail' $imgsize = 'width="70" height="82"';
@@ -83,7 +79,7 @@ $the_query = new WP_Query( $args ); ?>
           if ($posttags) {
             echo '<p class="font-xxsmall">Tags: ';
             foreach($posttags as $tag) {
-              echo '<a href="/blogs-news/tag/' . $tag->term_id . '" class="label label-primary">' . $tag->name . '</a> ';
+              echo '<a href="/tag/' . $tag->term_id . '" class="label label-primary">' . $tag->name . '</a> ';
             }
             echo '</p>';
           }
