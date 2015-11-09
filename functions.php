@@ -3,6 +3,7 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'autocompletejs' );
 add_action( 'wp_enqueue_scripts', 'ala_custom_js', 12 );
+add_action( 'wp_enqueue_scripts', 'browser_update_js' );
 
 function autocompletejs()
 {
@@ -22,6 +23,18 @@ function ala_custom_js()
         get_stylesheet_directory_uri() . '/js/ala_custom.js',
         array( 'jquery' ),
         '1.01',
+        true
+    );
+}
+
+// prompt users with very old browsers to update
+function browser_update_js()
+{
+    wp_enqueue_script(
+        'browser_update_js',
+        get_stylesheet_directory_uri() . '/js/browser-update-org.min.js',
+        array(),
+        '2015.11',
         true
     );
 }
