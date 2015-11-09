@@ -11,7 +11,7 @@
           <div class="input-group">
             <input type="text" class="autocomplete form-control" name="q" placeholder="Search the Atlas ...">
             <span class="input-group-btn">
-              <input class="btn btn-primary btn-lg button-search" type="submit">Search</input>
+              <input class="btn btn-primary btn-lg button-search" type="submit" value="Search">
             </span>
           </div>
         </form>
@@ -61,7 +61,7 @@
     <?php //get the right sidebar ?>
     <?php get_sidebar( 'right' ); ?>
 
- </div><!-- End container #main col -->  
+ </div><!-- End container #main col -->
 <!-- end content container -->
 
 <?php get_footer(); ?>
