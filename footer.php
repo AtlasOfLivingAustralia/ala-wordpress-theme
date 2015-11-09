@@ -79,13 +79,9 @@
           <p>
             The Atlas of Living Australia is a node of the <a href="http://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a>.
           </p>
-          <!-- <div class="col-xs-6 col-sm-6">
-            <img class="img-responsive csiro" src="<?php echo get_stylesheet_directory_uri(); ?>/img/CSIRO_Solid_RGB.svg">
-          </div> -->
 
-          <div class="col-xs-12 col-sm-12">
-            <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF-2015.png" alt="GBIF">
-          </div>
+          <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF-2015-cropped.png" alt="GBIF">
+
         </div>
         <div class="col-xs-12 col-sm-4">
           <p>
