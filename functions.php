@@ -3,7 +3,6 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'autocompletejs' );
 add_action( 'wp_enqueue_scripts', 'ala_custom_js', 12 );
-add_action( 'wp_enqueue_scripts', 'browser_update_js' );
 
 function autocompletejs()
 {
@@ -23,18 +22,6 @@ function ala_custom_js()
         get_stylesheet_directory_uri() . '/js/ala_custom.js',
         array( 'jquery' ),
         '1.01',
-        true
-    );
-}
-
-// prompt users with very old browsers to update
-function browser_update_js()
-{
-    wp_enqueue_script(
-        'browser_update_js',
-        get_stylesheet_directory_uri() . '/js/browser-update-org.min.js',
-        array(),
-        '2015.11',
         true
     );
 }
@@ -59,7 +46,7 @@ add_shortcode('section-pages', 'section_pages');
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array('bootstrap.css') ,'1.5.0' );
     wp_enqueue_style( 'autocompcss', get_stylesheet_directory_uri() . '/css/jquery.autocomplete.css', array('parent-style') ,'1.0' );
-    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('parent-style') ,'1.10' );
+    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('parent-style') ,'1.8' );
     wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array('ala-style') ,'4.3.0');
 }
 
@@ -162,3 +149,135 @@ function inpage_search($atts)
 	return $form;
 }
 add_shortcode('inpage-search', 'inpage_search');
+
+
+function custom_pagination($numpages = '', $pagerange = '', $paged='') {
+
+  if (empty($pagerange)) {
+    $pagerange = 2;
+  }
+
+  /**
+   * This first part of our function is a fallback
+   * for custom pagination inside a regular loop that
+   * uses the global $paged and global $wp_query variables.
+   *
+   * It's good because we can now override default pagination
+   * in our theme, and use this function in default quries
+   * and custom queries.
+   */
+  global $paged;
+  if (empty($paged)) {
+    $paged = 1;
+  }
+  if ($numpages == '') {
+    global $wp_query;
+    $numpages = $wp_query->max_num_pages;
+    if(!$numpages) {
+        $numpages = 1;
+    }
+  }
+
+  /**
+   * We construct the pagination arguments to enter into our paginate_links
+   * function.
+   */
+  $pagination_args = array(
+    'base'            => get_pagenum_link(1) . '%_%',
+    'format'          => 'page/%#%',
+    'total'           => $numpages,
+    'current'         => $paged,
+    'show_all'        => False,
+    'end_size'        => 1,
+    'mid_size'        => $pagerange,
+    'prev_next'       => True,
+    'prev_text'       => __('&lt;'),
+    'next_text'       => __('&gt;'),
+    'type'            => 'array',
+    'add_args'        => false,
+    'add_fragment'    => ''
+  );
+
+  $paginate_links = paginate_links($pagination_args);
+
+/*
+  <!-- debug paginate_links array: Array
+  (
+      [0] => <span class='page-numbers current'>1</span>
+      [1] => <a class='page-numbers' href='http://localhost:8080/blogs-news/page/2'>2</a>
+      [2] => <a class='page-numbers' href='http://localhost:8080/blogs-news/page/3'>3</a>
+      [3] => <span class="page-numbers dots">&hellip;</span>
+      [4] => <a class='page-numbers' href='http://localhost:8080/blogs-news/page/59'>59</a>
+      [5] => <a class="next page-numbers" href="http://localhost:8080/blogs-news/page/2">&gt;</a>
+  )
+  -->
+*/
+
+  if ($paginate_links) {
+    //debug
+    echo "<!-- debug paginate_links array: ";
+    print_r($paginate_links);
+    // if element 0 contains 'prev', insert 'first' element with &laquo; before it, and delete element after 'prev'
+    // if element contains 'dots' delete element
+    // if element contains 'current', replace with 'active'
+    // if element contains 'next', insert 'last' element with &raquo; after it, and delete element before 'next'
+    echo "-->";
+    // end debug
+/*
+    // pre-process pagination array for custom output
+    $pagination_array = array();
+    $delete_next = FALSE;
+    foreach ($paginate_links as $thislink) {
+      if ($delete_next === TRUE) {
+        // don't copy anything to output array for this one
+        $delete_next = FALSE;
+      } elseif (strpos($thislink, 'prev') !== FALSE) {
+        // if element contains 'prev', insert 'first' element with &laquo; before it, and delete element after 'prev'
+        $pagination_array[] = "<a class='page-numbers' href='/blogs-news/page/1'>&laquo;</a>";
+        $pagination_array[] = $thislink;
+        $delete_next = TRUE;
+      } elseif (strpos($thislink, 'dots') !== FALSE) {
+        // if element contains 'dots', ignore
+      } elseif (strpos($thislink, 'current') !== FALSE) {
+        // if element contains 'current', replace with 'active'
+        $thislink = str_replace("current", "active", $thislink);
+        $pagination_array[] = $thislink;
+      } elseif (strpos($thislink, 'next') !== FALSE) {
+        // if element contains 'next', insert 'last' element with &raquo; after it, and delete element before 'next'
+        $last_link = array_pop($pagination_array);
+        $pagination_array[] = $thislink;
+        $pagination_array[] = "<a class='page-numbers' href='/blogs-news/page/99'>&raquo;</a>";
+      } else {
+        // just copy to output array
+        $pagination_array[] = $thislink;
+      }
+    }
+*/
+    echo "<div class='row-fluid'>";
+      echo "<nav class='col-sm-12 col-centered text-center'>";
+        echo "<ul class='pagination pagination-lg'>";
+          foreach ($pagination_array as $thislink) {
+            echo "<li>" . $thislink . "</li>";
+          }
+        echo "</ul>";
+      echo "</nav>";
+    echo "</div>";
+
+    //echo "<nav class='custom-pagination'>";
+      //echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
+      //echo $paginate_links;
+    //echo "</nav>";
+  }
+
+}
+
+function post_category_links($categories = null) {
+  $separator = ', ';
+  $output = '';
+  if ( ! empty( $categories ) ) {
+      foreach( $categories as $category ) {
+          $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" title="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separator;
+      }
+      echo trim( $output, $separator );
+  }
+}
