@@ -65,14 +65,13 @@
             </ul>
           </li>
         </ul>
-        <form class="navbar-form navbar-left" role="search" action="http://bie.ala.org.au/search" method="get">
+        <form class="navbar-form navbar-left" action="http://bie.ala.org.au/search" method="get">
           <div class="form-group">
             <input id="search" class="autocomplete form-control" title="Search" type="text" name="q" placeholder="Search the Atlas" autocomplete="off">
             </div>
           <button type="submit" class="btn btn-primary">Search</button>
         </form>
 
-        <small>
           <ul class="nav navbar-nav navbar-right">
           <li class="dropdown font-xsmall">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -90,7 +89,6 @@
             </ul>
           </li>
           </ul>
-        </small>
 
       </div>
       <!-- /.navbar-collapse --> </div>
