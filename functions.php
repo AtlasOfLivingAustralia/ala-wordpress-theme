@@ -4,6 +4,29 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'autocompletejs' );
 add_action( 'wp_enqueue_scripts', 'ala_custom_js', 12 );
 
+/**
+ * Load scripts in the footer
+ *
+ * Automatically move JavaScript code to page footer, speeding up page loading time.
+ */
+function footer_enqueue_scripts() {
+  remove_action('wp_head', 'wp_print_scripts');
+  remove_action('wp_head', 'wp_print_head_scripts', 9);
+  remove_action('wp_head', 'wp_enqueue_scripts', 1);
+  add_action('wp_footer', 'wp_print_scripts', 5);
+  add_action('wp_footer', 'wp_enqueue_scripts', 5);
+  add_action('wp_footer', 'wp_print_head_scripts', 5);
+  // also remove core emoji support, as it tries to force load in the header
+  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+  remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+  remove_action( 'wp_print_styles', 'print_emoji_styles' );
+  remove_action( 'admin_print_styles', 'print_emoji_styles' );
+}
+add_action('after_setup_theme', 'footer_enqueue_scripts');
+
+
+
+
 function autocompletejs()
 {
     wp_enqueue_script(
