@@ -471,6 +471,28 @@ li .login-soc-bell:hover{background-color:#75ab0a;}
   .modal-dialog{width:700px;}
   .alert-promotional.alert-dismissible>div>div>div>p>strong,
   .alert-promotional.alert-dismissible>div>div>div>p{font-size: 19px;}
+  .panel-body .front-grain{
+    width: 100%;
+    height: 7.5em;
+  }
+  .panel-body .front-grain-aust-species{
+    background: url(../img/species-octopus-maorum-313.jpg) no-repeat center top;
+  }
+  .panel-body .front-grain-species-location{
+    background: url(../img/species-by-location-phyllopteryx-taeniolatus-313.jpg) no-repeat center top;
+  }
+  .panel-body .front-grain-collections{
+    background: url(../img/natural-history-collection-ANIC-insect4-313.jpg) no-repeat center top;
+  }
+  .panel-body .front-grain-mapping{
+    background: url(../img/mapping-82172860-313.jpg) no-repeat center top;
+  }
+  .panel-body .front-grain-datasets{
+    background: url(../img/data-sets-bembicium-auratum-313.jpg) no-repeat center top;
+  }
+  .panel-body .front-grain-community{
+    background: url(../img/partner-profiles-taylora-tasmanica-313.jpg) no-repeat center top;
+  }
 }
 
 /* Medium Devices, Desktops */
