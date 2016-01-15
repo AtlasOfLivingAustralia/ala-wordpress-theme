@@ -34,7 +34,7 @@
               <li class="divider"></li>
               <li><a href="http://sightings.ala.org.au/">Record a sighting</a></li>
               <li><a href="http://collections.ala.org.au/">Collections</a></li>
-              <li><a href="http://biocollect.ala.org.au/">Biocollect</a></li>
+              <li><a href="http://www.ala.org.au/biocollect/">Biocollect</a></li>
               <li><a href="http://volunteer.ala.org.au">DigiVol</a></li>
               <li><a href="https://fieldcapture.ala.org.au/merit">MERIT</a></li>
               <li><a href="http://www.soils2satellites.org.au/">Soils to satellite</a></li>
