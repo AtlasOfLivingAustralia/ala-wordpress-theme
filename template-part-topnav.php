@@ -16,63 +16,86 @@
         <a class="navbar-brand font-xsmall" href="/">Atlas Of Living Australia</a>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="dropdown font-xsmall">
+<li class="dropdown font-xsmall">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              ALA Apps
+              Explore
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="http://spatial.ala.org.au/">Spatial portal</a></li>
-              <li ><a href="http://biocache.ala.org.au/">Occurrence search</a></li>
-              <li ><a href="http://fish.ala.org.au/">Fish map</a></li>
-              <li ><a href="http://regions.ala.org.au/">Regions</a></li>
-              <li ><a href="http://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
-
-              <li class="divider"></li>
-              <li><a href="http://sightings.ala.org.au/">Record a sighting</a></li>
+              <li><a href="http://dashboard.ala.org.au/">Atlas Dashboard</a></li>
               <li><a href="http://collections.ala.org.au/">Collections</a></li>
-              <li><a href="http://www.ala.org.au/biocollect/">Biocollect</a></li>
-              <li><a href="http://volunteer.ala.org.au">DigiVol</a></li>
-              <li><a href="https://fieldcapture.ala.org.au/merit">MERIT</a></li>
-              <li><a href="http://www.soils2satellites.org.au/">Soils to satellite</a></li>
-              <li><a href="http://lists.ala.org.au/">Traits, species lists</a></li>
-              <li><a href="http://phylolink.ala.org.au/">Phylolink</a></li>
+              <li><a href="http://collections.ala.org.au/datasets">Datasets</a></li>
 
               <li class="divider"></li>
-              <li><a href="http://root.ala.org.au/">Community portals</a></li>
-              <li><a href="http://dashboard.ala.org.au">Dashboard</a></li>
-              <li><a href="http://collections.ala.org.au/datasets">Datasets browser</a></li>
+              <li class="dropdown-header">Occurrence records</li>
+              <li><a href="http://lists.ala.org.au/iconic-species">Browse iconic species</a></li>
+              <li><a href="http://biocache.ala.org.au/">Browse records</a></li>
+              <li><a href="http://regions.ala.org.au/">Browse your region</a></li>
+              <li><a href="http://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
+
+              <li class="divider"></li>
+              <li class="dropdown-header">Analyse</li>
+              <li><a href="http://spatial.ala.org.au/">Spatial Portal</a></li>
+              <li><a href="http://phylolink.ala.org.au/">Phylolink</a></li>
             </ul>
           </li>
+
           <li class="dropdown font-xsmall">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              ALA Info
+              Contribute
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="https://biocollect.ala.org.au/">Join a Citizen Science project</a></li>
+              <li><a href="http://sightings.ala.org.au/">Record a sighting</a></li>
+              <!-- <li><a href="#">Submit a data set</a></li> -->
+              <li><a href="https://volunteer.ala.org.au/">Digitise a record</a></li>
+              <!-- <li><a href="#">Occurrence sandbox</a></li> -->
+
+              <li class="divider"></li>
+              <li class="dropdown-header">Get in touch</li>
+              <!-- <li ><a href="#">Provide Feedback</a></li> -->
+              <li ><a href="/about-the-atlas/contact-us/">Contact Us</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown font-xsmall">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              Learn
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="/about-the-atlas/">About the Atlas</a></li>
-              <li><a href="/get-involved/">Get Involved</a></li>
 
               <li class="divider"></li>
-              <li><a href="/education-resources/">Education Resources</a></li>
+              <li ><a href="/education-resources/">Education Resources</a></li>
 
               <li class="divider"></li>
-              <li><a href="/about-the-atlas/contact-us/">Contact Us</a></li>
-              <?php //<li><a href="#">Provide Feedback</a></li>
-              ?>
+              <li class="dropdown-header">How we</li>
+              <li><a href="/about-the-atlas/communications-centre/">Communicate</a></li>
+              <li><a href="/faq/data-sensitivity/">Handle sensitive data</a></li>
+              <li><a href="/about-the-atlas/how-we-integrate-data/">Integrate data</a></li>
+              <li><a href="/get-involved/upload-data-sets/">Upload datasets</a></li>
+
+              <li class="divider"></li>
+              <li class="dropdown-header">How you can</li>
+              <li><a href="http://api.ala.org.au/">Use our API</a></li>
+              <li><a href="/about-the-atlas/downloadable-tools/ala-mobile-app/">Use the Atlas mobile app</a></li>
+              <li><a href="/get-involved/">Contribute to the Atlas</a></li>
             </ul>
           </li>
+
         </ul>
-        <form class="navbar-form navbar-left" action="http://bie.ala.org.au/search" method="get">
+<?php if (!is_front_page() ) { ?>
+        <form class="navbar-form navbar-left" action="https://bie.ala.org.au/search" method="get">
           <div class="form-group">
             <input id="search" class="autocomplete form-control" title="Search" type="text" name="q" placeholder="Search the Atlas" autocomplete="off">
             </div>
           <button type="submit" class="btn btn-primary">Search</button>
         </form>
-
+<?php } ?>
           <ul class="nav navbar-nav navbar-right">
           <li class="dropdown font-xsmall">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
