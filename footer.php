@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-4">
         <p class="lead">
-          The Atlas of Living Australia is a collaborative, national project that aggregates biodiversity data from multiple sources and makes it available and usable online.
+          The Atlas of Living Australia is a collaborative, national project that aggregates biodiversity data from multiple sources and makes it freely available and usable online.
         </p>
         <p class="lead">
           Sharing biodiversity knowledge to shape our future.
@@ -12,45 +12,54 @@
       </div>
 
       <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 hidden-print">
+        <h5>Explore</h5>
         <ul class="link-list">
-          <li class="heading"><a href="/get-involved/citizen-science/">Citizen Science &rarr;</a></li>
-          <li><a href="/get-involved/citizen-science/">About CS in the ALA</a></li>
-          <li><a href="http://volunteer.ala.org.au">DigiVol Portal</a></li>
+          <li><a href="http://dashboard.ala.org.au/">Atlas Dashboard</a></li>
+          <li><a href="http://collections.ala.org.au/">Collections</a></li>
+          <li><a href="http://collections.ala.org.au/datasets">Datasets</a></li>
+          <li><a href="http://lists.ala.org.au/iconic-species">Browse iconic species</a></li>
+          <li><a href="http://biocache.ala.org.au/">Browse records</a></li>
+          <li><a href="http://regions.ala.org.au/">Browse your region</a></li>
+          <li><a href="http://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
+          <li><a href="http://spatial.ala.org.au/">Spatial Portal</a></li>
+          <li><a href="https://phylolink.ala.org.au/">Phylolink</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 hidden-print">
+        <h5>Contribute</h5>
+        <ul class="link-list">
+          <li><a href="https://biocollect.ala.org.au/">Join a CS project</a></li>
           <li><a href="http://sightings.ala.org.au/">Record a sighting</a></li>
-          <li><a href="/get-involved/">Upload media</a></li>
+          <li><a href="#">Submit a data set</a></li>
+          <li><a href="http://volunteer.ala.org.au/">Digitise a record</a></li>
+          <li ><a href="/about-the-atlas/contact-us/">Contact Us</a></li>
+
         </ul>
       </div>
 
-      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 hidden-print">
-        <ul class="link-list">
-          <li class="heading"><a href="/about-the-atlas/">Atlas Features &rarr;</a></li>
-          <li><a href="http://dashboard.ala.org.au">Dashboard</a></li>
-          <li><a href="http://sandbox.ala.org.au/">Sandbox</a></li>
-          <li><a href="http://api.ala.org.au">API</a></li>
-          <li><a href="/about-the-atlas/downloadable-tools/ala-mobile-app/">Atlas Mobile Apps</a></li>
-        </ul>
-      </div>
-
-      <!-- <div class="clearfix visible-xs-block visible-lg-inline-block"></div> -->
-
-      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 hidden-print">
-        <ul class="link-list">
-          <li class="heading"><a href="http://biocache.ala.org.au/">Atlas Data &rarr;</a></li>
-          <li><a href="/faq/data-sensitivity/">Sensitive Data</a></li>
-          <li><a href="/about-the-atlas/how-we-integrate-data/">Data integration</a></li>
-          <li><a href="/get-involved/upload-data-sets/">Dataset upload</a></li>
-          <li><a href="http://lists.ala.org.au/">Species list upload</a></li>
-        </ul>
+      <div class="clearfix visible-xs-block">
+        <!-- This fixes the alignment issues of the footer columns -->
       </div>
 
       <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 hidden-print">
+        <h5>Learn</h5>
         <ul class="link-list">
-          <li class="heading"><a href="/about-the-atlas/contact-us/">Contact Us &rarr;</a></li>
-          <li><a href="/about-the-atlas/communications-centre/">Communications</a></li>
           <li><a href="/about-the-atlas/">About the Atlas</a></li>
-          <li><a href="/education-resources/">Education resources</a></li>
-          <li><a href="/faq/">FAQ</a></li>
-          <!-- <li><a href="#">Associated Sites</a></li> -->
+          <li><a href="/education-resources/">Education Resources</a></li>
+          <li><a href="/faq/">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 hidden-print">
+        <h5>Participate</h5>
+        <ul class="link-list">
+          <li><a href="https://fieldcapture.ala.org.au/merit">MERIT</a></li>
+          <li><a href="http://root.ala.org.au/">BDRS</a></li>
+          <li><a href="http://zoatrack.org/">ZoaTrack</a></li>
+          <li><a href="http://www.soils2satellites.org.au/">Soils to satellites</a></li>
+          <li><a href="http://fish.ala.org.au/">FishMap</a></li>
+          <li><a href="http://volunteer.ala.org.au/">DigiVol</a></li>
         </ul>
       </div>
 
@@ -77,10 +86,20 @@
         </div>
         <div class="col-xs-12 col-sm-4">
           <p>
+            The Atlas of Living Australia is a <a href="http://www.csiro.au/">CSIRO</a> partner.
+          </p>
+          <p>
             The Atlas of Living Australia is a node of the <a href="http://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a>.
           </p>
 
-          <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF-2015-cropped.png" alt="GBIF">
+          <div class="row">
+          <div class="col-xs-6">
+          <img class="img-responsive csiro" src="<?php echo get_stylesheet_directory_uri(); ?>/img/CSIRO_Solid_RGB.svg" alt="CSIRO logo">
+          </div>
+          <div class="col-xs-6">
+          <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF-2015-cropped.png" alt="GBIF logo">
+          </div>
+          </div>
 
         </div>
         <div class="col-xs-12 col-sm-4">
@@ -105,17 +124,14 @@
           <ul class="social list-inline">
             <li><a class="soc-facebook" href="https://www.facebook.com/atlasoflivingaustralia"><i class="fa fa-facebook"></i></a></li>
             <li><a class="soc-twitter" href="https://twitter.com/#!/atlaslivingaust"><i class="fa fa-twitter"></i></a></li>
-            <!-- <li><a class="soc-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li> -->
             <li><a class="soc-envelope" href="/about-the-atlas/contact-us/"><i class="fa fa-envelope"></i></a></li>
           </ul>
         </div>
 
-        <div class="col-xs-12 col-sm-5 col-md-4">
-          <ul class="footer-nav list-inline">
-            <li><a href="/about-the-atlas/contact-us/">Contact Us</a></li>
-            <li><a href="/get-involved/">Get Involved</a></li>
-            <li><a href="/system-status/">System status</a></li>
-          </ul>
+        <div class="col-xs-12 col-sm-6">
+          <a href="/about-the-atlas/contact-us/" type="button" class="btn btn-primary">Contact Us</a>
+          <a href="/get-involved/" type="button" class="btn btn-default">Contribute</a>
+          <a href="/system-status/" type="button" class="btn btn-link">System Status</a>
         </div>
 
       </div><!-- End row -->
