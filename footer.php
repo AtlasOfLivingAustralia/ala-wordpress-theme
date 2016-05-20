@@ -31,7 +31,7 @@
         <ul class="link-list">
           <li><a href="https://biocollect.ala.org.au/">Join a CS project</a></li>
           <li><a href="http://sightings.ala.org.au/">Record a sighting</a></li>
-          <li><a href="#">Submit a data set</a></li>
+          <li><a href="/get-involved/upload-data-sets/">Submit a data set</a></li>
           <li><a href="http://volunteer.ala.org.au/">Digitise a record</a></li>
           <li ><a href="/about-the-atlas/contact-us/">Contact Us</a></li>
 
