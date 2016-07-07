@@ -520,28 +520,106 @@ hr.email{margin-top: 0;margin-bottom: 3em;}
 .cc-image{margin-top: 9px;}
 table.email{margin-bottom: 4em;}
 
-/* Side menu (with search)
+
+/* Sidebar
 ================================= */
 
-#main > div > div > div.col-lg-3.col-md-4.col-xs-12 > div > nav > div.side-menu-container.margin-bottom-2 > ul{margin:0;width: 100%;}
-.side-menu {position:relative;background-color:#f8f8f8;border-right:1px solid #e7e7e7;}
-.side-menu .navbar {border: none;}
-.side-menu .navbar-header {width:100%;border-bottom:1px solid #e7e7e7;}
-.side-menu .navbar-nav .active a {background-color: transparent;margin-right: -1px;border-right: 5px solid #e7e7e7;} /*Grey bar on right side*/
-.side-menu .navbar-nav li {/*border-bottom: 1px solid #e7e7e7;display: block;*/width: 100%;}
-.side-menu #dropdown {border: 0;margin-bottom: 0;border-radius: 0;background-color: transparent;box-shadow: none;}
-.side-menu #dropdown .caret {float: right;margin: 9px 5px 0;}
-.side-menu #dropdown > a {border-bottom: 1px solid #e7e7e7;}
-.side-menu #dropdown .panel-body {padding:0;background-color:#f3f3f3;} /*sub menu background colour*/
-.side-menu #dropdown .panel-body .navbar-nav {width: 100%;}
-.side-menu #dropdown .panel-body .navbar-nav li {padding-left: 15px;border-bottom: 1px solid #e7e7e7;} /*Sub menu style*/
-.side-menu #dropdown .panel-body .navbar-nav li:last-child {border-bottom: none;}
-.side-menu #dropdown .panel-body .panel-body {margin-left: -15px;}
-.side-menu #dropdown .panel-body .panel-body li {padding-left: 30px;}
-.side-menu #dropdown .panel-body .panel-body li:last-child {border-bottom: 1px solid #e7e7e7;}
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
 
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
 
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
 
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+
+.profile-usermenu {
+  margin-top: 10px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover  {
+  background-color: #F3F3F3;
+  color: #777;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #C44D34;
+  background-color: #fff3f0;
+  border-left: 2px solid #C44D34;
+  margin-left: -2px;
+}
 
 
 /* Media Queries (Mobile First Method = only add rules to modify larger views)
