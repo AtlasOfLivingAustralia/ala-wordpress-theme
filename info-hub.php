@@ -28,8 +28,6 @@ get_header(); ?>
   </ol>
   <h2 class="heading-medium"><?php the_title() ;?></h2>
 
-  <div class="row dmbs-content">
-
         <?php // theloop
         if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -43,7 +41,6 @@ get_header(); ?>
 
         <?php endif; ?>
 
-   </div><?php // End row  ?>
 </div><?php // End col  ?>
 
  </div><!-- End container #main col -->
