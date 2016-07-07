@@ -306,3 +306,18 @@ function post_category_links($categories = null) {
       echo trim( $output, $separator );
   }
 }
+
+if ( ! function_exists( 'ala_body_classes' ) ) : 
+/**
+ * Adds classes to the array of body classes.
+ *
+ */
+function ala_body_classes( $classes ) {
+if ( is_page_template( 'info-hub.php' ) ) {
+        $classes[] = 'email';   
+    }   
+    return $classes;
+}
+endif; // ala_body_classes
+ 
+add_filter( 'body_class', 'ala_body_classes' );
