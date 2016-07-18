@@ -37,4 +37,20 @@ jQuery(document).ready(function($) {
 		max: 10,
 		selectFirst: false
 	});
+
+	// fixed sidebar nav for help pages
+	var headerHeight = $('.navbar-fixed-top').outerHeight(true) + $('.info-hub-banner').outerHeight(true) + $('.breadcrumb').outerHeight(true);
+	var footerHeight = 0;
+	$('footer').each(function() {
+		footerHeight += $(this).outerHeight();
+	});
+	$('.profile-usermenu').affix({
+		offset: {
+			top: headerHeight,
+			bottom: footerHeight
+		}
+	});
+	$(window).scroll(function () {
+		$('.profile-usermenu').width($('.sidebarCol').width());
+	});
 });
