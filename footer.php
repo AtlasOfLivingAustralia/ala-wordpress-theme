@@ -124,7 +124,6 @@
           <ul class="social list-inline">
             <li><a class="soc-facebook" href="https://www.facebook.com/atlasoflivingaustralia"><i class="fa fa-facebook"></i></a></li>
             <li><a class="soc-twitter" href="https://twitter.com/#!/atlaslivingaust"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="soc-envelope" href="/about-the-atlas/contact-us/"><i class="fa fa-envelope"></i></a></li>
           </ul>
         </div>
 
