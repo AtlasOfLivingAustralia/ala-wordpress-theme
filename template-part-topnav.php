@@ -105,21 +105,20 @@
         </form>
 <?php } ?>
           <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown font-xsmall">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              User settings
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
 <?php if (is_user_logged_in() ) { ?>
+            <li class="dropdown font-xsmall">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                User settings
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
               <li><a href="https://auth.ala.org.au/userdetails/myprofile/">My profile</a></li>
               <li><a href="<?php echo wp_logout_url( home_url() ); ?>">Log out</a></li>
+              </ul>
+            </li>
 <?php } else { ?>
-              <li><a href="<?php echo wp_login_url( home_url() ); ?>">Log in</a></li>
-              <li><a href="https://auth.ala.org.au/userdetails/registration/createAccount">Register</a></li>
+              <li><a href="<?php echo wp_login_url( home_url() ); ?>">Sign In</a></li>
 <?php } ?>
-            </ul>
-          </li>
           </ul>
 
       </div>
