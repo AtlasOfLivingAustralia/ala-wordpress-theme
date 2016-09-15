@@ -86,7 +86,7 @@
         </div>
         <div class="col-xs-12 col-sm-4">
           <p>
-            The Atlas of Living Australia is a <a href="http://www.csiro.au/">CSIRO</a> partner.
+            The Atlas of Living Australia is hosted by <a href="http://www.csiro.au/">CSIRO</a>.
           </p>
           <p>
             The Atlas of Living Australia is a node of the <a href="http://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a>.
