@@ -45,5 +45,5 @@ get_header(); ?>
 
  </div><!-- End container #main col -->
 <!-- end content container -->
-
+<hr class="email">
 <?php get_footer(); ?>
