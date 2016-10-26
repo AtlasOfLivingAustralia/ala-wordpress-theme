@@ -23,7 +23,7 @@ get_header(); ?>
 <div class="col-sm-12 col-md-12 col-lg-12">
   <h1 class="hidden"><?php the_title() ;?></h1>
   <ol class="breadcrumb hidden-print">
-    <li><a class="font-xxsmall" href="index.html">Home</a></li>
+    <li><a class="font-xxsmall" href="/">Home</a></li>
     <li class="font-xxsmall active"><?php the_title() ;?></li>
   </ol>
   <h2 class="heading-medium"><?php the_title() ;?></h2>
