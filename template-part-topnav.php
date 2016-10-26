@@ -54,7 +54,7 @@
             <ul class="dropdown-menu" role="menu">
               <li><a href="http://biocollect.ala.org.au/">Join a Citizen Science project</a></li>
               <li><a href="http://sightings.ala.org.au/">Record a sighting</a></li>
-              <li><a href="#">Submit a data set</a></li>
+              <li><a href="how-you-can/#submit-data-set">Submit a data set</a></li>
               <li><a href="http://volunteer.ala.org.au/">Digitise a record</a></li>
               <!-- <li><a href="#">Occurrence sandbox</a></li> -->
 
