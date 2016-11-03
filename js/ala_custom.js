@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 	}
 
 	// autocomplete for search inputs
-	$(".autocomplete").autocomplete('http://bie.ala.org.au/search/auto.jsonp', {
+	$(".autocomplete").autocomplete('http://bie.ala.org.au/ws/search/auto.jsonp', {
 		extraParams: {limit: 100},
 		dataType: 'jsonp',
 		parse: function(data) {
