@@ -16,81 +16,83 @@
         <a class="navbar-brand font-xsmall" href="/">Atlas Of Living Australia</a>
       </div>
 
+      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
 
           <li class="dropdown font-xsmall">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Explore
+              Start exploring
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
-
-              <li><a href="http://collections.ala.org.au/">Collections</a></li>
-              <li><a href="http://collections.ala.org.au/datasets">Data sets</a></li>
               <li><a href="http://lists.ala.org.au/iconic-species">Iconic species</a></li>
-
-              <li class="divider"></li>
-              <li class="dropdown-header">Occurrence records</li>
-              <li><a href="http://biocache.ala.org.au/">Search records</a></li>
-              <li><a href="http://regions.ala.org.au/">Browse your region</a></li>
               <li><a href="http://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
+              <li><a href="http://collections.ala.org.au/">Browse collections</a></li>
+              <li><a href="http://collections.ala.org.au/datasets">Browse datasets</a></li>
 
               <li class="divider"></li>
-              <li class="dropdown-header">Analyse</li>
-              <li><a href="http://spatial.ala.org.au/">Spatial Portal</a></li>
-              <li><a href="http://phylolink.ala.org.au/">Phylolink</a></li>
-
-              <li class="divider"></li>
-              <li><a href="http://dashboard.ala.org.au/">Atlas Dashboard</a></li>
+              <li><a href="http://www.ala.org.au/education-resources/">Learning resources</a></li>
             </ul>
           </li>
 
+
           <li class="dropdown font-xsmall">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Contribute
+              Search &amp; analyse
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="http://bie.ala.org.au/">Search species</a></li>
+              <li><a href="http://biocache.ala.org.au/">Search occurrence records</a></li>
+              <li><a href="http://regions.ala.org.au/">Regions tool</a></li>
+              <li><a href="http://spatial.ala.org.au/">Mapping analysis</a></li>
+
+              <li class="divider"></li>
+              <li><a href="http://dashboard.ala.org.au/">ALA dashboard</a></li>
+            </ul>
+          </li>
+
+
+          <li class="dropdown font-xsmall">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              Participate
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="http://biocollect.ala.org.au/">Join a Citizen Science project</a></li>
               <li><a href="http://sightings.ala.org.au/">Record a sighting</a></li>
-              <li><a href="how-you-can/#submit-data-set">Submit a data set</a></li>
-              <li><a href="http://volunteer.ala.org.au/">Digitise a record</a></li>
-              <!-- <li><a href="#">Occurrence sandbox</a></li> -->
+              <li><a href="http://www.ala.org.au/get-involved/upload-data-sets/">Submit a data set</a></li>
+              <li><a href="http://digivol.ala.org.au/">Digitise a record</a></li>
 
               <li class="divider"></li>
-              <li class="dropdown-header">Get in touch</li>
-              <!-- <li ><a href="https://rawgit.com/AtlasOfLivingAustralia/front-end-static/master/ALA%20Website%20Recreation%20in%20Bootstrap%203/feedback-form-page.html">Provide Feedback</a></li> -->
-              <li ><a href="about-the-atlas/contact-us/">Contact Us</a></li>
+              <li><a href="http://www.ala.org.au/about-the-atlas/contact-us/">Contact us</a></li>
             </ul>
           </li>
 
+
           <li class="dropdown font-xsmall">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Learn
+              Learn about the ALA
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="about-the-atlas/">About the Atlas</a></li>
-
-              <li class="divider"></li>
-              <li ><a href="education-resources/">Education Resources</a></li>
+              <li><a href="/about-the-atlas/">About the ALA</a></li>
 
               <li class="divider"></li>
               <li class="dropdown-header">How we</li>
-              <li><a href="how-we/#communicate">Communicate</a></li>
-              <li><a href="how-we/#handle-sensitive-data">Handle sensitive data</a></li>
-              <li><a href="how-we/#integrate-data">Integrate data</a></li>
-              <li><a href="how-we/#upload-data-sets">Upload datasets</a></li>
+              <li><a href="/how-we/#communicate">Communicate</a></li>
+              <li><a href="/how-we/#handle-sensitive-data">Handle sensitive data</a></li>
+              <li><a href="/how-we/#integrate-data">Integrate data</a></li>
+              <li><a href="/how-we/#upload-data-sets">Upload datasets</a></li>
 
               <li class="divider"></li>
               <li class="dropdown-header">How you can</li>
-              <!-- <li><a href="http://www.ala.org.au/about-the-atlas/downloadable-tools/ala-mobile-app/">Use the Atlas mobile app</a></li> -->
-              <li><a href="get-involved/">Contribute to the Atlas</a></li>
-              <li><a href="how-you-can/#find-species-info">Find species information</a></li>
-              <li><a href="how-you-can/#download-data">Download data</a></li>
-              <li><a href="how-you-can/#record-sighting">Record a sighting</a></li>
-              <li><a href="how-you-can/#use-our-api">Use our API</a></li>
+              <li><a href="/get-involved/">Contribute to the ALA</a></li>
+              <li><a href="/how-you-can/#find-species-info">Find species information</a></li>
+              <li><a href="/how-you-can/#download-data">Download data</a></li>
+              <li><a href="/how-you-can/#record-sighting">Record a sighting</a></li>
+              <li><a href="/how-you-can/#use-our-api">Use our API</a></li>
             </ul>
           </li>
 
