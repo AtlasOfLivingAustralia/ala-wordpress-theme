@@ -595,7 +595,7 @@ table.email{margin-bottom: 4em;}
 }
 
 .profile-usermenu ul li a {
-  color: #93a3b5;
+  color: #637073;
   font-size: 14px;
   font-weight: 400;
 }
@@ -615,7 +615,7 @@ table.email{margin-bottom: 4em;}
 }
 
 .profile-usermenu ul li.active a {
-  color: #C44D34;
+  color: #222;
   background-color: #fff3f0;
   border-left: 2px solid #C44D34;
   margin-left: -2px;
