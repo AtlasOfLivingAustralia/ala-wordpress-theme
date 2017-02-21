@@ -13,7 +13,7 @@
 
       <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 hidden-print">
         <ul class="link-list">
-          <li class="heading"><a href="/get-involved/citizen-science/">Citizen Science &rarr;</a></li>
+          <li class="heading"><a href="/get-involved/">Citizen Science &rarr;</a></li>
           <li><a href="/get-involved/citizen-science/">About CS in the ALA</a></li>
           <li><a href="http://volunteer.ala.org.au">DigiVol Portal</a></li>
           <li><a href="http://sightings.ala.org.au/">Record a sighting</a></li>
