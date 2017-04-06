@@ -121,9 +121,9 @@ form.banner{padding-top:6.5em;}
 #main > div > h2{margin:0 0 .8em;}
 .panel-body img{margin:0 10px 10px 0;}
 .secondary-footer img{margin-bottom:2em;}
-img.aus-govt,img.ncris{max-width:200px;}
-img.gbif,img.csiro{max-width:180px;padding-top:13px;}
-img.ncris{margin-top:8px;}
+img.aus-govt,img.ncris{max-width:150px;}
+img.gbif,img.csiro{max-width:150px;padding-top:15px;}
+img.ncris{margin-top:20px;}
 .caption{color:#222;display:block;font-size:14px;font-weight:400;margin-bottom:20px;margin-top:7px;}
 
 /* Btn (Button)
@@ -449,7 +449,7 @@ li .login-soc-bell:hover{background-color:#75ab0a;}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-  img.aus-govt,img.ncris{max-width:150px;}
+  img.aus-govt,img.ncris{max-width:180px;}
   .help-text {margin-top: 1em;}
   .alert-promotional.alert-dismissible>div>div>div>p>strong,
   .alert-promotional.alert-dismissible>div>div>div>p{font-size: 16px;}
@@ -457,7 +457,7 @@ li .login-soc-bell:hover{background-color:#75ab0a;}
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-  img.aus-govt,img.ncris{max-width:200px;}
+  img.aus-govt,img.ncris{max-width:180px;}
   form.banner{padding-top:6.5em;}
   .modal-dialog{width:450px;}
 }

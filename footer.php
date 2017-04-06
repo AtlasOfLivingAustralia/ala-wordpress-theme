@@ -62,27 +62,28 @@
   <footer class="secondary-footer hidden-print">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-4">
-
+        <div class="col-xs-12 col-sm-8">
           <div class="row">
-            <div class="col-xs-6 col-sm-12">
+            <div class="col-xs-12">
+              <p>
+                The ALA is made possible by contributions from its partners, is supported by <a href="https://www.education.gov.au/national-collaborative-research-infrastructure-strategy-ncris">NCRIS</a> and hosted by <a href="https://www.csiro.au/">CSIRO</a>.
+              <br/>
+                The ALA is the Australian node of the <a href="http://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a>.
+              </p>
+            </div>
+          </div><!-- /.row -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
               <img class="img-responsive ncris" src="<?php echo get_stylesheet_directory_uri(); ?>/img/NCRIS-Logo_Mono.png" alt="NCRIS"><!-- Logo -->
             </div>
-
-            <div class="col-xs-6 col-sm-12">
-              <img class="img-responsive aus-govt" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Aust-Govt-Initiative-stacked-64.png" alt="An Australian Government initiative"><!-- Logo -->
+            <div class="col-xs-12 col-sm-4">
+              <img class="img-responsive csiro" src="<?php echo get_stylesheet_directory_uri(); ?>/img/CSIRO_Solid_RGB.svg" alt="CSIRO logo">
             </div>
-          </div>
-
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <p>
-            The Atlas of Living Australia is a node of the <a href="http://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a>.
-          </p>
-
-          <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF-2015-cropped.png" alt="GBIF">
-
-        </div>
+            <div class="col-xs-12 col-sm-4">
+              <img class="img-responsive gbif" src="<?php echo get_stylesheet_directory_uri(); ?>/img/GBIF-2015-cropped.png" alt="GBIF logo">
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.col-sm-8 -->
         <div class="col-xs-12 col-sm-4">
           <p>
             This site is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia License</a>.
@@ -91,9 +92,8 @@
           <p>
             Provider content may be covered by other <a href="/about-the-atlas/terms-of-use/">Terms of Use</a>.
           </p>
-        </div>
+        </div><!-- /.col-sm-4 -->
       </div><!-- End row -->
-
     </div><!-- End container -->
   </footer>
 
