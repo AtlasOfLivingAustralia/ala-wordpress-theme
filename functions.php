@@ -3,7 +3,7 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'bootstrapjs' );
 add_action( 'wp_enqueue_scripts', 'autocompletejs' );
-add_action( 'wp_enqueue_scripts', 'ala_custom_js', 12 );
+add_action( 'wp_enqueue_scripts', 'ala_custom_js' );
 
 /**
  * Load scripts in the footer
@@ -56,7 +56,7 @@ function ala_custom_js()
         'ala_custom_js',
         get_stylesheet_directory_uri() . '/js/ala_custom.js',
         array( 'jquery' ),
-        '1.02',
+        '1.03',
         true
     );
 }

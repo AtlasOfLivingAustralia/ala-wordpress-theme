@@ -81,6 +81,7 @@ p.alert-text>a{color: #FFF6F5;text-decoration: underline;}
 p.alert-text>a:hover {text-decoration: none;}
 .alert-dismissable-button {padding-top: 8px;line-height: 1.7;opacity: 0.6;}
 .alert-dismissable-button:hover {line-height: 1.7;opacity: 1.0;color: #fff;}
+.alert.alert-promotional a{color: #FFF6F5;text-decoration: underline;}
 
 /* Breadcrumb
 ================================= */

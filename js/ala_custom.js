@@ -1,4 +1,41 @@
 // ALA custom functions
+var tocWidth = 0; // global
+
+// wait for all elements to render (including images) - will be slower than $(document).ready()
+jQuery(window).load(function($) {
+    resizePanels();
+
+    jQuery( window ).resize(function() {
+        resizePanels();
+        resizeToc();
+    });
+
+    function resizeToc() {
+        var toc = jQuery('.toc-floating-menu');
+        var sidebar = jQuery('.sidebar-col');
+
+        if (toc && sidebar) {
+            toc.width(sidebar.width());
+        }
+    }
+
+    function resizePanels() {
+        var panels = jQuery('.panel.panel-default'); // might want to use a more specific selector (e.g. add an extra class to those panel divs)
+        var max = 0;
+        jQuery.each(panels, function(i,el) {
+            var thisMax = jQuery(el).find('img').outerHeight() + jQuery(el).find('.panel-body').outerHeight();
+            var icon = jQuery(el).find('a');
+            if (max < thisMax) {
+                max = thisMax;
+            }
+        });
+
+        if (max > 0) {
+            panels.innerHeight(max); // set height to all divs
+        }
+    }
+});
+
 jQuery(document).ready(function($) {
 
     // Change banner images based on month - format jtron-bg-month-01-770px.jpg
@@ -37,61 +74,36 @@ jQuery(document).ready(function($) {
         });
     }
 
-	// autocomplete for search inputs
-	$(".autocomplete").autocomplete('https://bie.ala.org.au/ws/search/auto.jsonp', {
-		extraParams: {limit: 100},
-		dataType: 'jsonp',
-		parse: function(data) {
-			var rows = new Array();
-			data = data.autoCompleteList;
-			for(var i=0; i<data.length; i++){
-				rows[i] = {
-					data: data[i],
-					value: data[i].matchedNames[0],
-					result: data[i].matchedNames[0]
-				};
-			}
-			return rows;
-		},
-		matchSubset: false,
-		formatItem: function(row, i, n) {
-			return row.matchedNames[0];
-		},
-		cacheLength: 10,
-		minChars: 3,
-		scroll: false,
-		max: 10,
-		selectFirst: false
-	});
+    // autocomplete for search inputs
+    $(".autocomplete").autocomplete('https://bie.ala.org.au/ws/search/auto.jsonp', {
+        extraParams: {limit: 100},
+        dataType: 'jsonp',
+        parse: function(data) {
+            var rows = new Array();
+            data = data.autoCompleteList;
+            for(var i=0; i<data.length; i++){
+                rows[i] = {
+                    data: data[i],
+                    value: data[i].matchedNames[0],
+                    result: data[i].matchedNames[0]
+                };
+            }
+            return rows;
+        },
+        matchSubset: false,
+        formatItem: function(row, i, n) {
+            return row.matchedNames[0];
+        },
+        cacheLength: 10,
+        minChars: 3,
+        scroll: false,
+        max: 10,
+        selectFirst: false
+    });
 
-	function updateStats(divId, statValue) {
-	    $(divId).fadeOut("fast").html(statValue).fadeIn("fast");
-	}
-
-	function resizeToc() {
-	    var toc = $('.toc-floating-menu');
-	    var sidebar = $('.sidebar-col');
-	    
-	    if (toc && sidebar) {
-	        toc.width(sidebar.width());
-	    }
-	}
-
-	function resizePanels() {
-	    var panels = $('.panel.panel-default'); // might want to use a more specific selector (e.g. add an extra class to those panel divs)
-	    var max = 0;
-	    $.each(panels, function(i,el) {
-	        var thisMax = $(el).find('img').outerHeight() + $(el).find('.panel-body').outerHeight();
-	        var icon = $(el).find('a');
-	        if (max < thisMax) {
-	            max = thisMax;
-	        }
-	    });
-	    
-	    if (max > 0) {
-	        panels.innerHeight(max); // set height to all divs
-	    }
-	}
+    function updateStats(divId, statValue) {
+        $(divId).fadeOut("fast").html(statValue).fadeIn("fast");
+    }
 
 });
 
