@@ -1,15 +1,41 @@
 // ALA custom functions
 jQuery(document).ready(function($) {
 
-	//  politely move ALA navbar down below Wordpress admin bar if present.
-	if( $('#wpadminbar').length ) {
-		 // wordpress admin bar is present
-		 var wpadminheight = $('#wpadminbar').css('height');
-		 $('#alatopnav').css({top: wpadminheight});
-	} else {
-		// wordpress admin bar is not present
-		$('#alatopnav').css({top: 0});
-	}
+    // Change banner images based on month - format jtron-bg-month-01-770px.jpg
+    if ($('#ala-jumbotron').length) { //if (document.getElementById("ala-jumbotron")) {
+        var month = ("0" + new Date().getMonth()).slice(-2);
+        var filename = "/wp-content/themes/ala-wordpress-theme/img/jtron-bg-month-" + month + "-770px.jpg"
+        document.getElementById("ala-jumbotron").style.backgroundImage = "url('" + filename + "')";
+    }
+ 
+    // update ALA stats
+    if ($(".main-stats").length) {
+        var statsUrl = "https://dashboard.ala.org.au/dashboard/homePageStats";
+        $.getJSON(statsUrl, function(data) {
+            updateStats("#allRecords", data.recordCounts.count.toLocaleString());
+            updateStats("#allSpecies", data.speciesCounts.count.toLocaleString());
+            updateStats("#allDownloads", data.downloadCounts.events.toLocaleString());
+            updateStats("#allUsers", data.userCounts.count.toLocaleString());
+        });
+    }
+    
+    // Add floating toable of contents (ToC)
+    if ($('.navbar-fixed-top').length && $('.toc-floating-menu').length) {
+        var headerHeight = $('.navbar-fixed-top').outerHeight(true); //  + $('.info-hub-banner').outerHeight(true) + $('.breadcrumb').outerHeight(true);
+        var footerHeight = $('footer').outerHeight(true) + $('.alert-creativecommons').outerHeight(true);
+        
+        $('.toc-floating-menu').affix({
+            offset: {
+                top:  $('.toc-floating-menu').offset().top - headerHeight, //headerHeight,
+                bottom: footerHeight
+            }
+        });
+
+        $(window).scroll(function () {
+            //$('.sidebar-col').width($('.sidebarCol').width());
+            resizeToc();
+        });
+    }
 
 	// autocomplete for search inputs
 	$(".autocomplete").autocomplete('https://bie.ala.org.au/ws/search/auto.jsonp', {
@@ -38,19 +64,34 @@ jQuery(document).ready(function($) {
 		selectFirst: false
 	});
 
-	// fixed sidebar nav for help pages
-	var headerHeight = $('.navbar-fixed-top').outerHeight(true) + $('.info-hub-banner').outerHeight(true) + $('.breadcrumb').outerHeight(true);
-	var footerHeight = 0;
-	$('footer').each(function() {
-		footerHeight += $(this).outerHeight();
-	});
-	$('.profile-usermenu').affix({
-		offset: {
-			top: headerHeight,
-			bottom: footerHeight
-		}
-	});
-	$(window).scroll(function () {
-		$('.profile-usermenu').width($('.sidebarCol').width());
-	});
+	function updateStats(divId, statValue) {
+	    $(divId).fadeOut("fast").html(statValue).fadeIn("fast");
+	}
+
+	function resizeToc() {
+	    var toc = $('.toc-floating-menu');
+	    var sidebar = $('.sidebar-col');
+	    
+	    if (toc && sidebar) {
+	        toc.width(sidebar.width());
+	    }
+	}
+
+	function resizePanels() {
+	    var panels = $('.panel.panel-default'); // might want to use a more specific selector (e.g. add an extra class to those panel divs)
+	    var max = 0;
+	    $.each(panels, function(i,el) {
+	        var thisMax = $(el).find('img').outerHeight() + $(el).find('.panel-body').outerHeight();
+	        var icon = $(el).find('a');
+	        if (max < thisMax) {
+	            max = thisMax;
+	        }
+	    });
+	    
+	    if (max > 0) {
+	        panels.innerHeight(max); // set height to all divs
+	    }
+	}
+
 });
+

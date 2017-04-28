@@ -1,6 +1,7 @@
 <?php
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'bootstrapjs' );
 add_action( 'wp_enqueue_scripts', 'autocompletejs' );
 add_action( 'wp_enqueue_scripts', 'ala_custom_js', 12 );
 
@@ -27,7 +28,16 @@ function footer_enqueue_scripts() {
 add_action('after_setup_theme', 'footer_enqueue_scripts');
 */
 
-
+function bootstrapjs()
+{
+    wp_enqueue_script(
+        'bootstrapjs',
+        get_stylesheet_directory_uri() . '/js/bootstrap.min.js',
+        array( 'jquery' ),
+        '3.3.7',
+        true
+    );
+}
 
 function autocompletejs()
 {
@@ -51,6 +61,13 @@ function ala_custom_js()
     );
 }
 
+add_action( 'init', 'my_add_excerpts_to_pages' );
+
+function my_add_excerpts_to_pages() {
+     add_post_type_support( 'page', 'excerpt' );
+}
+
+
 //list pages in section shortcode
 function section_pages($atts)
 {
@@ -62,17 +79,17 @@ function section_pages($atts)
 	global $post;
 	$ID = $post->ID;
 	$thispage = '<li><a href="#'.$jumplink.'">'.$linkname.'</a></li>';
-	$pages = wp_list_pages('title_li=&sort_column=menu_ord
-	er&depth=1&child_of='.$ID.'&echo=0');
+	$pages = wp_list_pages('title_li=&sort_column=menu_order&depth=1&child_of='.$ID.'&echo=0');
 	return $thispage.$pages;
 }
 add_shortcode('section-pages', 'section_pages');
 
 function theme_enqueue_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array('bootstrap.css') ,'1.5.0' );
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array() ,'1.5.0' );
+    wp_enqueue_style( 'bootstrapcss', get_stylesheet_directory_uri() . '/css/bootstrap.min.css', array('parent-style') ,'3.3.7' );
     wp_enqueue_style( 'autocompcss', get_stylesheet_directory_uri() . '/css/jquery.autocomplete.css', array('parent-style') ,'1.0' );
-    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('parent-style') ,'1.13' );
-    wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array('ala-style') ,'4.3.0');
+    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('bootstrapcss') ,'2.0' );
+    wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array('ala-style') ,'4.7.0');
 }
 
 function do_loginscript()
@@ -313,10 +330,12 @@ if ( ! function_exists( 'ala_body_classes' ) ) :
  *
  */
 function ala_body_classes( $classes ) {
-if ( is_page_template( 'info-hub.php' ) ) {
-        $classes[] = 'email';   
-    }   
-    return $classes;
+  if ( is_page_template( 'alacontent-channel.php' ) || is_page('home') ) {
+    $classes[] = 'background-lightgrey';
+  } else {
+    $classes[] = 'background-white';
+  }
+  return $classes;
 }
 endif; // ala_body_classes
  

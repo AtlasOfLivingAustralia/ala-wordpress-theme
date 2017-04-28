@@ -8,7 +8,7 @@
 
 
     <?php //left sidebar ?>
-    <?php get_sidebar( 'left' ); ?>
+    <?php //get_sidebar( 'left' ); ?>
 
    <div class="col-sm-12 col-md-9 col-lg-9">
     <h1 class="hidden"><?php the_title() ;?></h1>
@@ -38,7 +38,7 @@
 </div><?php // End col  ?>
 
     <?php //get the right sidebar ?>
-    <?php get_sidebar( 'right' ); ?>
+    <?php // get_sidebar( 'right' ); ?>
 
  </div><?php // End container #main col  ?>
 <?php // end content container  ?>

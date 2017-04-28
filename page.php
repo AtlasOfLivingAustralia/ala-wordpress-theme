@@ -4,6 +4,7 @@
     include 'home.php';
     
   } else { //default
-    include 'page_standard.php';
+    $GLOBALS['ALAcontentType'] = 'Article';
+    include 'page_core.php';
   }
 ?>
