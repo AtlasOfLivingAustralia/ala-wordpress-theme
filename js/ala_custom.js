@@ -74,6 +74,9 @@ jQuery(document).ready(function($) {
         });
     }
 
+    // make Userback feedback button keyboard-navigable
+    $('userback-button').attr('tabindex','0');
+
     // autocomplete for search inputs
     $(".autocomplete").autocomplete('https://bie.ala.org.au/ws/search/auto.jsonp', {
         extraParams: {limit: 100},
