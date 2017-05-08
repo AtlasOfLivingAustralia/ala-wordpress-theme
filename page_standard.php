@@ -3,7 +3,7 @@
 <?php get_template_part('template-part', 'topnav'); ?>
 
 <div id="main" class="container dmbs-container">
-
+<!-- page_standard.php -->
 <?php // get_template_part('template-part', 'head'); ?>
 
 

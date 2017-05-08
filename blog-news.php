@@ -4,20 +4,33 @@
  *
  * Selectable from a dropdown menu on the edit page screen.
  */
-define('WP_USE_THEMES', false);
+//define('WP_USE_THEMES', false);
 get_header(); ?>
 
 <?php get_template_part('template-part', 'topnav'); ?>
+<!-- blog-news.php -->
+ <!-- Breadcrumb -->
+  <section id="breadcrumb">
+    <div class="container">
+      <div class="row">
+        <ul class="breadcrumb-list">
+          <li><a href="/">Home</a></li>
+          <li active"><span class="glyphicon glyphicon-menu-right"></span>ALA News</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- End breadcrumb -->
 
-<div id="main" class="container dmbs-container">
-  <div class="col-xs-12">
-    <h1 class="hidden">Welcome to the Atlas of Living Australia</h1>
-    <ol class="breadcrumb hidden-print">
-      <li><a class="font-xxsmall" href="/">Home</a></li>
-      <li class="font-xxsmall active"><?php the_title() ;?></li>
-    </ol>
-    <h2 class="heading-medium"><?php the_title() ;?></h2>
-  </div>
+  <div class="container">
+    <section class="content-container">
+      <div class="row">
+
+        <article class="col-md-12 header-wrap margin-bottom-half-1">
+          <h5 class="subject-category-overline">Channel</h5>
+          <h2 class="subject-title">The Atlas of Living Australia News</h2>
+          <h3 class="subject-subtitle">News and events from around the ALA community.</h3>
+        </article>
 
 <?php
 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
@@ -48,87 +61,44 @@ $the_query = new WP_Query( $args ); ?>
 
     $blog_thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(), $thumbsize);
 
-    if ( $paged == 1 && $postCounter == 1){
-      // first post on first page gets featured display
-      $blog_thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumb-lg');
 ?>
-<div class="row-fluid">
-  <div class="col-lg-12">
-<?php if ($blog_thumb_url) { ?>
-    <img class="img-responsive" src="<?php echo $blog_thumb_url[0]; ?>" alt="Main image: <?php the_title(); ?>">
-<?php } ?>
-    <div class="panel panel-default">
-      <div class="panel-body row">
-        <div class="col-md-2">
-          <p class="stat__title">
-            <?php
-            $this_post_categories = get_the_category();
-            post_category_links($this_post_categories);
-            ?>
-          </p>
-        </div>
-        <div class="col-md-10">
-          <h3 class="blog-heading-large">
-            <a href="<?php the_permalink();?>" class="color--mellow-red"><?php the_title(); ?></a>
-          </h3>
-          <p class="font-xxsmall heading-underlined"><?php the_time('j F, Y'); ?></p>
-          <?php
-          $posttags = get_the_tags();
-          if ($posttags) {
-            echo '<p class="font-xxsmall">Tags: ';
-            foreach($posttags as $tag) {
-              echo '<a href="/tag/' . $tag->slug . '" class="label label-primary">' . $tag->name . '</a> ';
-            }
-            echo '</p>';
-          }
-          ?>
-        </div>
-      </div>
-    </div>
-  </div><!-- .col-lg-12 -->
-</div><!-- .row-fluid -->
-<?php
-    } else {
-      // all other posts get normal display
-?>
-
 <div class="col-md-12">
-  <div class="panel panel-default">
+  <div class="panel panel-default panel-blog">
     <div class="panel-body row">
       <div class="col-md-2">
-        <p class="stat__title">
+        <h4>
           <?php
           $this_post_categories = get_the_category();
           post_category_links($this_post_categories);
           ?>
-        </p>
+        </h4>
       </div>
       <div class="col-md-6">
-        <h3 class="blog-heading-large">
-          <a href="<?php the_permalink();?>" class="color--pink"><?php the_title(); ?></a>
+        <h3>
+          <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
         </h3>
-        <p class="font-xxsmall heading-underlined"><?php the_time('j F, Y'); ?></p>
+        <p class="heading-underlined"><?php the_time('j F, Y'); ?></p>
         <?php
-        $posttags = get_the_tags();
-        if ($posttags) {
-          echo '<p class="font-xxsmall">Tags: ';
-          foreach($posttags as $tag) {
-            echo '<a href="/tag/' . $tag->slug . '" class="label label-primary">' . $tag->name . '</a> ';
-          }
-          echo '</p>';
-        }
+        // $posttags = get_the_tags();
+        // if ($posttags) {
+        //   echo '<p class="subject-byline">Tags: ';
+        //   foreach($posttags as $tag) {
+        //     echo '<span class="label label-ala">' . $tag->name . '</span> ';
+        //   }
+        //   echo '</p>';
+        // }
         ?>
+
+
+        <!-- <p class="subject-byline">Tags:&ensp;<span class="label label-ala">News</span> <span class="label label-ala">Data</span></p> -->
       </div>
-      <div class="col-md-4">
-      <?php if ($blog_thumb_url) { ?>
-        <img class="img-responsive" src="<?php echo $blog_thumb_url[0]; ?>" alt="Image: <?php the_title(); ?>">
-      <?php } ?>
-      </div>
+      <div class="col-md-4"><img class="img-responsive" src="<?php echo $blog_thumb_url[0]; ?>" alt="Image: <?php the_title(); ?>"></div>
     </div>
   </div>
-</div><!-- .col-md-12 -->
+</div>
+
   <?php
-    }
+
   endwhile;
   // end The Loop
   ?>
@@ -146,13 +116,15 @@ $the_query = new WP_Query( $args ); ?>
   <?php wp_reset_postdata(); ?>
 
   <?php else: ?>
-    <article>
+    <article class="col-md-12">
       <h1>Sorry...</h1>
       <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
     </article>
   <?php endif; ?>
 
- </div><!-- End container #main col -->
-<!-- end content container -->
+      </div><?php // End .row  ?>
+    </section><?php // End .content-container  ?>
+
+  </div><?php // End .container  ?>
 
 <?php get_footer(); ?>

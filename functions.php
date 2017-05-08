@@ -330,7 +330,7 @@ if ( ! function_exists( 'ala_body_classes' ) ) :
  *
  */
 function ala_body_classes( $classes ) {
-  if ( is_page_template( 'alacontent-channel.php' ) || is_page('home') ) {
+  if ( is_page_template( 'alacontent-channel.php' ) || is_page('home') || is_page_template( 'category.php' ) ) {
     $classes[] = 'background-lightgrey';
   } else {
     $classes[] = 'background-white';
