@@ -192,6 +192,11 @@ function inpage_search($atts)
 }
 add_shortcode('inpage-search', 'inpage_search');
 
+function get_cat_slug($cat_id) {
+  $cat_id = (int) $cat_id;
+  $category = &get_category($cat_id);
+  return $category->slug;
+}
 
 function custom_pagination($numpages = '', $pagerange = '', $paged='') {
 

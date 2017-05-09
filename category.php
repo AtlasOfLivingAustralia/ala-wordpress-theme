@@ -4,15 +4,16 @@ get_header(); ?>
 
 <?php get_template_part('template-part', 'topnav'); ?>
 <!-- category.php -->
-
  <!-- Breadcrumb -->
   <section id="breadcrumb">
     <div class="container">
       <div class="row">
         <ul class="breadcrumb-list">
           <li><a href="/">Home</a></li>
+<?php if ( get_cat_slug($cat) == "blogs-news" ) : ?>
+          <li><span class="glyphicon glyphicon-menu-right"></span>ALA News</li>
+<?php else: ?>
           <li><span class="glyphicon glyphicon-menu-right"></span><a href="/blogs-news/">ALA News</a></li>
-<?php if ( is_category() ) : ?>
           <li active"><span class="glyphicon glyphicon-menu-right"></span><?php single_cat_title(); ?></li>
 <?php endif; ?>
         </ul>
@@ -38,12 +39,12 @@ $args = array(
 ?>
         <article class="col-md-12 header-wrap margin-bottom-half-1">
           <h5 class="subject-category-overline">Channel</h5>
-<?php if ( is_category() ) : ?>
-          <h2 class="subject-title"><?php single_cat_title(); ?></h2>
-          <h3 class="subject-subtitle"><?php echo category_description($cat); ?></h3>
-<?php else: ?>
+<?php if ( get_cat_slug($cat) == "blogs-news" ) : ?>
           <h2 class="subject-title">The Atlas of Living Australia News</h2>
           <h3 class="subject-subtitle">News and events from around the ALA community.</h3>
+<?php else: ?>
+          <h2 class="subject-title"><?php single_cat_title(); ?></h2>
+          <h3 class="subject-subtitle"><?php echo category_description($cat); ?></h3>
 <?php endif; ?>
         </article>
 <?php
