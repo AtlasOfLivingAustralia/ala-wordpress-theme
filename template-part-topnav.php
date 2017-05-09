@@ -103,6 +103,8 @@
               <li class="divider"></li>
               <li><a href="/education-resources/">Learning resources</a></li>
               <li class="divider"></li>
+              <li><a href="/blogs-news/">ALA News</a></li>
+              <li class="divider"></li>
               <li><a href="/about-the-atlas/contact-us/">Contact us</a></li>
             </ul>
           </li>

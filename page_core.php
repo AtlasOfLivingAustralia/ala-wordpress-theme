@@ -27,8 +27,22 @@
           <h5 class="subject-category-overline"><?php echo $GLOBALS['ALAcontentType'] ;?></h5>
           <h2 class="subject-title"><?php the_title() ;?></h2>
           <h3 class="subject-subtitle"><?php echo $post->post_excerpt ;?></h3>
-<?php if ( $GLOBALS['ALAcontentType'] != 'Channel' ) : ?>
-          <p class="subject-byline"><?php echo get_the_date() ;?></p>
+<?php if ( $GLOBALS['ALAcontentType'] == 'Article' ) : ?>
+          <p class="subject-byline">By <?php the_author(); ?>, <?php echo get_the_date() ;?></p>
+<?php
+  $categories = get_the_category();
+  $separator = ' ';
+  $output = '';
+  if($categories){
+    $output .= '<p class="subject-byline">Categories: ';
+    foreach($categories as $category) {
+      $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '"><span class="label label-ala">'.$category->cat_name.'</span></a>'.$separator;
+      // $output .= '<span class="label label-ala">'.$category->cat_name.'</span>'.$separator;
+    }
+    $output .= '</p>';
+  echo trim($output, $separator);
+  }
+?>
 <?php endif; ?>
         </article>
 

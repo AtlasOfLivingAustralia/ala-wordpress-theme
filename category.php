@@ -5,20 +5,16 @@ get_header(); ?>
 <?php get_template_part('template-part', 'topnav'); ?>
 <!-- category.php -->
 
- <?php //if ( is_category() ) : ?>
-
-  <?php //else: ?>
-    <!-- <p>is_category() false.</p> -->
-  <?php //endif; ?>
-
  <!-- Breadcrumb -->
   <section id="breadcrumb">
     <div class="container">
       <div class="row">
         <ul class="breadcrumb-list">
           <li><a href="/">Home</a></li>
-          <!-- <li><a href="/"><span class="glyphicon glyphicon-menu-right"></span><?php // echo $GLOBALS['ALAcontentType'] ;?></a></li> -->
+          <li><span class="glyphicon glyphicon-menu-right"></span><a href="/blogs-news/">ALA News</a></li>
+<?php if ( is_category() ) : ?>
           <li active"><span class="glyphicon glyphicon-menu-right"></span><?php single_cat_title(); ?></li>
+<?php endif; ?>
         </ul>
       </div>
     </div>
@@ -28,7 +24,6 @@ get_header(); ?>
   <div class="container">
     <section class="content-container">
       <div class="row">
-
 
 <?php
 $postsperpage = get_option('posts_per_page');
@@ -43,8 +38,13 @@ $args = array(
 ?>
         <article class="col-md-12 header-wrap margin-bottom-half-1">
           <h5 class="subject-category-overline">Channel</h5>
+<?php if ( is_category() ) : ?>
           <h2 class="subject-title"><?php single_cat_title(); ?></h2>
-          <!-- <h3 class="subject-subtitle">News and events from around the ALA community.</h3> -->
+          <h3 class="subject-subtitle"><?php echo category_description($cat); ?></h3>
+<?php else: ?>
+          <h2 class="subject-title">The Atlas of Living Australia News</h2>
+          <h3 class="subject-subtitle">News and events from around the ALA community.</h3>
+<?php endif; ?>
         </article>
 <?php
 // the query
@@ -88,7 +88,9 @@ $the_query = new WP_Query( $args ); ?>
 
         <!-- <p class="subject-byline">Tags:&ensp;<span class="label label-ala">News</span> <span class="label label-ala">Data</span></p> -->
       </div>
+<?php if ($blog_thumb_url) { ?>
       <div class="col-md-4"><img class="img-responsive" src="<?php echo $blog_thumb_url[0]; ?>" alt="Image: <?php the_title(); ?>"></div>
+<?php } ?>
     </div>
   </div>
 </div>
