@@ -18,8 +18,8 @@
           <div class="col-xs-12 col-sm-4 col-md-6">
             <form id="global-search" class="banner" action="https://bie.ala.org.au/search" method="get" name="search-form">
               <div class="icon-addon addon-lg">
-                <input type="text" placeholder="Search the Atlas ..." class="form-control autocomplete">
-                <label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="search"></label>
+                <input type="text" placeholder="Search the Atlas ..." class="form-control autocomplete" id="biesearch">
+                <label for="biesearch" class="glyphicon glyphicon-search" rel="tooltip" title="search"></label>
               </div>
             </form>
           </div>
