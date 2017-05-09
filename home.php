@@ -74,7 +74,7 @@
     <div class="col-md-12">
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
-          <a href="https://lists.ala.org.au/iconic-species"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-koala.jpg"></a>
+          <a href="https://lists.ala.org.au/iconic-species"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-koala.jpg" alt="Koala"></a>
           <div class="panel-body">
             <h3><a href="https://lists.ala.org.au/iconic-species">Australian species</a></h3>
             <p class="help-block">
@@ -85,7 +85,7 @@
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
-          <a href="http://regions.ala.org.au/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-lionfish.jpg"></a>
+          <a href="http://regions.ala.org.au/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-lionfish.jpg" alt="Lionfish"></a>
           <div class="panel-body">
             <h3><a href="http://regions.ala.org.au/">Species by location</a></h3>
             <p class="help-block">
@@ -96,7 +96,7 @@
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
-          <a href="https://biocache.ala.org.au/search"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-rainbow-lorikeet.jpg"></a>
+          <a href="https://biocache.ala.org.au/search"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-rainbow-lorikeet.jpg" alt="Rainbow Lorikeet"></a>
           <div class="panel-body">
             <h3><a href="https://biocache.ala.org.au/search">Occurrence records</a></h3>
             <p class="help-block">
@@ -108,7 +108,7 @@
       <!-- End Col -->
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
-          <a href="/get-involved/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-get-involved-icon.jpg"></a>
+          <a href="/get-involved/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-get-involved-icon.jpg" alt="Get Involved icon"></a>
           <div class="panel-body">
             <h3><a href="/get-involved/">Contribute to the ALA</a></h3>
             <p class="help-block">
@@ -120,7 +120,7 @@
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
           <a href="/blogs-news/">
-            <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-how-you-can-icon.jpg">
+            <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-how-you-can-icon.jpg" alt="ALA news icon">
           </a>
           <div class="panel-body">
             <h3><a href="/blogs-news/">Browse ALA news</a></h3>
@@ -133,7 +133,7 @@
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
           <a href="/atlas-information-hub/">
-            <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-education-icon.jpg">
+            <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-education-icon.jpg" alt="Knowledge Base icon">
           </a>
           <div class="panel-body">
             <h3><a href="/atlas-information-hub/">ALA knowledge base</a></h3>
