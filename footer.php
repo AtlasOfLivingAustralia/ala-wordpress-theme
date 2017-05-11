@@ -54,6 +54,7 @@
             <li><a href="/how-we/#">How the ALA works</a></li>
             <li><a href="/how-you-can/#">How you can work with the ALA</a></li>
             <li><a href="/education-resources/">Learning resources</a></li>
+            <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">Citing the Atlas</a></li>
             <li><a href="/blogs-news/">ALA News</a></li>
             <li><a href="/about-the-atlas/contact-us/">Contact us</a></li>
           </ul>
