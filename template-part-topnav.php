@@ -107,6 +107,7 @@
               <li><a href="/blogs-news/">ALA News</a></li>
               <li class="divider"></li>
               <li><a href="/about-the-atlas/contact-us/">Contact us</a></li>
+              <li><a href="/about-the-atlas/feedback-form/">Feedback form</a></li>
             </ul>
           </li>
         </ul>
