@@ -85,9 +85,9 @@
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
-          <a href="http://regions.ala.org.au/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-lionfish.jpg" alt="Lionfish"></a>
+          <a href="/species-by-location/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-lionfish.jpg" alt="Lionfish"></a>
           <div class="panel-body">
-            <h3><a href="http://regions.ala.org.au/">Species by location</a></h3>
+            <h3><a href="/species-by-location/">Species by location</a></h3>
             <p class="help-block">
               Use the Atlas of Living Australia to browse species by pre-defined region or by location to find species nearby.
             </p>
@@ -96,9 +96,9 @@
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
-          <a href="https://biocache.ala.org.au/search"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-rainbow-lorikeet.jpg" alt="Rainbow Lorikeet"></a>
+          <a href="/occurrence-records/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-rainbow-lorikeet.jpg" alt="Rainbow Lorikeet"></a>
           <div class="panel-body">
-            <h3><a href="https://biocache.ala.org.au/search">Occurrence records</a></h3>
+            <h3><a href="/occurrence-records/">Occurrence records</a></h3>
             <p class="help-block">
               Use the Atlas to Explore species occurrence records using the Spatial Portal or Search Records for species occurrences.
             </p>
