@@ -46,7 +46,7 @@
 <?php endif; ?>
         </article>
 
-<?php if ( $GLOBALS['ALAcontentType'] == 'Channel' ) : ?>
+<?php if ( $GLOBALS['ALAcontentType'] == 'Channel' || $GLOBALS['ALAcontentType'] == 'Site Utilities') : ?>
 
         <article class="col-md-12">
         <!-- Start editable content -->
