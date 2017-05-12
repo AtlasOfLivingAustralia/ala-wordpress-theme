@@ -95,6 +95,7 @@ section#breadcrumb {padding: 130px 0 15px 0;border-bottom: 1px solid #E7E7E7;bac
 /* Forms
 ================================= */
 .input-lg {height: 49px;}
+#alarecaptcha-container {padding-left: 0;}
 
 /* Labels
 ================================= */
