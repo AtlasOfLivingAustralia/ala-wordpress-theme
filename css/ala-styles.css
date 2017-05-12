@@ -96,6 +96,7 @@ section#breadcrumb {padding: 130px 0 15px 0;border-bottom: 1px solid #E7E7E7;bac
 ================================= */
 .input-lg {height: 49px;}
 #alarecaptcha-container {padding-left: 0;}
+#alafeedbacksubmit input {color:#F26649;background-color:#fff;border-color:#F26649;padding:12px 18px;font-size:16px;line-height:1.33;border-radius:0}
 
 /* Labels
 ================================= */
