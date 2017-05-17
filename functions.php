@@ -67,6 +67,11 @@ function my_add_excerpts_to_pages() {
      add_post_type_support( 'page', 'excerpt' );
 }
 
+// featured images
+function ala_wordpress_theme_post_thumbnails() {
+    add_theme_support( 'post-thumbnails' );
+}
+add_action( 'after_setup_theme', 'ala_wordpress_theme_post_thumbnails' );
 
 //list pages in section shortcode
 function section_pages($atts)
