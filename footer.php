@@ -26,7 +26,7 @@
           <ul class="link-list">
             <li><a href="http://collections.ala.org.au/">Browse natural history collections</a></li>
             <li><a href="http://collections.ala.org.au/datasets">Search collections datasets</a></li>
-            <li><a href="https://downloads.ala.org.au">Download datasets</a>
+            <li><a href="https://downloads.ala.org.au">Download data</a>
             <li><a href="https://spatial.ala.org.au/">Spatial portal</a></li>
             <li><a href="https://dashboard.ala.org.au/">ALA dashboard</a></li>
           </ul>
@@ -50,11 +50,11 @@
           <h5 class="footer-second-row">Learn about the ALA</h5>
           <ul class="link-list">
             <li><a href="/about-the-atlas/">About the ALA</a></li>
-            <li><a href="/what-ala-does/#">What the ALA does</a></li>
-            <li><a href="/how-we/#">How the ALA works</a></li>
-            <li><a href="/how-you-can/#">How you can work with the ALA</a></li>
+            <li><a href="/what-ala-does/">What the ALA does</a></li>
+            <li><a href="/how-we/">How the ALA works</a></li>
+            <li><a href="/how-you-can/">How you can use the ALA</a></li>
+            <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">How to cite the ALA</a></li>
             <li><a href="/education-resources/">Learning resources</a></li>
-            <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">Citing the Atlas</a></li>
             <li><a href="/blogs-news/">ALA News</a></li>
             <li><a href="/about-the-atlas/contact-us/">Contact us</a></li>
             <li><a href="/about-the-atlas/feedback-form/">Feedback form</a></li>

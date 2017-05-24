@@ -108,11 +108,11 @@
       <!-- End Col -->
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
-          <a href="/get-involved/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-get-involved-icon.jpg" alt="Get Involved icon"></a>
+          <a href="/get-involved/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-get-involved-icon.jpg" alt="Contribute icon"></a>
           <div class="panel-body">
             <h3><a href="/get-involved/">Contribute to the ALA</a></h3>
             <p class="help-block">
-              Learn about the ALA and discover the many different ways in which we can help you achieve your goals.
+              Get involved in citizen science, digitise survey records, or contribute your sighting to the ALA.
             </p>
           </div>
         </div>
@@ -125,7 +125,7 @@
           <div class="panel-body">
             <h3><a href="/blogs-news/">Browse ALA news</a></h3>
             <p class="help-block">
-              Learn about the ALA and discover the many different ways in which we can help you achieve your goals.
+              Browse news and events from around the ALA community, and keep up to date with how we are engaging with our users.
             </p>
           </div>
         </div>
@@ -138,7 +138,7 @@
           <div class="panel-body">
             <h3><a href="/atlas-information-hub/">ALA knowledge base</a></h3>
             <p class="help-block">
-              Did you see something? Photograph something? Contribute your sighting to the Atlas of Living Australia. Log your sighting at our Record a Sighting page.
+              Learn about the ALA and discover the many different ways in which we can help you achieve your goals.
             </p>
           </div>
         </div>
