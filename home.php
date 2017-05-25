@@ -4,7 +4,7 @@
 
   <div class="jumbotron ala-header hidden-print" id="ala-jumbotron">
     <div class="container">
-      <div class="col-lg-6 col-md-8 col-sm-12 promotional">The <strong>Atlas of Living Australia</strong> is a collaborative, national project that aggregates biodiversity data from multiple sources and makes it freely available and usable online</div>
+      <div class="col-lg-6 col-md-8 col-sm-12 promotional">The <strong>Atlas of Living Australia</strong> is a collaborative, national project that aggregates biodiversity data from multiple sources and makes it freely available and usable online.</div>
     </div>
   </div>
 <?php // theloop - but only for the alert
