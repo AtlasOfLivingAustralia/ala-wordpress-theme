@@ -39,7 +39,7 @@
         <div class="col-xs-6 col-sm-3 col-lg-2 hidden-print">
           <h5 class="footer-second-row">Participate</h5>
           <ul class="link-list">
-            <li><a href="https://biocollect.ala.org.au/">Join a CS project</a></li>
+            <li><a href="https://biocollect.ala.org.au/">Join a citizen science project</a></li>
             <li><a href="https://sightings.ala.org.au/">Record a sighting</a></li>
             <li><a href="/get-involved/upload-data-sets/">Submit a dataset</a></li>
             <li><a href="https://digivol.ala.org.au/">Digitise a record</a></li>
@@ -82,7 +82,7 @@
           <a href="https://sightings.ala.org.au/" title="Did you see something?" class="footer-bonus-link">
             <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer-bonus-record-sighting-icon.png" alt="Sightings icon">
           </a>
-          <p class="footer-bonus-description">Did you see something? Photograph something? <a href="https://sightings.ala.org.au/">Contribute your sighting</a> to the Atlas of Living Australia.</p>
+          <p class="footer-bonus-description">Did you see something? Photograph something? <a href="https://sightings.ala.org.au/">Contribute your sighting</a> to the ALA.</p>
         </div>
 
       </div>
@@ -90,7 +90,7 @@
       <!-- Logo section -->
       <div class="row">
         <div class="col-md-12">
-          <h5 class="footer-bonus-heading">The ALA is made possible by contributions from its partners, is supported by NCRIS and hosted by CSIRO</h5>
+          <h5 class="footer-bonus-heading">The ALA is made possible by contributions from its partners, is supported by NCRIS and hosted by CSIRO.</h5>
         </div>
       </div>
 

@@ -32,7 +32,7 @@
     <div class="col-md-8 col-md-offset-2 hidden">
       <h1 class="heading-large margin-bottom-quarter-1">Atlas of Living Australia</h1>
       <h2 class="promotional">
-        The Atlas of Living Australia is a collaborative, national project that aggregates biodiversity data from multiple sources and makes it freely available and usable online
+        The Atlas of Living Australia is a collaborative, national project that aggregates biodiversity data from multiple sources and makes it freely available and usable online.
       </h2>
     </div>
 
@@ -89,7 +89,7 @@
           <div class="panel-body">
             <h3><a href="/species-by-location/">Species by location</a></h3>
             <p class="help-block">
-              Use the Atlas of Living Australia to browse species by pre-defined region or by location to find species nearby.
+              Browse species by pre-defined region or by location.
             </p>
           </div>
         </div>
@@ -100,7 +100,7 @@
           <div class="panel-body">
             <h3><a href="/occurrence-records/">Occurrence records</a></h3>
             <p class="help-block">
-              Use the Atlas to Explore species occurrence records using the Spatial Portal or Search Records for species occurrences.
+              Explore species occurrence records using the Spatial Portal or search records for species occurrences.
             </p>
           </div>
         </div>
