@@ -336,15 +336,11 @@ footer {background-color: #fff;}
 .footer-list {clear: both;border-top: 1px solid #e2e5e8;padding: 20px 0;margin: 20px 0 0;}
 .footer-item {float: left;margin-right: 20px;height: 24px;line-height: 24px;}
 .footer-item-status {margin-right: 0;float: right;}
-.footer-bonus-brands a {display: inline-block;background: url('../img/footer-bonus-logos.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;}
-.footer-bonus-brands #ncris {background-position: -2px -262px; width: 150px; height: 59px;margin: 20px 40px 75px 0;}
-.footer-bonus-brands #ncris:hover {background-position: -2px -323px; width: 150px; height: 59px;}
-.footer-bonus-brands #csiro {background-position: -2px -384px; width: 100px; height: 100px;margin: 5px 40px 60px 0;}
-.footer-bonus-brands #csiro:hover {background-position: -2px -486px; width: 100px; height: 100px;}
-.footer-bonus-brands #gbif {background-position: -2px -136px; width: 150px; height: 61px;margin: 20px 40px 75px 0;}
-.footer-bonus-brands #gbif:hover {background-position: -2px -199px; width: 150px; height: 61px;}
-.footer-bonus-brands #aus-govt {background-position: -2px -0px; width: 201px; height: 66px;margin: 20px 40px 72px 0;}
-.footer-bonus-brands #aus-govt:hover {background-position: -2px -68px; width: 201px; height: 66px;}
+.footer-bonus-brands a {display: inline-block;background: url('../img/footer-bonus-logos-mono.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;}
+.footer-bonus-brands #ncris {background-position: -10px -76px;width: 151px;height: 59px;margin: 20px 40px 75px 0;}
+.footer-bonus-brands #csiro {background-position: -10px -217px;width: 100px;height: 100px;margin: 5px 40px 60px 0;}
+.footer-bonus-brands #gbif {background-position: -10px -145px;width: 150px;height: 62px;;margin: 20px 40px 75px 0;}
+.footer-bonus-brands #aus-govt {background-position: -10px -0px;width: 202px;height: 66px;margin: 20px 40px 72px 0;}
 .footer-container {padding: 30px;}
 hr.footer-border {margin: -30px 0 20px 0;border-top: 1px solid #e2e5e8;}
 
