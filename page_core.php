@@ -46,9 +46,9 @@
 <?php endif; ?>
         </article>
 
-<?php if ( $GLOBALS['ALAcontentType'] == 'Channel' || $GLOBALS['ALAcontentType'] == 'Site Utilities') : ?>
+<?php if ( $GLOBALS['ALAcontentType'] != 'Spatial Portal Help') : ?>
 
-        <article class="col-md-12">
+        <article class="col-md-12" id="alaEditable">
         <!-- Start editable content -->
             <?php the_content(); ?>
             <?php wp_link_pages(); ?>
@@ -59,14 +59,11 @@
 
         <article class="col-md-3 col-md-push-9 sidebar-col">
           <div class="toc-floating-menu">
-<!--           <h4>Page contents:</h4>
-            <div class="profile-usermenu margin-bottom-2">
-            <?php //echo '<ul class="nav">' . toc_get_index() . '</ul>'; ?>
-            </div> -->
+
           </div>
         </article>
 
-        <article class="col-md-8 col-md-pull-3">
+        <article class="col-md-8 col-md-pull-3" id="alaEditable">
         <!-- Start editable content -->
             <?php the_content(); ?>
             <?php wp_link_pages(); ?>

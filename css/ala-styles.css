@@ -297,7 +297,7 @@ section#breadcrumb {padding: 130px 0 15px 0;border-bottom: 1px solid #E7E7E7;bac
 .affix-bottom {position:absolute;}
 
 /* table of contents floating div */
-.toc-floating-menu.affix {position: fixed;top: 130px;}
+.toc-floating-menu.affix {position: fixed;top: 180px;}
 .sidebar-col {min-height:600px;margin-bottom: 20px;position:relative !important;}
 
 /* Main stats
