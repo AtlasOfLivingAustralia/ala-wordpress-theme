@@ -1,5 +1,7 @@
 // ALA custom functions
 var tocWidth = 0; // global
+var alaHeaderHeight = 0;
+var alaFooterHeight = 0;
 
 function resizeToc() {
     var toc = jQuery('.toc-floating-menu');
@@ -7,6 +9,18 @@ function resizeToc() {
 
     if (toc && sidebar) {
         toc.width(sidebar.width());
+
+        if (jQuery(window).width() > 992) {
+            jQuery('.toc-floating-menu').affix({
+                offset: {
+                    top: jQuery('.toc-floating-menu').offset().top - alaHeaderHeight - 35,
+                    bottom: jQuery('footer').outerHeight(true) + jQuery('.alert-creativecommons').outerHeight(true)
+                }
+            });
+        } else {
+            //$('.toc-floating-menu').
+        }
+
     }
 }
 
@@ -66,15 +80,17 @@ jQuery(document).ready(function($) {
     }
 
     if ($('.navbar-fixed-top').length && $('.toc-floating-menu').length) {
-        var headerHeight = $('.navbar-fixed-top').outerHeight(true); //  + $('.info-hub-banner').outerHeight(true) + $('.breadcrumb').outerHeight(true);
-        var footerHeight = $('footer').outerHeight(true) + $('.alert-creativecommons').outerHeight(true);
+        var alaHeaderHeight = $('.navbar-fixed-top').outerHeight(true); //  + $('.info-hub-banner').outerHeight(true) + $('.breadcrumb').outerHeight(true);
+        var alaFooterHeight = $('footer').outerHeight(true) + $('.alert-creativecommons').outerHeight(true);
         
-        $('.toc-floating-menu').affix({
-            offset: {
-                top:  $('.toc-floating-menu').offset().top - headerHeight - 35, //headerHeight,
-                bottom: footerHeight
-            }
-        });
+        if ($(window).width() > 992) {
+            $('.toc-floating-menu').affix({
+                offset: {
+                    top:  $('.toc-floating-menu').offset().top - alaHeaderHeight - 35,
+                    bottom: alaFooterHeight
+                }
+            });
+        }
 
         $(window).scroll(function () {
             //$('.sidebar-col').width($('.sidebarCol').width());

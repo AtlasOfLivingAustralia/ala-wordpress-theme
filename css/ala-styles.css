@@ -297,7 +297,7 @@ section#breadcrumb {padding: 130px 0 15px 0;border-bottom: 1px solid #E7E7E7;bac
 .affix-bottom {position:absolute;}
 
 /* table of contents floating div */
-.toc-floating-menu.affix {position: fixed;top: 180px;}
+.toc-floating-menu.affix {position: static;}
 .sidebar-col {min-height:600px;margin-bottom: 20px;position:relative !important;}
 
 /* Main stats
@@ -479,8 +479,13 @@ iframe,embed {max-width: 100%;}
 }
 
 @media screen and (min-width: 1060px) {
-	.row.row-search {padding-top: 0;}
+  .row.row-search {padding-top: 0;}
   .footer-item-start {margin-left: 10px;}
+}
+
+@media screen and (min-width: 992px) {
+  /* table of contents floating div */
+  .toc-floating-menu.affix {position: fixed;top: 180px;}
 }
 
 @media screen and (max-width: 959px) {
