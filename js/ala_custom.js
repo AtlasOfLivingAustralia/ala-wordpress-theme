@@ -74,7 +74,7 @@ jQuery(document).ready(function($) {
     if ($('#toc_container').length) {
         $('#toc_container').addClass('toc-floating-menu affix-top');
         $('#toc_container').wrapAll("<div class='col-md-3 col-md-push-9 sidebar-col' id='toc-wrapper' />");
-        $('#alaEditable').children().not('#toc-wrapper').wrapAll("<div class='col-md-8 col-md-pull-3' />");
+        $('#alaEditable').children().not('#toc-wrapper').wrapAll("<div class='col-md-8 col-md-pull-3' />").css('margin-left','0');
         $('.toc_title').replaceWith( "<h4>Page contents:</h4>" );
         $('.toc_list').addClass('nav').wrapAll("<div class='profile-usermenu margin-bottom-2'>");
     }
