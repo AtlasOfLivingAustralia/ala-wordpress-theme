@@ -298,7 +298,7 @@ section#breadcrumb {padding: 130px 0 15px 0;border-bottom: 1px solid #E7E7E7;bac
 
 /* table of contents floating div */
 .toc-floating-menu.affix {position: static;}
-.sidebar-col {min-height:600px;margin-bottom: 20px;position:relative !important;}
+.sidebar-col {margin-bottom: 20px;position:relative !important;}
 
 /* Main stats
 ================================= */
@@ -469,6 +469,7 @@ img.alignnone {max-width: 96%;height: auto;width: auto;}
 /* Recommended CSS from WP for defined content width support */
 .size-auto,.size-full,.size-large,.size-medium,.size-thumbnail {max-width: 100%;height: auto;}
 iframe,embed {max-width: 100%;}
+body #wpadminbar {position: fixed;}
 
 /* Media Queries (Mobile First Method = only add rules to modify larger views)
 ================================= */
