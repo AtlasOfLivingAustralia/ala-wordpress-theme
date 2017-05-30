@@ -1,10 +1,11 @@
 <?php
   $post = $wp_query->post;
+  //default content type
+  $GLOBALS['ALAcontentType'] = 'Page';
   if ( is_page('home') ) {
-    include 'home.php';
+    include (locate_template('home.php'));
     
-  } else { //default
-    $GLOBALS['ALAcontentType'] = 'Page';
-    include 'page_core.php';
+  } else {
+    include (locate_template('page_core.php'));
   }
 ?>

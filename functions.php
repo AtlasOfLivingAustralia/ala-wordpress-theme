@@ -56,7 +56,7 @@ function ala_custom_js()
         'ala_custom_js',
         get_stylesheet_directory_uri() . '/js/ala_custom.js',
         array( 'jquery' ),
-        '1.05',
+        '1.06',
         true
     );
 }
