@@ -394,6 +394,8 @@ hr.footer-border {margin: -30px 0 20px 0;border-top: 1px solid #e2e5e8;}
 /* Typography
 ================================= */
 h1, h2, h3, h4, h5, h6 {color: #384047;display: block;font-weight: 700;margin: 0;text-rendering: optimizeLegibility;}
+h1 {margin-bottom: 30px;}
+h2,h3 {margin-bottom: 16px;}
 ul {list-style: none;}
 ul.link-list {padding-left: 0;margin-top: 10px;line-height: 24px;}
 .heading-large{font-size:36px;font-weight:700;line-height:1.1111111111;text-transform:none;margin-bottom: 0;}
