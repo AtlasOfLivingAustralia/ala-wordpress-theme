@@ -398,7 +398,7 @@ ul {list-style: none;}
 ul.link-list {padding-left: 0;margin-top: 10px;line-height: 24px;}
 .heading-large{font-size:36px;font-weight:700;line-height:1.1111111111;text-transform:none;margin-bottom: 0;}
 .heading-medium{border-bottom:inherit;font-size:24px;font-weight:700;line-height:1.25;}
-.jumbotron .promotional {color: #F0F0F0;background-color:rgba(0,0,0,0.4);padding: 30px 20px;text-align: left;}
+.jumbotron .promotional {color: #F0F0F0;background-color:rgba(0,0,0,0.5);padding: 30px 20px;text-align: left;}
 .promotional {color: #637073;font-size: 24px;font-weight: 400;line-height: 34px;}
 .subject-category-overline {font-size: 18px;font-weight: 700;border-top: 2px solid;padding-top: 8px;display: inline-block;width: 50%;max-width: 175px;margin-bottom: 20px;}
 .subject-title {font-size: 48px;font-weight: 600;line-height: 1.1;margin-bottom: 15px;max-width: 90%;}
