@@ -48,27 +48,27 @@
 
 <?php if ( $GLOBALS['ALAcontentType'] != 'Spatial Portal Help') : ?>
 
-        <article class="col-md-12" id="alaEditable">
+        <div class="col-md-12" id="alaEditable">
         <!-- Start editable content -->
             <?php the_content(); ?>
             <?php wp_link_pages(); ?>
         <!-- End editable content -->
-        </article><?php // End .col-md-12  ?>
+        </div><?php // End .col-md-12  ?>
 
 <?php else: ?>
 
-        <article class="col-md-3 col-md-push-9 sidebar-col">
+        <div class="col-md-3 col-md-push-9 sidebar-col">
           <div class="toc-floating-menu">
 
           </div>
-        </article>
+        </div>
 
-        <article class="col-md-8 col-md-pull-3" id="alaEditable">
+        <div class="col-md-8 col-md-pull-3" id="alaEditable">
         <!-- Start editable content -->
             <?php the_content(); ?>
             <?php wp_link_pages(); ?>
         <!-- End editable content -->
-        </article><?php // End .col-md-8 col-md-pull-3  ?>
+        </div><?php // End .col-md-8 col-md-pull-3  ?>
 
 <?php endif; ?>
 
