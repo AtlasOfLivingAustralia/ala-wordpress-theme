@@ -231,6 +231,7 @@ section#breadcrumb {padding: 130px 0 15px 0;border-bottom: 1px solid #E7E7E7;bac
 .panel-danger > .panel-heading + .panel-collapse .panel-body {border-top-color: #eed3d7;}
 .panel-danger > .panel-footer + .panel-collapse .panel-body {border-bottom-color: #eed3d7;}
 .panel-blog {height: inherit !important;}
+#main.panel>h3 {margin-bottom:0;}
 
 /* Pagination
 ================================= */
