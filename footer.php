@@ -50,7 +50,6 @@
           <h5 class="footer-second-row">Learn about the ALA</h5>
           <ul class="link-list">
             <li><a href="/about-the-atlas/">About the ALA</a></li>
-            <!-- <li><a href="/what-ala-does/">What the ALA does</a></li> -->
             <li><a href="/how-we/">How the ALA works</a></li>
             <li><a href="/how-you-can/">How you can use the ALA</a></li>
             <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">How to cite the ALA</a></li>
