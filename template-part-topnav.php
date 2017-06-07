@@ -58,7 +58,7 @@
             <ul class="dropdown-menu" role="menu">
               <li><a href="https://lists.ala.org.au/iconic-species">Australian species</a></li>
               <li><a href="https://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
-              <li><a href="http://regions.ala.org.au/">Explore your region</a></li>
+              <li><a href="http://regions.ala.org.au/">Explore regions</a></li>
               <li><a href="https://biocache.ala.org.au/search">Search occurrence records</a></li>
               <!-- <li><a href="http://bie.ala.org.au/">Search species</a></li> -->
             </ul>
@@ -103,6 +103,7 @@
               <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">How to cite the ALA</a></li>
               <li class="divider"></li>
               <li><a href="/education-resources/">Learning resources</a></li>
+              <li><a href="/ala-and-indigenous-ecological-knowledge-iek/">Indigenous Ecological Knowledge</a></li>
               <li class="divider"></li>
               <li><a href="/blogs-news/">ALA News</a></li>
               <li class="divider"></li>

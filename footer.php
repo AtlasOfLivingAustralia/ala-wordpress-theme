@@ -16,7 +16,7 @@
           <ul class="link-list">
             <li><a href="https://lists.ala.org.au/iconic-species">Australian species</a></li>
             <li><a href="https://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
-            <li><a href="http://regions.ala.org.au/">Explore your region</a></li>
+            <li><a href="http://regions.ala.org.au/">Explore regions</a></li>
             <li><a href="https://biocache.ala.org.au/search">Search occurrence records</a></li>
           </ul>
         </div>
@@ -50,11 +50,12 @@
           <h5 class="footer-second-row">Learn about the ALA</h5>
           <ul class="link-list">
             <li><a href="/about-the-atlas/">About the ALA</a></li>
-            <li><a href="/what-ala-does/">What the ALA does</a></li>
+            <!-- <li><a href="/what-ala-does/">What the ALA does</a></li> -->
             <li><a href="/how-we/">How the ALA works</a></li>
             <li><a href="/how-you-can/">How you can use the ALA</a></li>
             <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">How to cite the ALA</a></li>
             <li><a href="/education-resources/">Learning resources</a></li>
+            <li><a href="/ala-and-indigenous-ecological-knowledge-iek/">Indigenous Ecological Knowledge</a></li>
             <li><a href="/blogs-news/">ALA News</a></li>
             <li><a href="/about-the-atlas/contact-us/">Contact us</a></li>
             <li><a href="/about-the-atlas/feedback-form/">Feedback form</a></li>

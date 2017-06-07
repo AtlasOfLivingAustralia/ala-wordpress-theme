@@ -230,7 +230,7 @@ section#breadcrumb {padding: 130px 0 15px 0;border-bottom: 1px solid #E7E7E7;bac
 .panel-danger > .panel-heading {color: #b94a48;background-color: #f2dede;border-color: #eed3d7;}
 .panel-danger > .panel-heading + .panel-collapse .panel-body {border-top-color: #eed3d7;}
 .panel-danger > .panel-footer + .panel-collapse .panel-body {border-bottom-color: #eed3d7;}
-.panel-blog {height: inherit !important;}
+.panel-height-inherit {height: inherit !important;}
 
 /* Pagination
 ================================= */
