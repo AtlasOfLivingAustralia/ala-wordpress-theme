@@ -34,7 +34,7 @@ function bootstrapjs()
         'bootstrapjs',
         get_stylesheet_directory_uri() . '/js/bootstrap.min.js',
         array( 'jquery' ),
-        '3.3.7',
+        filemtime(get_stylesheet_directory() . '/js/bootstrap.min.js'),
         true
     );
 }
@@ -45,7 +45,7 @@ function autocompletejs()
         'autocompletejs',
         get_stylesheet_directory_uri() . '/js/jquery.autocomplete.js',
         array( 'jquery' ),
-        '1.0',
+        filemtime(get_stylesheet_directory() . '/js/jquery.autocomplete.js'),
         true
     );
 }
@@ -56,7 +56,7 @@ function ala_custom_js()
         'ala_custom_js',
         get_stylesheet_directory_uri() . '/js/ala_custom.js',
         array( 'jquery' ),
-        '1.06',
+        filemtime(get_stylesheet_directory() . '/js/ala_custom.js'),
         true
     );
 }
@@ -90,11 +90,11 @@ function section_pages($atts)
 add_shortcode('section-pages', 'section_pages');
 
 function theme_enqueue_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array() ,'1.5.0' );
-    wp_enqueue_style( 'bootstrapcss', get_stylesheet_directory_uri() . '/css/bootstrap.min.css', array('parent-style') ,'3.3.7' );
-    wp_enqueue_style( 'autocompcss', get_stylesheet_directory_uri() . '/css/jquery.autocomplete.css', array('parent-style') ,'1.0' );
-    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('bootstrapcss') ,'2.0.3' );
-    wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array('ala-style') ,'4.7.0');
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_stylesheet_directory() . '/style.css'));
+    wp_enqueue_style( 'bootstrapcss', get_stylesheet_directory_uri() . '/css/bootstrap.min.css', array('parent-style'), filemtime(get_stylesheet_directory() . '/css/bootstrap.min.css') );
+    wp_enqueue_style( 'autocompcss', get_stylesheet_directory_uri() . '/css/jquery.autocomplete.css', array('parent-style'), filemtime(get_stylesheet_directory() . '/css/jquery.autocomplete.css') );
+    wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('bootstrapcss') , filemtime(get_stylesheet_directory() . '/css/ala-styles.css') );
+    wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array('ala-style') , '4.7.0');
 }
 
 function do_loginscript()

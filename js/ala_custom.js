@@ -17,10 +17,7 @@ function resizeToc() {
                     bottom: jQuery('footer').outerHeight(true) + jQuery('.alert-creativecommons').outerHeight(true)
                 }
             });
-        } else {
-            //$('.toc-floating-menu').
         }
-
     }
 }
 
