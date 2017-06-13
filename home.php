@@ -96,9 +96,9 @@
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
-          <a href="/occurrence-records/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-rainbow-lorikeet.jpg" alt="Rainbow Lorikeet"></a>
+          <a href="/mapping-and-analysis/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-rainbow-lorikeet.jpg" alt="Rainbow Lorikeet"></a>
           <div class="panel-body">
-            <h3><a href="/occurrence-records/">Occurrence records</a></h3>
+            <h3><a href="/mapping-and-analysis/">Mapping &amp; Analysis</a></h3>
             <p class="help-block">
               Explore species occurrence records using the Spatial Portal or search records for species occurrences.
             </p>
