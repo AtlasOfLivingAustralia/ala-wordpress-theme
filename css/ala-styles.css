@@ -73,7 +73,7 @@ div.col-md-1>ul.nav-login>li>a:visited {color: #fff;}
 ================================= */
 .alert {border-radius: 0;}
 .alert.alert-promotional{background-color:#DA644E;border-color:#DA644E;border-top:none;color:#FFF6F5;margin-top:-30px;}
-.alert.alert-creativecommons{background-color:#C44D34;border-color:#9d9d9d;border-top:none;color:#fff;}
+.alert.alert-creativecommons{background-color:#C44D34;border-color:#9d9d9d;border-top:none;color:#fff;margin-bottom:0;}
 .container.alert-container {padding: 0 25px;}
 p.alert-text {padding: 8px 0 0;font-size: 18px;line-height: 26px;}
 .alert-text.text-creativecommons {font-size: 15px;line-height: 22px;}
