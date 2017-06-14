@@ -124,11 +124,10 @@
   </footer>
 
   <!-- Creative commons alert -->
-  <div class="alert alert-creativecommons alert-dismissible hidden-print" role="alert">
+  <div class="alert alert-creativecommons hidden-print" role="alert">
     <div class="container alert-container">
       <div class="row-fluid">
         <div class="col-md-12">
-          <button type="button" class="close alert-dismissable-button" data-dismiss="alert" aria-label="Close" title="Close"><span aria-hidden="true">&times;</span></button>
           <p class="alert-text text-creativecommons">
             This work is licensed under a <a href="#">Creative Commons Attribution 3.0 Australia License</a>&ensp;<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
           </p>
