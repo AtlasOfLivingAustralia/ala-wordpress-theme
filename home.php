@@ -89,7 +89,7 @@
           <div class="panel-body">
             <h3><a href="/species-by-location/">Species by location</a></h3>
             <p class="help-block">
-              Browse species by pre-defined region or by location.
+              Browse species by pre-defined <a href="http://regions.ala.org.au/">region</a> or by <a href="http://biocache.ala.org.au/explore/your-area">location</a>.
             </p>
           </div>
         </div>
@@ -100,7 +100,7 @@
           <div class="panel-body">
             <h3><a href="/mapping-and-analysis/">Mapping &amp; Analysis</a></h3>
             <p class="help-block">
-              Explore species occurrence records using the Spatial Portal or search records for species occurrences.
+              Explore species occurrence records using the <a href="http://spatial.ala.org.au/webportal/">Spatial Portal</a> or search records for <a href="https://biocache.ala.org.au/search#tab_simpleSearch">species occurrences</a>.
             </p>
           </div>
         </div>
@@ -112,7 +112,7 @@
           <div class="panel-body">
             <h3><a href="/get-involved/">Contribute to the ALA</a></h3>
             <p class="help-block">
-              Get involved in citizen science, digitise survey records, or contribute your sighting to the ALA.
+              Get involved in <a href="/get-involved/citizen-science/">citizen science</a>, digitise <a href="https://volunteer.ala.org.au/">survey records</a>, or <a href="https://sightings.ala.org.au/">contribute your sighting</a> to the ALA.
             </p>
           </div>
         </div>
