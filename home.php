@@ -100,7 +100,7 @@
           <div class="panel-body">
             <h3><a href="/mapping-and-analysis/">Mapping &amp; analysis</a></h3>
             <p class="help-block">
-              Explore species occurrence records using the <a href="http://spatial.ala.org.au/webportal/">Spatial Portal</a> or search records for <a href="https://biocache.ala.org.au/search#tab_simpleSearch">species occurrences</a>.
+              Explore species occurrence records using the <a href="http://spatial.ala.org.au/webportal/">Spatial Portal</a> or <a href="https://biocache.ala.org.au/search#tab_simpleSearch">search records</a> for species occurrences.
             </p>
           </div>
         </div>
