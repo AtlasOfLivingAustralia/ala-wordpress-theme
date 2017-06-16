@@ -337,10 +337,10 @@ footer {background-color: #fff;}
 .footer-item {float: left;margin-right: 20px;height: 24px;line-height: 24px;}
 .footer-item-status {margin-right: 0;float: right;}
 .footer-bonus-brands a {display: inline-block;background: url('../img/footer-bonus-logos-mono.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;}
-.footer-bonus-brands #ncris {background-position: -10px -76px;width: 151px;height: 59px;margin: 20px 40px 75px 0;}
-.footer-bonus-brands #csiro {background-position: -10px -217px;width: 100px;height: 100px;margin: 5px 40px 60px 0;}
-.footer-bonus-brands #gbif {background-position: -10px -145px;width: 150px;height: 62px;;margin: 20px 40px 75px 0;}
-.footer-bonus-brands #aus-govt {background-position: -10px -0px;width: 202px;height: 66px;margin: 20px 40px 72px 0;}
+.footer-bonus-brands #ncris {background-position: -5px -0px; width: 152px; height: 60px; margin: 20px 40px 75px 0;}
+.footer-bonus-brands #csiro {background-position: -5px -132px; width: 100px; height: 100px; margin: 5px 40px 60px 0;}
+.footer-bonus-brands #gbif {background-position: -5px -65px; width: 151px; height: 62px; margin: 20px 40px 75px 0;}
+/*.footer-bonus-brands #aus-govt {background-position: -10px -0px;width: 202px;height: 66px; margin: 20px 40px 72px 0;}*/
 .footer-container {padding: 30px;}
 hr.footer-border {margin: -30px 0 20px 0;border-top: 1px solid #e2e5e8;}
 
@@ -414,6 +414,30 @@ article ul {list-style-type: disc;}
 article h3 {font-size: 30px;font-weight: 700;margin-bottom: .4em;}
 article h4 {font-size: 24px;font-weight: 700;margin-bottom: .2em;}
 article h5 {font-size: 18px;font-weight: 700;margin-bottom: .2em;}
+
+/* Attachments (document attachments)
+================================= */
+p.attachment {font-size: 15px;margin-bottom: 0;}
+.attachment-icon {
+  float: left;
+  margin-left: -15px;
+  padding-right: 12px;
+  /*height: auto;*/
+}
+.attachment-info {
+  padding-left: 45px;
+}
+
+.panel-attachment {
+  background-color: #f7f7f7;
+  border-color: #dddddd;
+  margin-bottom: 5px;
+}
+.panel-attachment-body {
+  padding: 8px;
+  /*background-color: #f7f7f7;*/
+}
+
 
 /* Links
 ================================= */
