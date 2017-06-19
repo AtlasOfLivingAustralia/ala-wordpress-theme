@@ -49,9 +49,9 @@
         <div class="col-xs-6 col-sm-3 col-lg-2 hidden-print">
           <h5 class="footer-second-row">Learn about the ALA</h5>
           <ul class="link-list">
-            <li><a href="/about-the-atlas/">About the ALA</a></li>
-            <li><a href="/how-we/">How the ALA works</a></li>
-            <li><a href="/how-you-can/">How you can use the ALA</a></li>
+            <li><a href="/about-the-atlas/">Who we are</a></li>
+            <li><a href="/how-to-use/">How to use the ALA</a></li>
+            <li><a href="/how-to-work-with-data/">How to work with data</a></li>
             <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">How to cite the ALA</a></li>
             <li><a href="/education-resources/">Learning resources</a></li>
             <li><a href="/ala-and-indigenous-ecological-knowledge-iek/">Indigenous Ecological Knowledge</a></li>

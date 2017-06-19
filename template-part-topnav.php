@@ -95,10 +95,10 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="/about-the-atlas/">About the ALA</a></li>
+              <li><a href="/about-the-atlas/">Who we are</a></li>
               <li class="divider"></li>
-              <li><a href="/how-we/">How the ALA works</a></li>
-              <li><a href="/how-you-can/">How you can use the ALA</a></li>
+              <li><a href="/how-to-use/">How to use the ALA</a></li>
+              <li><a href="/how-to-work-with-data/">How to work with data</a></li>
               <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">How to cite the ALA</a></li>
               <li class="divider"></li>
               <li><a href="/education-resources/">Learning resources</a></li>
