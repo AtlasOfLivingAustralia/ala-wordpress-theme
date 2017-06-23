@@ -60,7 +60,8 @@
               <li><a href="https://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
               <li><a href="http://regions.ala.org.au/">Explore regions</a></li>
               <li><a href="https://biocache.ala.org.au/search">Search occurrence records</a></li>
-              <!-- <li><a href="http://bie.ala.org.au/">Search species</a></li> -->
+              <li class="divider"></li>
+              <li><a href="/sites-and-services/">Sites &amp; services</a></li>
             </ul>
           </li>
           <li class="dropdown">
