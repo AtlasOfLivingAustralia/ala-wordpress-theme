@@ -318,6 +318,18 @@ section#breadcrumb {padding: 130px 0 15px 0;border-bottom: 1px solid #E7E7E7;bac
 .t-center {text-align: center;}
 .content-container {padding: 40px 20px 20px;}
 
+/* Content
+================================= */
+.popular-bonus-link {float: left;}
+.popular-bonus-heading {line-height: 20px; margin: 0 0 5px; padding-left: 70px;}
+.popular-bonus-description {line-height: 22px; margin: 0 0 40px 0; padding-left: 70px;}
+
+dt {margin-top: 10px;}
+
+article > div > dl > dt {font-size: 18px; font-weight: 500;}
+article > div > dl {margin-bottom: 50px;}
+article > div > dl > dd {font-weight: 300; font-size: 18px;}
+
 /* Footer
 ================================= */
 footer {background-color: #fff;}
