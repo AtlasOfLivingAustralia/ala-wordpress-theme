@@ -26,7 +26,9 @@
         <article class="col-md-12 header-wrap margin-bottom-half-1">
           <h5 class="subject-category-overline"><?php echo $GLOBALS['ALAcontentType'] ;?></h5>
           <h2 class="subject-title"><?php the_title() ;?></h2>
+<?php if ( $post->post_excerpt ) : ?>
           <h3 class="subject-subtitle"><?php echo $post->post_excerpt ;?></h3>
+<?php endif; ?>
 <?php if ( $GLOBALS['ALAcontentType'] == 'Article' ) : ?>
           <p class="subject-byline">By <?php the_author(); ?>, <?php echo get_the_date() ;?></p>
 <?php
