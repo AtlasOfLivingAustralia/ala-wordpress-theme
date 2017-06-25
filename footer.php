@@ -11,7 +11,7 @@
           <h3 class="promotional">Sharing biodiversity knowledge to shape our future</h3>
         </div>
 
-        <div class="col-xs-6 col-sm-3 col-lg-2 hidden-print">
+        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
           <h5>Start exploring</h5>
           <ul class="link-list">
             <li><a href="https://lists.ala.org.au/iconic-species">Australian species</a></li>
@@ -22,7 +22,7 @@
           </ul>
         </div>
 
-        <div class="col-xs-6 col-sm-3 col-lg-2 hidden-print">
+        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
           <h5>Search &amp; analyse</h5>
           <ul class="link-list">
             <li><a href="http://collections.ala.org.au/">Browse natural history collections</a></li>
@@ -37,7 +37,7 @@
           <!-- This fixes the alignment issues of the footer columns -->
         </div>
 
-        <div class="col-xs-6 col-sm-3 col-lg-2 hidden-print">
+        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
           <h5 class="footer-second-row">Participate</h5>
           <ul class="link-list">
             <li><a href="https://biocollect.ala.org.au/">Join a citizen science project</a></li>
@@ -47,7 +47,7 @@
           </ul>
         </div>
 
-        <div class="col-xs-6 col-sm-3 col-lg-2 hidden-print">
+        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
           <h5 class="footer-second-row">Learn about the ALA</h5>
           <ul class="link-list">
             <li><a href="/about-the-atlas/">Who we are</a></li>
