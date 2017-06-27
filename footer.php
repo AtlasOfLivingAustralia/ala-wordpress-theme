@@ -54,7 +54,7 @@
             <li><a href="/how-to-use/">How to use the ALA</a></li>
             <li><a href="/how-to-work-with-data/">How to work with data</a></li>
             <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">How to cite the ALA</a></li>
-            <li><a href="/education-resources/">Learning resources</a></li>
+            <li><a href="/education-resources/">Education resources</a></li>
             <li><a href="/ala-and-indigenous-ecological-knowledge-iek/">Indigenous Ecological Knowledge</a></li>
             <li><a href="/blogs-news/">ALA News</a></li>
             <li><a href="/about-the-atlas/contact-us/">Contact us</a></li>
