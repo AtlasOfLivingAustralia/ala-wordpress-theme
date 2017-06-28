@@ -76,9 +76,9 @@
         <div class="panel panel-default">
           <a href="https://lists.ala.org.au/iconic-species"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-channel-image-koala.jpg" alt="Koala"></a>
           <div class="panel-body">
-            <h3><a href="https://lists.ala.org.au/iconic-species">Australian species</a></h3>
+            <h3><a href="https://lists.ala.org.au/iconic-species">Australian iconic species</a></h3>
             <p class="help-block">
-              Search for Australian flora and fauna species by common, scientific name or search by category.
+              Browse some of our most popular species, or search over 400,000 species within the ALA.
             </p>
           </div>
         </div>
