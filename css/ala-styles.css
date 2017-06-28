@@ -328,7 +328,7 @@ dt {margin-top: 10px;}
 
 article > div > dl > dt {font-size: 18px; font-weight: 500;}
 article > div > dl {margin-bottom: 50px;}
-article > div > dl > dd {font-weight: 300; font-size: 18px;}
+article > div > dl > dd {font-weight: 300; font-size: 18px; padding-bottom: 5px;}
 
 /* Footer
 ================================= */
