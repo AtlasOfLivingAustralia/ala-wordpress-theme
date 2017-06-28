@@ -14,7 +14,7 @@
         <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
           <h5>Start exploring</h5>
           <ul class="link-list">
-            <li><a href="https://lists.ala.org.au/iconic-species">Australian species</a></li>
+            <li><a href="https://lists.ala.org.au/iconic-species">Australian iconic species</a></li>
             <li><a href="https://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
             <li><a href="http://regions.ala.org.au/">Explore regions</a></li>
             <li><a href="https://biocache.ala.org.au/search">Search occurrence records</a></li>

@@ -56,7 +56,7 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="https://lists.ala.org.au/iconic-species">Australian species</a></li>
+              <li><a href="https://lists.ala.org.au/iconic-species">Australian iconic species</a></li>
               <li><a href="https://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
               <li><a href="http://regions.ala.org.au/">Explore regions</a></li>
               <li><a href="https://biocache.ala.org.au/search">Search occurrence records</a></li>
