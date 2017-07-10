@@ -42,7 +42,7 @@
           <ul class="link-list">
             <li><a href="https://biocollect.ala.org.au/">Join a citizen science project</a></li>
             <li><a href="https://sightings.ala.org.au/">Record a sighting</a></li>
-            <li><a href="/get-involved/upload-data-sets/">Submit a dataset</a></li>
+            <li><a href="/submit-dataset-to-ala/">Submit a dataset</a></li>
             <li><a href="https://digivol.ala.org.au/">Digitise a record</a></li>
           </ul>
         </div>
@@ -50,10 +50,10 @@
         <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
           <h5 class="footer-second-row">Learn about the ALA</h5>
           <ul class="link-list">
-            <li><a href="/about-the-atlas/">Who we are</a></li>
-            <li><a href="/how-to-use/">How to use the ALA</a></li>
+            <li><a href="/who-we-are/">Who we are</a></li>
+            <li><a href="/how-to-use-ala/">How to use the ALA</a></li>
             <li><a href="/how-to-work-with-data/">How to work with data</a></li>
-            <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">How to cite the ALA</a></li>
+            <li><a href="/how-to-cite-ala/">How to cite the ALA</a></li>
             <li><a href="/education-resources/">Education resources</a></li>
             <li><a href="/ala-and-indigenous-ecological-knowledge-iek/">Indigenous Ecological Knowledge</a></li>
             <li><a href="/blogs-news/">ALA News</a></li>

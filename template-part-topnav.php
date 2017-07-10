@@ -86,7 +86,7 @@
             <ul class="dropdown-menu" role="menu">
               <li><a href="https://biocollect.ala.org.au/">Join a Citizen Science project</a></li>
               <li><a href="https://sightings.ala.org.au/">Record a sighting in the ALA</a></li>
-              <li><a href="/get-involved/upload-data-sets/">Submit a dataset to the ALA</a></li>
+              <li><a href="/submit-dataset-to-ala/">Submit a dataset to the ALA</a></li>
               <li><a href="https://digivol.ala.org.au/">Digitise a record in DigiVol</a></li>
             </ul>
           </li>
@@ -96,11 +96,11 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="/about-the-atlas/">Who we are</a></li>
+              <li><a href="/who-we-are/">Who we are</a></li>
               <li class="divider"></li>
-              <li><a href="/how-to-use/">How to use the ALA</a></li>
+              <li><a href="/how-to-use-ala/">How to use the ALA</a></li>
               <li><a href="/how-to-work-with-data/">How to work with data</a></li>
-              <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">How to cite the ALA</a></li>
+              <li><a href="/how-to-cite-ala/">How to cite the ALA</a></li>
               <li class="divider"></li>
               <li><a href="/education-resources/">Education resources</a></li>
               <li><a href="/ala-and-indigenous-ecological-knowledge-iek/">Indigenous Ecological Knowledge</a></li>

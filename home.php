@@ -108,11 +108,11 @@
       <!-- End Col -->
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
-          <a href="/get-involved/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-get-involved-icon.jpg" alt="Contribute icon"></a>
+          <a href="/contribute-to-ala/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-get-involved-icon.jpg" alt="Contribute icon"></a>
           <div class="panel-body">
-            <h3><a href="/get-involved/">Contribute to the ALA</a></h3>
+            <h3><a href="/contribute-to-ala/">Contribute to the ALA</a></h3>
             <p class="help-block">
-              Get involved in <a href="/get-involved/citizen-science/">citizen science</a>, digitise <a href="https://volunteer.ala.org.au/">survey records</a>, or <a href="https://sightings.ala.org.au/">contribute your sighting</a> to the ALA.
+              Get involved in <a href="/citizen-science-central/">citizen science</a>, digitise <a href="https://volunteer.ala.org.au/">survey records</a>, or <a href="https://sightings.ala.org.au/">contribute your sighting</a> to the ALA.
             </p>
           </div>
         </div>
@@ -132,11 +132,11 @@
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="panel panel-default">
-          <a href="/atlas-information-hub/">
+          <a href="/ala-knowledge-base/">
             <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-education-icon.jpg" alt="Knowledge Base icon">
           </a>
           <div class="panel-body">
-            <h3><a href="/atlas-information-hub/">ALA knowledge base</a></h3>
+            <h3><a href="/ala-knowledge-base/">ALA knowledge base</a></h3>
             <p class="help-block">
               Learn about the ALA and discover the many different ways in which we can help you achieve your goals.
             </p>
