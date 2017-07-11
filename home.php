@@ -78,7 +78,7 @@
           <div class="panel-body">
             <h3><a href="https://lists.ala.org.au/iconic-species">Australian iconic species</a></h3>
             <p class="help-block">
-              Browse some of our most popular species, or search over 400,000 species within the ALA.
+              Browse some of our most popular species, or search over 100,000 species within the ALA.
             </p>
           </div>
         </div>
