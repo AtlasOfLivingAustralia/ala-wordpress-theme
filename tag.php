@@ -9,6 +9,7 @@ get_header(); ?>
 <?php get_template_part('template-part', 'topnav'); ?>
 
 <div id="main" class="container dmbs-container">
+<!-- tag.php -->
   <div class="col-xs-12">
     <h1 class="hidden">Welcome to the Atlas of Living Australia</h1>
     <ol class="breadcrumb hidden-print">
