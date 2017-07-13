@@ -1,5 +1,6 @@
 <?php
 //define('WP_USE_THEMES', false);
+$GLOBALS['ALAcontentType'] = 'Channel';
 get_header(); ?>
 
 <?php get_template_part('template-part', 'topnav'); ?>

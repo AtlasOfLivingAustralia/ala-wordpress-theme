@@ -148,4 +148,7 @@
 
   </div><!-- end content container -->
 
-<?php get_footer(); ?>
+<?php 
+$GLOBALS['ALAcontentType'] = 'Channel';
+get_footer(); 
+?>
