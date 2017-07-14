@@ -12,10 +12,10 @@ get_header(); ?>
         <ul class="breadcrumb-list">
           <li><a href="/">Home</a></li>
 <?php if ( get_cat_slug($cat) == "blogs-news" ) : ?>
-          <li><span class="glyphicon glyphicon-menu-right"></span>ALA News</li>
+          <li>ALA News</li>
 <?php else: ?>
-          <li><span class="glyphicon glyphicon-menu-right"></span><a href="/blogs-news/">ALA News</a></li>
-          <li active"><span class="glyphicon glyphicon-menu-right"></span><?php single_cat_title(); ?></li>
+          <li><a href="/blogs-news/">ALA News</a></li>
+          <li active"><?php single_cat_title(); ?></li>
 <?php endif; ?>
         </ul>
       </div>

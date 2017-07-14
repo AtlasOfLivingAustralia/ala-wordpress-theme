@@ -8,8 +8,7 @@
       <div class="row">
         <ul class="breadcrumb-list">
           <li><a href="/">Home</a></li>
-          <!-- <li><a href="/"><span class="glyphicon glyphicon-menu-right"></span><?php // echo $GLOBALS['ALAcontentType'] ;?></a></li> -->
-          <li class="active"><span class="glyphicon glyphicon-menu-right"></span><?php the_title() ;?></li>
+          <li class="active"><?php the_title() ;?></li>
         </ul>
       </div>
     </div>
