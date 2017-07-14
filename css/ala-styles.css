@@ -577,6 +577,12 @@ body #wpadminbar {position: fixed;}
   .admin-bar .navbar {
     top: 32px;
   }
+  .admin-bar :target:before {
+    content:"";
+    display:block;
+    height:140px;
+    margin:-100px 0 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
