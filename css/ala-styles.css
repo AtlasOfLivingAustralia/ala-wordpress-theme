@@ -92,6 +92,21 @@ section#breadcrumb {padding: 130px 0 15px 0;border-bottom: 1px solid #E7E7E7;bac
 .breadcrumb-list li a {color: #AF442E;}
 .breadcrumb-list li .glyphicon {margin-right: 5px;color: #bbb;}
 
+section#breadcrumb li + li::before {
+    /*display: inline-block;
+    margin: 0 .6em;
+    transform: rotate(15deg);
+    border-right: .1em solid currentColor;
+    height: .8em;
+    content: '';*/
+
+    content: "\f105";
+    font-family: FontAwesome;
+    margin: 0 .6em;
+    height: .8em;
+    opacity: .6;
+}
+
 /* Forms
 ================================= */
 .input-lg {height: 49px;}
