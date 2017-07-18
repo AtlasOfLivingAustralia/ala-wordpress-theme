@@ -31,7 +31,7 @@ jQuery(window).load(function($) {
     });
 
     function resizePanels() {
-        var panels = jQuery('.panel.panel-default'); // might want to use a more specific selector (e.g. add an extra class to those panel divs)
+        var panels = jQuery('.panel.panel-default').not('.panel-blog'); // might want to use a more specific selector (e.g. add an extra class to those panel divs)
         var max = 0;
         jQuery.each(panels, function(i,el) {
             var thisMax = jQuery(el).find('img').outerHeight() + jQuery(el).find('.panel-body').outerHeight();
