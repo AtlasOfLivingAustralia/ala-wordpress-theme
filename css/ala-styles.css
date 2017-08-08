@@ -374,6 +374,21 @@ footer {background-color: #fff;}
 /*hr.footer-border {margin: -30px 0 20px 0;border-top: 1px solid #e2e5e8;}*/
 hr.footer-border {margin: 30px 0 30px 0; border-top: 2px solid #333;}
 
+.acknowledgement-callout {
+    padding: 20px 20px 15px;
+    margin: 0 0 40px;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    background-color: #F7F7F7;
+}
+
+.acknowledgement-callout-ala {
+    border-left-color: #C44D34;
+}
+
+body > footer > div > div.col-md-12.acknowledgement-callout.acknowledgement-callout-ala > div > p {line-height: 1.4;}
+
 /* Layout control
 ================================= */
 .padding-bottom-1{padding-bottom: 1em;}.padding-bottom-2{padding-bottom: 2em;}
@@ -445,6 +460,13 @@ article h3 {font-size: 30px;font-weight: 700;margin-bottom: .4em;}
 article h4 {font-size: 24px;font-weight: 700;margin-bottom: .2em;}
 article h5 {font-size: 18px;font-weight: 700;margin-bottom: .2em;}
 article h3.profile-title {font-size: 20px;}
+article h4.product {margin-top: 4em;}
+
+
+/* Attachments (document attachments)
+================================= */
+img.product {margin: 0 auto;}
+.app-icons.product {margin-top: 1.2em;}
 
 /* Attachments (document attachments)
 ================================= */
