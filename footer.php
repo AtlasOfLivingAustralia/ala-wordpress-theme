@@ -87,7 +87,14 @@
         </div>
 
       </div>
-
+      <!-- Acknowledgement section -->
+      <div class="row col-sm-12 acknowledgement-callout acknowledgement-callout-ala">
+        <div class="col-md-10 col-sm-12">
+          <h4 class="margin-bottom-half-1">Acknowledgement of Traditional Owners and Country</h4>
+          <p>The Atlas of Living Australia acknowledges Australia’s Traditional Owners and pays respect to the past and present Elders of the nation’s Aboriginal and Torres Strait Islander communities. We honour and celebrate the spiritual, cultural and customary connections of Traditional Owners to country and the biodiversity that forms part of that country.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
       <!-- Logo section -->
       <div class="row">
         <div class="col-md-12">
