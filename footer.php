@@ -40,7 +40,7 @@
         <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
           <h5 class="footer-second-row">Participate</h5>
           <ul class="link-list">
-            <li><a href="https://biocollect.ala.org.au/">Join a citizen science project</a></li>
+            <li><a href="https://biocollect.ala.org.au/acsa">Join a citizen science project</a></li>
             <li><a href="https://sightings.ala.org.au/">Record a sighting</a></li>
             <li><a href="/submit-dataset-to-ala/">Submit a dataset</a></li>
             <li><a href="https://digivol.ala.org.au/">Digitise a record</a></li>
@@ -76,7 +76,7 @@
           <a href="https://biocollect.ala.org.au/" title="Contribute your sightings" class="footer-bonus-link">
             <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer-bonus-cit-science-icon.png" alt="Citizen Science icon">
           </a>
-          <p class="footer-bonus-description">Find out how you can <a href="https://biocollect.ala.org.au/">contribute to a citizen science project</a> in your area, or explore one of the many citizen science projects supported by the ALA.</p>
+          <p class="footer-bonus-description">Find out how you can <a href="https://biocollect.ala.org.au/acsa">contribute to a citizen science project</a> in your area, or explore one of the many citizen science projects supported by the ALA.</p>
         </div>
         <div class="col-md-4 col-sm-12 footer-bonus-item">
           <h5 class="footer-bonus-heading">Record a sighting</h5>
