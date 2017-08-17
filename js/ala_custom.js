@@ -7,7 +7,7 @@ function resizeToc() {
     var toc = jQuery('.toc-floating-menu');
     var sidebar = jQuery('.sidebar-col');
 
-    if (toc && sidebar) {
+    if (toc.length && sidebar.length) {
         toc.width(sidebar.width());
 
         if (jQuery(window).width() > 992) {
