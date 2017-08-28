@@ -72,7 +72,7 @@
               <li><a href="http://collections.ala.org.au/">Browse natural history collections</a></li>
               <li><a href="http://collections.ala.org.au/datasets">Search datasets</a></li>
               <li><a href="https://downloads.ala.org.au">Download data</a>
-              <li><a href="https://spatial.ala.org.au/">Spatial portal</a></li>
+              <li><a href="http://spatial.ala.org.au/">Spatial portal</a></li>
               <li class="divider"></li>
               <li><a href="https://dashboard.ala.org.au/">ALA dashboard</a></li>
             </ul>
