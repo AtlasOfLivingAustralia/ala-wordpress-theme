@@ -5,8 +5,8 @@
 
 /* Global
 ================================= */
-body{-webkit-font-smoothing:antialiased;font:normal 15px Roboto,Helvetica,"Helvetica Neue",Arial,sans-serif;padding-top:0;}
-#main{padding: 0 0 2em 0;}
+body{-webkit-font-smoothing:antialiased;font:normal 15px Roboto,Helvetica,"Helvetica Neue",Arial,sans-serif;padding-top:68px;}
+#main{padding-top: 30px; padding-bottom: 5em; }
 body.background-white {background-color:#fff;}
 body.background-lightgrey {background-color:#f2f2f2;}
 .container {position: relative;max-width: 1260px;}
@@ -64,7 +64,7 @@ div.col-md-1>ul.nav-login>li>a:visited {color: #fff;}
   /*background:url(../img/jtron-bg-10-oct-770px.jpg) no-repeat center top;*/ /*OCT*/
   /*background:url(../img/jtron-bg-11-nov-770px.jpg) no-repeat center top;*/ /*NOV*/
   /*background:url(../img/jtron-bg-12-dec-770px.jpg) no-repeat center top;*/ /*DEC*/
-  background-attachment:relative;background-position:center center;background-size:cover;margin-top:112px;min-height:230px;text-align:center;width:100%;}
+  background-attachment:relative;background-position:center center;background-size:cover;margin-top:0;min-height:230px;text-align:center;width:100%;}
   form.banner{padding-top:6.5em;}
   button.btn.btn-default.btn-lg {min-height: 46px;}
 .info-hub-banner {background-repeat: repeat-x;background: url(../img/info-hub-banner-3.png);margin-top: 32px;text-align: center;width: 100%;background-color: #f26649;}
@@ -93,7 +93,7 @@ p.alert-text>a:hover {text-decoration: none;}
 
 /* Breadcrumb
 ================================= */
-section#breadcrumb {padding: 130px 0 15px 0;border-bottom: 1px solid #E7E7E7;background-color: #E7E7E7;}
+section#breadcrumb {padding: 12px 0 15px 19px;border-bottom: 1px solid #E7E7E7;background-color: #E7E7E7;}
 .breadcrumb-list {list-style: none;margin: 0 0 0 35px;padding: 0;}
 .breadcrumb-list li {display: inline-block;}
 .breadcrumb-list li a {color: #AF442E;}
@@ -441,6 +441,7 @@ input[type="date"] {line-height: 34px;}
 .popular-bonus-description {line-height: 22px; margin: 0 0 40px 0; padding-left: 70px;}
 
 dt {margin-top: 10px;}
+#classification dt {margin-top: 0;}
 
 article > div > dl > dt {font-size: 18px; font-weight: 500;}
 article > div > dl {margin-bottom: 50px;}
@@ -869,6 +870,19 @@ img.alignnone {max-width: 96%;height: auto;width: auto;}
 iframe,embed {max-width: 100%;}
 body #wpadminbar {position: fixed;}
 
+/** Navbar logged in switch */
+/* TODO Reverse order so that log in is visible by default */
+.nav-login {
+  display: none;
+}
+
+.not-logged-in .nav-logged-in {
+  display: none;
+}
+
+.not-logged-in .nav-login {
+  display: block;
+}
 /* Callouts
 ================================= */
 .acknowledgement-callout {padding: 20px 20px 15px;margin: 0 0 40px;border: 1px solid #eee;border-left-width: 5px;border-radius: 3px;background-color: #F7F7F7;}
@@ -877,6 +891,12 @@ body > footer > div > div.col-md-12.acknowledgement-callout.acknowledgement-call
 
 /* Media Queries (Mobile First Method = only add rules to modify larger views)
 ================================= */
+/* Matches bootstrap breakpoint */
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 118px;
+  }
+}
 @media screen and (max-width: 1059px) {
   .footer-item-text {clear: left;margin: 0;}
   .footer-item-status {clear: left;float: left;margin: 20px 0 0;}
@@ -928,7 +948,6 @@ body > footer > div > div.col-md-12.acknowledgement-callout.acknowledgement-call
 
 @media screen and (max-width: 768px) {
   .row.row-search{padding-top:15px}
-  .ala-header{margin-top:62px}
   .info-hub-banner{margin-top:36px}
   section#breadcrumb{padding-top:80px}
   .main-stats{padding:10px 15px}
