@@ -883,6 +883,15 @@ body #wpadminbar {position: fixed;}
 .not-logged-in .nav-login {
   display: block;
 }
+
+.ala-wordpress .nav-login {
+  display: block;
+}
+
+.ala-wordpress .not-logged-in .nav-logged-in {
+  display: block;
+}
+
 /* Callouts
 ================================= */
 .acknowledgement-callout {padding: 20px 20px 15px;margin: 0 0 40px;border: 1px solid #eee;border-left-width: 5px;border-radius: 3px;background-color: #F7F7F7;}
