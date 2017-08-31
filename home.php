@@ -11,7 +11,7 @@
   if ( have_posts() ) : while ( have_posts() ) : the_post();
     if( get_post_meta($post->ID, 'ALACustomAlertMessage', true) ) { ?>
     <!-- Promotional alert -->
-  <div class="alert alert-promotional alert-dismissible" role="alert">
+  <div class="alert alert-ala-default alert-dismissible" role="alert">
     <div class="container">
       <div class="row-fluid">
         <div class="col-md-12">
