@@ -11,6 +11,15 @@ add_action( 'wp_enqueue_scripts', 'ala_custom_js' );
  * Automatically move JavaScript code to page footer, speeding up page loading time.
  */
 
+// Make javascript asynchronous in WordPress (avoids render blocking)
+// https://stackoverflow.com/a/32339947/100571
+add_filter( 'script_loader_tag', function ( $tag, $handle ) {    
+    if( is_admin() ) {
+        return $tag;
+    }
+    return str_replace( ' src', ' async src', $tag );
+}, 10, 2 );
+
 // note this can cause FOUC (Flash of Unstyled Content) but avoids render blocking JS load in head
 function footer_enqueue_scripts() {
   remove_action('wp_head', 'wp_print_scripts');
