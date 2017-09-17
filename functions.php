@@ -21,6 +21,7 @@ add_filter( 'script_loader_tag', function ( $tag, $handle ) {
 }, 10, 2 );
 
 // note this can cause FOUC (Flash of Unstyled Content) but avoids render blocking JS load in head
+/*
 function footer_enqueue_scripts() {
   remove_action('wp_head', 'wp_print_scripts');
   remove_action('wp_head', 'wp_print_head_scripts', 9);
@@ -35,6 +36,7 @@ function footer_enqueue_scripts() {
   remove_action( 'admin_print_styles', 'print_emoji_styles' );
 }
 add_action('after_setup_theme', 'footer_enqueue_scripts');
+*/
 
 function bootstrapjs()
 {
