@@ -42,28 +42,28 @@
         <div class="main-stats col-lg-3 col-md-3 col-sm-6">
           <h4>Occurrence Records</h4>
           <div class="stat-number" id="allRecords">
-            68,000,000
+            72,266,000
           </div>
         </div>
 
         <div class="main-stats col-lg-3 col-md-3 col-sm-6">
           <h4>Species</h4>
           <div class="stat-number" id="allSpecies">
-            472,000
+            195,000
           </div>
         </div>
 
         <div class="main-stats col-lg-3 col-md-3 col-sm-6">
           <h4>Data downloads</h4>
           <div class="stat-number" id="allDownloads">
-            914,000
+            1.58M
           </div>
         </div>
 
         <div class="main-stats col-lg-3 col-md-3 col-sm-6">
           <h4>Registered users</h4>
           <div class="stat-number" id="allUsers">
-            34,000
+            40,000
           </div>
         </div>
       </div><!-- End main stats -->
