@@ -121,7 +121,7 @@
               <a title="Facebook" class="footer-social-link" href="https://twitter.com/#!/atlaslivingaust"><i class="fa fa-twitter"></i></a>
             </li>
 
-            <li class="footer-item footer-item-text footer-item-start"><a href="https://www.csiro.au/en/About/Footer/Copyright">Copyright</a></li>
+            <li class="footer-item footer-item-text footer-item-start"><a href="https://www.ala.org.au/who-we-are/terms-of-use/#Copyright">Copyright</a></li>
             <li class="footer-item footer-item-text"><a href="/about-the-atlas/terms-of-use/">Terms of use</a></li>
             <li class="footer-item footer-item-text"><a href="/about-the-atlas/contact-us/">Contact us</a></li>
             <li class="footer-item footer-item-status"><a href="http://status.ala.org.au/">System status</a></li>
