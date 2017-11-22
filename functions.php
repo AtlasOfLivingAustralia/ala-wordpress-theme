@@ -115,6 +115,7 @@ add_shortcode('section-pages', 'section_pages');
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_stylesheet_directory() . '/style.css'));
     wp_enqueue_style( 'bootstrapcss', get_stylesheet_directory_uri() . '/css/bootstrap.min.css', array('parent-style'), filemtime(get_stylesheet_directory() . '/css/bootstrap.min.css') );
+    wp_enqueue_style( 'bootstrapthemecss', get_stylesheet_directory_uri() . '/css/bootstrap-theme.min.css', array('parent-style'), filemtime(get_stylesheet_directory() . '/css/bootstrap-theme.min.css') );
     wp_enqueue_style( 'autocompcss', get_stylesheet_directory_uri() . '/css/jquery.autocomplete.css', array('parent-style'), filemtime(get_stylesheet_directory() . '/css/jquery.autocomplete.css') );
     wp_enqueue_style( 'ala-style', get_stylesheet_directory_uri() . '/css/ala-styles.css', array('bootstrapcss') , filemtime(get_stylesheet_directory() . '/css/ala-styles.css') );
     wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array('ala-style') , '4.7.0');
