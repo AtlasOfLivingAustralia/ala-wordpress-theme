@@ -104,9 +104,9 @@
 
       <div class="row">
         <div class="col-md-12 footer-bonus-brands">
-          <a href="https://www.education.gov.au/national-collaborative-research-infrastructure-strategy-ncris" target="_blank" class="img-responsive" id="ncris"></a>
-          <a href="https://www.csiro.au/" target="_blank" id="csiro"></a>
-          <a href="http://www.gbif.org/" target="_blank" class="img-responsive" id="gbif"></a>
+          <a href="https://www.education.gov.au/national-collaborative-research-infrastructure-strategy-ncris" class="img-responsive" id="ncris">NCRIS</a>
+          <a href="https://www.csiro.au/" id="csiro">CSIRO</a>
+          <a href="http://www.gbif.org/" class="img-responsive" id="gbif">GBIF</a>
         </div>
       </div>
       <!-- End logo section -->
