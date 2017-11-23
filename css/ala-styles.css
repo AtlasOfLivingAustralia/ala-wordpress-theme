@@ -100,15 +100,7 @@ section#breadcrumb {padding: 12px 0 15px 19px;border-bottom: 1px solid #E7E7E7;b
 .breadcrumb-list li .glyphicon {margin-right: 5px;color: #bbb;}
 
 section#breadcrumb li + li::before {
-    /*display: inline-block;
-    margin: 0 .6em;
-    transform: rotate(15deg);
-    border-right: .1em solid currentColor;
-    height: .8em;
-    content: '';*/
-
-    content: "\f105";
-    font-family: FontAwesome;
+    content: ">";
     margin: 0 .6em;
     height: .8em;
     opacity: .6;
