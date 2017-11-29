@@ -212,6 +212,7 @@ input[type="date"] {line-height: 34px;}
 .form-group {margin-bottom: 15px;}
 .form-group-lg .form-control, .form-group-sm .form-control {border-radius: 0;}
 .input-group-addon {border: 1px solid #999;border-radius: 0;}
+.input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn {border-radius: 0;}
 
 /* Labels
 ================================= */
@@ -839,7 +840,7 @@ a:hover, a:focus {color: #DA644E;}
 .btn{font-weight:700;border-radius:0;}
 .btn-default{color:#444;border-color:#999}
 .btn-primary{background-color:#C65837;background-image:-webkit-linear-gradient(top,#F26649 0,#CE573E 100%);background-image:-o-linear-gradient(top,#F26649 0,#CE573E 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#F26649),to(#CE573E));background-image:linear-gradient(to bottom,#F26649 0,#CE573E 100%);filter:progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0);filter:progid: DXImageTransform.Microsoft.gradient(enabled=false);background-repeat:repeat-x;border-color:#CE573E;}
-.btn-primary:focus,.btn-primary:hover{background-color:#CE573E;background-position:0 -15px;border-color:#CE573E;}
+.btn-primary:focus,.btn-primary:hover,.btn-primary:active:focus,.btn-primary:active:hover{background-color:#CE573E;background-position:0 -15px;border-color:#CE573E;}
 .btn-primary.active,.btn-primary:active{background-color:#CE573E;border-color:#A94733}
 .btn-primary.disabled,.btn-primary:disabled,.btn-primary[disabled]{background-color:#CE573E;background-image:none}
 .btn-primary.disabled,.btn-primary.disabled.active,.btn-primary.disabled.focus,.btn-primary.disabled:active,.btn-primary.disabled:focus,.btn-primary.disabled:hover,.btn-primary[disabled],.btn-primary[disabled].active,.btn-primary[disabled].focus,.btn-primary[disabled]:active,.btn-primary[disabled]:focus,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary,fieldset[disabled] .btn-primary.active,fieldset[disabled] .btn-primary.focus,fieldset[disabled] .btn-primary:active,fieldset[disabled] .btn-primary:focus,fieldset[disabled] .btn-primary:hover{background-color:#CE573E;background-image:none}
