@@ -114,13 +114,12 @@
       <div class="row">
         <div class="col-md-12">
           <ul class="footer-list">
-            <li class="footer-item footer-social-item">
-              <a title="Twitter" class="footer-social-link" href="https://www.facebook.com/atlasoflivingaustralia"><i class="fa fa-facebook"></i></a>
+            <li class="footer-item footer-social">
+              <a id="twitter" title="Twitter" href="https://twitter.com/#!/atlaslivingaust"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/social_twitter_29px.png" alt="Twitter" /></a>
             </li>
-            <li class="footer-item footer-social-item">
-              <a title="Facebook" class="footer-social-link" href="https://twitter.com/#!/atlaslivingaust"><i class="fa fa-twitter"></i></a>
+            <li class="footer-item footer-social">
+              <a id="facebook" title="Facebook" href="https://www.facebook.com/atlasoflivingaustralia"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/social_facebook_29px.png" alt="Facebook" /></a>
             </li>
-
             <li class="footer-item footer-item-text footer-item-start"><a href="/who-we-are/terms-of-use/#Copyright">Copyright</a></li>
             <li class="footer-item footer-item-text"><a href="/about-the-atlas/terms-of-use/">Terms of use</a></li>
             <li class="footer-item footer-item-text"><a href="/about-the-atlas/contact-us/">Contact us</a></li>

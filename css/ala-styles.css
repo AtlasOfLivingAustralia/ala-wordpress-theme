@@ -693,11 +693,6 @@ footer ul {list-style: none;}
 .footer-bonus-link {float: left;}
 .footer-bonus-icon {fill: #b5bec5;}
 .footer-bonus-description {line-height: 22px;margin: 0;}
-.footer-social-item {width: 24px;overflow: hidden;margin-right: 10px;border-radius: 15px;}
-.footer-social-link {display: block;width: 100%;height: 100%;background: #b7c0c7;transition: background 0.15s ease;fill: #edeff0;}
-.footer-social-link:hover {background: #DA644E;fill: #fff;}
-.fa-facebook {color: #fff;padding-left:7px}
-.fa-twitter {color: #fff;padding-left:6px;}
 .footer-list {clear: both;border-top: 1px solid #e2e5e8;padding: 20px 0;margin: 20px 0 0;}
 .footer-item {float: left;margin-right: 20px;height: 24px;line-height: 24px;}
 .footer-item-status {margin-right: 0;float: right;}
