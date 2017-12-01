@@ -685,6 +685,7 @@ table th[class*="col-"] {
 /* Footer
 ================================= */
 footer {background-color: #fff;}
+footer ul {list-style: none;}
 .footer-nav {clear: both;padding: 1em 0 2em;}
 .footer-bonus {padding-bottom: 1em;}
 .footer-bonus-heading {margin: 0 0 10px;line-height: 20px;}
@@ -778,7 +779,6 @@ h1, h2, h3, h4, h5, h6 {color: #384047;display: block;font-weight: 700;margin: 0
 #main h2,#main h3 {margin-bottom: 16px;}
 .ala-wordpress #main h1 {margin-bottom: 0;}
 .ala-wordpress #main h2,.ala-wordpress #main h3 {margin-bottom: 0;}
-ul {list-style: none;}
 ul.link-list {padding-left: 0;margin-top: 10px;line-height: 24px;}
 .heading-large{font-size:36px;font-weight:700;line-height:1.1111111111;text-transform:none;margin-bottom: 0;}
 .heading-medium{border-bottom:inherit;font-size:24px;font-weight:700;line-height:1.25;}
@@ -887,25 +887,11 @@ body #wpadminbar {position: fixed;}
 
 /** Navbar logged in switch */
 /* TODO Reverse order so that log in is visible by default */
-.nav-login {
-  display: none;
-}
-
-.not-logged-in .nav-logged-in {
-  display: none;
-}
-
-.not-logged-in .nav-login {
-  display: block;
-}
-
-.ala-wordpress .nav-login {
-  display: block;
-}
-
-.ala-wordpress .not-logged-in .nav-logged-in {
-  display: block;
-}
+.nav-login {display: none;}
+.not-logged-in .nav-logged-in {display: none;}
+.not-logged-in .nav-login {display: block;}
+.ala-wordpress .nav-login {display: block;}
+.ala-wordpress .not-logged-in .nav-logged-in {display: block;}
 
 /* Callouts
 ================================= */
