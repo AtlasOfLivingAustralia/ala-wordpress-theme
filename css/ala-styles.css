@@ -694,8 +694,8 @@ footer ul {list-style: none;}
 .footer-bonus-icon {fill: #b5bec5;}
 .footer-bonus-description {line-height: 22px;margin: 0;}
 .footer-list {clear: both;border-top: 1px solid #e2e5e8;padding: 20px 0;margin: 20px 0 0;}
-.footer-item {float: left;margin-right: 20px;height: 24px;line-height: 24px;}
-.footer-social {margin-bottom: 12px;}
+.footer-item {float: left;margin-right: 20px;height: 24px;line-height: 24px;margin-top:3px;}
+.footer-social {margin-bottom: 12px;margin-top:0;}
 .footer-item-status {margin-right: 0;float: right;}
 .footer-bonus-brands a {display: inline-block;background: url('../img/footer-bonus-logos-mono.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;}
 .footer-bonus-brands #ncris {background-position: -5px -0px; width: 152px; height: 60px; margin: 20px 40px 75px 0;}
