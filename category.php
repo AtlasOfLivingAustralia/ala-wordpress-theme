@@ -63,19 +63,19 @@ $the_query = new WP_Query( $args ); ?>
 <div class="col-md-12">
   <div class="panel panel-default panel-blog">
     <div class="panel-body row">
-      <div class="col-md-2">
-        <h4>
+      <div class="col-md-8">
+        <h3>
+          <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+        </h3>
+        <p class="heading-underlined"><?php the_time('j F, Y'); ?>
           <?php
           $this_post_categories = get_the_category();
           post_category_links($this_post_categories);
           ?>
-        </h4>
-      </div>
-      <div class="col-md-6">
-        <h3>
-          <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
-        </h3>
-        <p class="heading-underlined"><?php the_time('j F, Y'); ?></p>
+        </p>
+        <?php if ( $post->post_excerpt ) : ?>
+          <p><?php echo $post->post_excerpt ;?></p>
+        <?php endif; ?>
         <?php
         // $posttags = get_the_tags();
         // if ($posttags) {
@@ -86,8 +86,6 @@ $the_query = new WP_Query( $args ); ?>
         //   echo '</p>';
         // }
         ?>
-
-
         <!-- <p class="subject-byline">Tags:&ensp;<span class="label label-ala">News</span> <span class="label label-ala">Data</span></p> -->
       </div>
 <?php if ($blog_thumb_url) { ?>

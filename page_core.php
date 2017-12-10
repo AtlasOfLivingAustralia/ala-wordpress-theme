@@ -29,7 +29,7 @@
           <h3 class="subject-subtitle"><?php echo $post->post_excerpt ;?></h3>
 <?php endif; ?>
 <?php if ( $GLOBALS['ALAcontentType'] == 'Article' ) : ?>
-          <p class="subject-byline">By <?php the_author(); ?>, <?php echo get_the_date() ;?></p>
+          <p class="subject-byline"><!--By <?php the_author(); ?>, --><?php echo get_the_date() ;?></p>
 <?php
   $categories = get_the_category();
   $separator = ' ';
