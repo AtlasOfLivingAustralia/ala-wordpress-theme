@@ -123,7 +123,7 @@
             <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ala-info-hub-how-you-can-icon.jpg" alt="ALA news icon">
           </a>
           <div class="panel-body">
-            <h3><a href="/blogs-news/">Browse ALA news</a></h3>
+            <h3><a href="/blogs-news/">ALA Blog</a></h3>
             <p class="help-block">
               Browse news and events from around the ALA community, and keep up to date with how we are engaging with our users.
             </p>

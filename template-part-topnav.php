@@ -104,7 +104,7 @@
               <li><a href="/education-resources/">Education resources</a></li>
               <li><a href="/ala-and-indigenous-ecological-knowledge-iek/">Indigenous Ecological Knowledge</a></li>
               <li class="divider"></li>
-              <li><a href="/blogs-news/">ALA News</a></li>
+              <li><a href="/blogs-news/">ALA Blog</a></li>
               <li class="divider"></li>
               <li><a href="/about-the-atlas/contact-us/">Contact us</a></li>
               <li><a href="/about-the-atlas/feedback-form/">Feedback form</a></li>

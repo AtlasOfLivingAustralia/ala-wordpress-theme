@@ -41,7 +41,7 @@ $args = array(
           <div class=" col-md-12 col-sm-12"><h5 class="subject-category-overline">Channel</h5></div>
           <div class="col-md-8 col-sm-12">
 <?php if ( get_cat_slug($cat) == "blogs-news" ) : ?>
-          <h2 class="subject-title">The Atlas of Living Australia News</h2>
+          <h2 class="subject-title">ALA Blog</h2>
           <h3 class="subject-subtitle">News and events from around the ALA community.</h3>
 <?php else: ?>
           <h2 class="subject-title"><?php single_cat_title(); ?></h2>
