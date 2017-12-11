@@ -38,8 +38,8 @@ $args = array(
   'paged'            => $paged
 );
 ?>
-        <article class="col-md-12 header-wrap margin-bottom-half-1">
-          <h5 class="subject-category-overline">Channel</h5>
+          <div class=" col-md-12 col-sm-12"><h5 class="subject-category-overline">Channel</h5></div>
+          <div class="col-md-8 col-sm-12">
 <?php if ( get_cat_slug($cat) == "blogs-news" ) : ?>
           <h2 class="subject-title">The Atlas of Living Australia News</h2>
           <h3 class="subject-subtitle">News and events from around the ALA community.</h3>
@@ -47,7 +47,28 @@ $args = array(
           <h2 class="subject-title"><?php single_cat_title(); ?></h2>
           <h3 class="subject-subtitle"><?php echo category_description($cat); ?></h3>
 <?php endif; ?>
-        </article>
+          </div>
+          <div class="dropdown col-md-4 col-sm-12">
+            <button class="btn btn-default dropdown-toggle margin-bottom-2" type="button" id="categoriesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Categories
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="categoriesMenu">
+          <?php 
+          $catargs = array(
+              'exclude'            => 1,
+              'title_li'           => '',
+          );
+          wp_list_categories($catargs) ?>
+          <!--     <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li> -->
+            </ul>
+          </div>
+      </div>
+
 <?php
 // the query
 $the_query = new WP_Query( $args ); ?>
@@ -60,6 +81,7 @@ $the_query = new WP_Query( $args ); ?>
     $thumbsize = 'thumb-med';
     $blog_thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(), $thumbsize);
 ?>
+      <div class="row">
 <div class="col-md-12">
   <div class="panel panel-default panel-blog">
     <div class="panel-body row">
@@ -94,7 +116,7 @@ $the_query = new WP_Query( $args ); ?>
     </div>
   </div>
 </div>
-
+</div>
   <?php
   endwhile;
   // end The Loop
