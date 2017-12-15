@@ -365,7 +365,8 @@ if ( ! function_exists( 'ala_body_classes' ) ) :
  */
 function ala_body_classes( $classes ) {
   if ( is_page_template( 'alacontent-channel.php' ) || is_page('home') || is_category() || is_page_template( 'category.php' )) {
-    $classes[] = 'background-lightgrey';
+    //$classes[] = 'background-lightgrey';
+    $classes[] = 'background-white';
   } else {
     $classes[] = 'background-white';
   }
