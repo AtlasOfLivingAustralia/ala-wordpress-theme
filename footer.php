@@ -1,9 +1,7 @@
  <footer>
     <!-- Container -->
     <div class="container footer-container ">
-<?php //if ( $GLOBALS['ALAcontentType'] != 'Channel' ) : ?>
       <hr class="footer-border">
-<?php //endif; ?>
       <div class="row footer-nav">
 
         <div class="col-md-12 margin-bottom-2">
