@@ -87,6 +87,7 @@
               <li><a href="https://sightings.ala.org.au/">Record a sighting in the ALA</a></li>
               <li><a href="/submit-dataset-to-ala/">Submit a dataset to the ALA</a></li>
               <li><a href="https://digivol.ala.org.au/">Digitise a record in DigiVol</a></li>
+              <li><a href="/who-we-are/downloadable-tools/ala-mobile-app/">Mobile apps</a></li>
             </ul>
           </li>
           <li class="dropdown">
