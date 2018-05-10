@@ -29,6 +29,12 @@
     <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/ms-icon-144x144.png?v2">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- support widget -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
+    <script type="text/javascript">
+        FreshWidget.init("", {"queryString": "&widgetType=popup&searchArea=no", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#D5502A", "alignment": "2", "offset": "235px", "formHeight": "500px", "url": "https://support.ehelp.edu.au"} );
+    </script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
