@@ -147,7 +147,7 @@ p.alert-text>a:hover {text-decoration: none;}
 .alert-dismissable-button:hover {line-height: 1.7;opacity: 1.0;color: #fff;}
 .alert.alert-ala-danger a,.alert.alert-ala-info a,.alert.alert-ala-success a,.alert.alert-ala-warning a {color: #333;text-decoration: underline}
 .alert.alert-ala-default a {color: #fff6f5;text-decoration: underline}
-.alert.alert-ala-danger p,.alert.alert-ala-default p,.alert.alert-ala-info p,.alert.alert-ala-success p,.alert.alert-ala-warning p {margin-bottom: 0;font-size: 16px}
+.alert.alert-ala-danger p,.alert.alert-ala-default p,.alert.alert-ala-info p,.alert.alert-ala-success p,.alert.alert-ala-warning p {margin-bottom: 0;font-size: 20px}
 .alert.alert-ala-default {background-color: #da644e;color: #fff6f5}
 .alert.alert-ala-success {color: #333;background-color: #dff0d8;border-color: #d6e9c6}
 .alert.alert-ala-info {color: #333;background-color: #d9edf7;border-color: #bce8f1}
