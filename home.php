@@ -4,6 +4,14 @@
 
   <div class="jumbotron ala-header hidden-print" id="ala-jumbotron">
     <div class="container">
+<?php // theloop - but only for the announcement
+  if ( have_posts() ) : while ( have_posts() ) : the_post();
+    if( get_post_meta($post->ID, 'ALACustomAnnouncement', true) ) { ?>
+      <div class="col-lg-5 col-md-8 col-sm-12 ala-announce"><?php echo get_post_meta($post->ID, 'ALACustomAnnouncement', true); ?></div>
+      <div class="col-lg-1 col-md-12 col-sm-12"><!-- temporary spacer block goes with ala-announce block --></div>
+<?php } ?>
+<?php endwhile; ?>
+<?php endif; ?>
       <div class="col-lg-6 col-md-8 col-sm-12 promotional">The <strong>Atlas of Living Australia</strong> is a collaborative, national project that aggregates biodiversity data from multiple sources and makes it freely available and usable online.</div>
     </div>
   </div>
