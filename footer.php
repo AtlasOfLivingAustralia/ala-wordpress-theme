@@ -122,7 +122,7 @@
             <li class="footer-item footer-item-text footer-item-start"><a href="/who-we-are/terms-of-use/#Copyright">Copyright</a></li>
             <li class="footer-item footer-item-text"><a href="/about-the-atlas/terms-of-use/">Terms of use</a></li>
             <li class="footer-item footer-item-text"><a href="/about-the-atlas/contact-us/">Contact us</a></li>
-            <li class="footer-item footer-item-status"><a href="http://status.ala.org.au/">System status</a></li>
+            <li class="footer-item footer-item-status"><a href="https://status.ala.org.au/">System status</a></li>
           </ul>
         </div>
       </div>
