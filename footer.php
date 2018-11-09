@@ -9,7 +9,7 @@
           <h3 class="promotional">Sharing biodiversity knowledge to shape our future</h3>
         </div>
 
-        <div class="col-xs-6 col-sm-2 col-lg-2 hidden-print">
+        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
           <h5>Start exploring</h5>
           <ul class="link-list">
             <li><a href="https://lists.ala.org.au/iconic-species">Australian iconic species</a></li>
@@ -20,7 +20,7 @@
           </ul>
         </div>
 
-        <div class="col-xs-6 col-sm-2 col-lg-2 hidden-print">
+        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
           <h5>Search &amp; analyse</h5>
           <ul class="link-list">
             <li><a href="http://collections.ala.org.au/">Browse natural history collections</a></li>
@@ -35,7 +35,7 @@
           <!-- This fixes the alignment issues of the footer columns -->
         </div>
 
-        <div class="col-xs-6 col-sm-2 col-lg-2 hidden-print">
+        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
           <h5 class="footer-second-row">Participate</h5>
           <ul class="link-list">
             <li><a href="https://biocollect.ala.org.au/acsa">Join a citizen science project</a></li>
@@ -46,7 +46,11 @@
           </ul>
         </div>
 
-        <div class="col-xs-6 col-sm-2 col-lg-2 hidden-print">
+        <div class="clearfix visible-sm-block">
+          <!-- This fixes the alignment issues of the footer columns -->
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
           <h5 class="footer-second-row">Learn about the ALA</h5>
           <ul class="link-list">
             <li><a href="/who-we-are/">Who we are</a></li>
@@ -59,7 +63,7 @@
           </ul>
         </div>
 
-        <div class="col-xs-6 col-sm-2 col-lg-2 hidden-print">
+        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
           <h5 class="footer-second-row">Help</h5>
           <ul class="link-list">
             <li><a href="https://support.ala.org.au/">Knowledge base</a></li>
