@@ -9,7 +9,7 @@
           <h3 class="promotional">Sharing biodiversity knowledge to shape our future</h3>
         </div>
 
-        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
+        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
           <h5>Start exploring</h5>
           <ul class="link-list">
             <li><a href="https://lists.ala.org.au/iconic-species">Australian iconic species</a></li>
@@ -20,7 +20,7 @@
           </ul>
         </div>
 
-        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
+        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
           <h5>Search &amp; analyse</h5>
           <ul class="link-list">
             <li><a href="http://collections.ala.org.au/">Browse natural history collections</a></li>
@@ -35,7 +35,7 @@
           <!-- This fixes the alignment issues of the footer columns -->
         </div>
 
-        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
+        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
           <h5 class="footer-second-row">Participate</h5>
           <ul class="link-list">
             <li><a href="https://biocollect.ala.org.au/acsa">Join a citizen science project</a></li>
@@ -46,7 +46,11 @@
           </ul>
         </div>
 
-        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
+        <div class="clearfix visible-sm-block">
+          <!-- This fixes the alignment issues of the footer columns -->
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
           <h5 class="footer-second-row">Learn about the ALA</h5>
           <ul class="link-list">
             <li><a href="/who-we-are/">Who we are</a></li>
@@ -56,6 +60,13 @@
             <li><a href="/education-resources/">Education resources</a></li>
             <li><a href="/ala-and-indigenous-ecological-knowledge-iek/">Indigenous Ecological Knowledge</a></li>
             <li><a href="/blogs-news/">ALA Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
+          <h5 class="footer-second-row">Help</h5>
+          <ul class="link-list">
+            <li><a href="https://support.ala.org.au/">Knowledge base</a></li>
             <li><a href="/about-the-atlas/contact-us/">Contact us</a></li>
             <li><a href="/about-the-atlas/feedback-form/">Feedback form</a></li>
           </ul>
@@ -142,13 +153,10 @@
     </div>
   </div><!-- End Creative commons bar -->
 
-<?php /*
+<?php wp_footer(); ?>
 <script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
 <script type="text/javascript">
-  FreshWidget.init("", {"queryString": "&widgetType=popup&formTitle=ALA+support", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#D5502A", "alignment": "2", "offset": "68px", "formHeight": "500px", "url": "https://support.ehelp.edu.au"} );
+FreshWidget.init("", {"queryString": "&widgetType=popup&helpdesk_ticket[group_id]=6000207804&helpdesk_ticket[product_id]=6000005589&formTitle=ALA+support", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#d5502a", "alignment": "2", "offset": "197px", "formHeight": "500px", "url": "https://support.ala.org.au"} );
 </script>
-*/
-?>
-<?php wp_footer(); ?>
 </body>
 </html>

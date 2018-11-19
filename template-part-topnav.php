@@ -111,6 +111,18 @@
               <li><a href="/about-the-atlas/feedback-form/">Feedback form</a></li>
             </ul>
           </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              Help
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="https://support.ala.org.au/">Knowledge base</a></li>
+              <li class="divider"></li>
+              <li><a href="/about-the-atlas/contact-us/">Contact us</a></li>
+              <li><a href="/about-the-atlas/feedback-form/">Feedback form</a></li>
+            </ul>
+          </li>
         </ul>
         <ul class="nav navbar-nav navbar-right visible-xs">
 <?php if (is_user_logged_in() ) { ?>
