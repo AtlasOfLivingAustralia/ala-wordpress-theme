@@ -146,7 +146,7 @@
       <div class="row-fluid">
         <div class="col-md-12">
           <p class="alert-text text-creativecommons">
-            This work is licensed under a <a href="https://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia License</a>&ensp;<a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by/3.0/80x15.png"></a>
+            This work is licensed under a <a href="https://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia License</a>&ensp;<a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/"><img alt="Creative Commons License" style="border-width:0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cc-by.png"></a>
           </p>
         </div>
       </div>
